@@ -11,7 +11,7 @@
 
         public Direccion direccion { get; set;}
 
-        public DateTime fechaNacimiento { get; set; }
+        public string fechaNacimiento { get; set; }
 
         public List<int> telefonos { get; set; }
 

@@ -3,18 +3,18 @@
     {
       "cedula": 118620970,
       "nombre": {
-        "primerNombre": "Juan",
+        "primerNombre": "Mauricio",
         "apellido1": "Luna",
         "apellido2": "Acuña"
       },
-      "correo": null,
-      "contraseña": null,
+      "correo": "mauluna52@gmail.com",
+      "contraseña": "Valeria2326$",
       "direccion": {
         "distrito": "Concepcion",
-        "cantón": null,
+        "cantón": "La Union",
         "provincia": "Cartago"
       },
-      "fechaNacimiento": "0001-01-01T00:00:00",
+      "fechaNacimiento": "2002-12-12",
       "telefonos": [
         62912132
       ],
@@ -23,18 +23,18 @@
     {
       "cedula": 987350485,
       "nombre": {
-        "primerNombre": "Daniel",
+        "primerNombre": "Mauricio",
         "apellido1": "Duarte",
         "apellido2": "Cordero"
       },
-      "correo": null,
-      "contraseña": null,
+      "correo": "duartecor@gmail.com",
+      "contraseña": "dU@rT3",
       "direccion": {
         "distrito": "San Antonio",
-        "cantón": null,
+        "cantón": "Desamparados",
         "provincia": "San José"
       },
-      "fechaNacimiento": "0001-01-01T00:00:00",
+      "fechaNacimiento": "1997-08-21",
       "telefonos": [
         72021332,
         60161269

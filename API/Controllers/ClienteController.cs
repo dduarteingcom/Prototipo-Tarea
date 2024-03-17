@@ -46,15 +46,17 @@ namespace WebApplication1.Controllers
             string json = System.IO.File.ReadAllText("database.json");
             Clientes clientes = JsonConvert.DeserializeObject<Clientes>(json);
 
+            List<Cliente> clientesCoincidentes = new List<Cliente>();
+
             foreach (Cliente cliente in clientes.clientes)
             {
                 if (cliente.nombre.primerNombre == nombre)
                 {
-                    return cliente;
+                    clientesCoincidentes.Add(cliente);
                 }
             }
 
-            return null;
+            return clientesCoincidentes.Count > 0 ? clientesCoincidentes : null;
         }
 
         [HttpPut]
@@ -78,10 +80,7 @@ namespace WebApplication1.Controllers
                     return cliente;
                 }
             }
-
             return null;
-
         }
-
     }
 }
