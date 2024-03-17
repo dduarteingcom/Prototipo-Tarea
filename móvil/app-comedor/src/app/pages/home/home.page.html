@@ -1,0 +1,47 @@
+<ion-content>
+    <header>ComeTec</header>
+    <div (click)="moveToCarrito()" class="carrito">
+      <img style="height: 4vh;" src="../../../../assets/images/carrito.png">
+    </div>
+    <p>Menú</p>
+    <swiper-container  swiper [modules]="swiperModules">
+    <swiper-slide *ngFor="let plato of platos">
+      <div class="plato">
+        <div class="row">
+          <p>{{plato.nombre}}</p>
+        </div>
+        <div class="row">
+          <p>Descripción:</p>
+          <p>{{plato.descripcion}}</p>
+        </div>
+        <div class="row">
+          <p>Precio:</p>
+          <p>{{plato.precio}}</p>
+        </div>
+        <div class="row">
+          <p>Tipo:</p>
+          <p>{{plato.tipo}}</p>
+        </div>
+        <div class="row">
+          <p>Cálorias</p>
+          <p>{{plato.cantidadCalorias}}</p>
+        </div>
+        <div class="row">
+          <p>Duración</p>
+          <p>{{plato.duracion}}</p>
+        </div>
+        <div class="row">
+          <p>Ingredientes</p>
+          <ul>
+            <li *ngFor="let ingrediente of plato.ingredientes" >{{ingrediente}}</li>
+          </ul>
+        </div>
+        <ion-button (click)="addToCarrito(plato.nombre)">Añadir a carrito</ion-button>
+      </div>
+    </swiper-slide>
+  
+  </swiper-container>
+</ion-content>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  

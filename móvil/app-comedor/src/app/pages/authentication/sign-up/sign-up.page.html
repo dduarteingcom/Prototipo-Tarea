@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="row">
+      <ion-button (click)="goBack()">Go Back</ion-button>
+      <p>Registrate</p>
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <p>Ingresa los siguientes datos</p>
+  <p>Información personal</p>
+  <ul>
+    <input placeholder="Número de Cédula">
+    <input placeholder="Nombre">
+    <input placeholder="Apellidos">
+    <input placeholder="Fecha de nacimiento">
+  </ul>
+  <p>Dirección</p>
+  <ul>
+    <input placeholder="Provincia">
+    <input placeholder="Cantón">
+    <input placeholder="Distrito">
+  </ul>
+  <p>Teléfonos</p>
+  <ul>
+    <input placeholder="Telefono-1">
+    <input placeholder="Telefono-2">
+  </ul>
+  <ion-button (click)="moveToMore()">Continuar</ion-button>
+</ion-content>

@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="row">
+      <ion-button (click)="goBack()">Go Back</ion-button>
+      <p>Registrate</p>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+  <ul>
+    <input placeholder="correo electrónico">
+    <input placeholder="contraseña">
+    <input placeholder="confirma tu contraseña">
+  </ul>
+  <ion-button (click)="goHome()">Continuar</ion-button>
+</ion-content>
