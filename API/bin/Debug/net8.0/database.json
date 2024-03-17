@@ -1,0 +1,45 @@
+{
+  "clientes": [
+    {
+      "cedula": 118620970,
+      "nombre": {
+        "primerNombre": "Juan",
+        "apellido1": "Luna",
+        "apellido2": "Acuña"
+      },
+      "correo": null,
+      "contraseña": null,
+      "direccion": {
+        "distrito": "Concepcion",
+        "cantón": null,
+        "provincia": "Cartago"
+      },
+      "fechaNacimiento": "0001-01-01T00:00:00",
+      "telefonos": [
+        62912132
+      ],
+      "menu": null
+    },
+    {
+      "cedula": 987350485,
+      "nombre": {
+        "primerNombre": "Daniel",
+        "apellido1": "Duarte",
+        "apellido2": "Cordero"
+      },
+      "correo": null,
+      "contraseña": null,
+      "direccion": {
+        "distrito": "San Antonio",
+        "cantón": null,
+        "provincia": "San José"
+      },
+      "fechaNacimiento": "0001-01-01T00:00:00",
+      "telefonos": [
+        72021332,
+        60161269
+      ],
+      "menu": null
+    }
+  ]
+}
