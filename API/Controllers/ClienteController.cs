@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using WebApplication1.Models;
+using API.Models;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace WebApplication1.Controllers
+namespace API.Controllers
 {
     public class Clientes
     {
@@ -31,7 +31,7 @@ namespace WebApplication1.Controllers
             {
                 if (cliente.cedula == cedula)
                 {
-                    return cliente;
+                    return cliente.nombre.primerNombre;
                 }
             }
 
@@ -39,26 +39,28 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet]
-        [Route("encontrarNombre")]
+        [Route("encontrarPrimerNombre")]
 
         public dynamic encontrarPrimerNombre(string nombre)
         {
             string json = System.IO.File.ReadAllText("database.json");
             Clientes clientes = JsonConvert.DeserializeObject<Clientes>(json);
 
+            List<Cliente> clientesCoincidentes = new List<Cliente>();
+
             foreach (Cliente cliente in clientes.clientes)
             {
                 if (cliente.nombre.primerNombre == nombre)
                 {
-                    return cliente;
+                    clientesCoincidentes.Add(cliente);
                 }
             }
 
-            return null;
+            return clientesCoincidentes.Count > 0 ? clientesCoincidentes : null;
         }
 
         [HttpPut]
-        [Route("modificarNombre")]
+        [Route("modificarPrimerNombre")]
         public dynamic modificarNombre(int cedula, string nuevoNombre)
         {
             string path = "database.json";
@@ -78,10 +80,27 @@ namespace WebApplication1.Controllers
                     return cliente;
                 }
             }
-
             return null;
-
         }
+        [HttpGet]
+        [Route("mostrarClientes")]
 
+        public dynamic mostrarClientes()
+        {
+            string json = System.IO.File.ReadAllText("database.json");
+            Clientes clientes = JsonConvert.DeserializeObject<Clientes>(json);
+
+            List<Cliente> clientesCoincidentes = new List<Cliente>();
+
+            foreach (Cliente cliente in clientes.clientes)
+            {
+                if (cliente != null)
+                {
+                    clientesCoincidentes.Add(cliente);
+                }
+            }
+
+            return clientesCoincidentes.Count > 0 ? clientesCoincidentes : null;
+        }
     }
 }
