@@ -5,7 +5,7 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("usuario")]
-    public class UsuarioController
+    public class UsuarioController : ControllerBase
     {
 
         [HttpGet]
