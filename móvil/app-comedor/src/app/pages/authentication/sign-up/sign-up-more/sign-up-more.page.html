@@ -1,17 +1,22 @@
 <ion-header>
   <ion-toolbar>
     <div class="row">
-      <ion-button (click)="goBack()">Go Back</ion-button>
-      <p>Registrate</p>
+      <ion-button class="boton-redondo" (click)="goBack()">&#8592;</ion-button>
+      <p style="margin-left: 23vw; color: white;">Regístrate</p>
     </div>
+
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
 
   <ul>
-    <input placeholder="correo electrónico">
-    <input placeholder="contraseña">
-    <input placeholder="confirma tu contraseña">
+    <ion-input placeholder="Correo electrónico"></ion-input>
+    <ion-input placeholder="Contraseña"></ion-input>
+    <ion-input placeholder="Confirma tu contraseña"></ion-input>
   </ul>
-  <ion-button (click)="goHome()">Continuar</ion-button>
+  
+
+  <div class="button-centered">
+    <ion-button class = "boton2" (click)="goHome()">Continuar &raquo;</ion-button>  
+  </div>
 </ion-content>

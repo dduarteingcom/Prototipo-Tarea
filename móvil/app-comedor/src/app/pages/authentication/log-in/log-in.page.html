@@ -1,17 +1,23 @@
 <ion-header>
   <ion-toolbar>
     <div class="row">
-      <ion-button (click)="goBack()" >Go back</ion-button>
-      <p>Inicia Sesión</p>
+      <ion-button class="boton-redondo" (click)="goBack()">&#8592;</ion-button>
+      <p style="margin-left: 19vw; color: white;">Inicio de sesión</p>
+      
     </div>
   </ion-toolbar>
 </ion-header>
+
+
 <ion-content >
   <header style="display: flex;">
   </header>
   <ul>
-    <ion-input placeholder="correo electrónico"></ion-input>
-    <ion-input placeholder="contraseña"></ion-input>
+    <ion-input placeholder="Escriba su correo electrónico"></ion-input>
+    <ion-input placeholder="Escriba su contraseña"></ion-input>
   </ul>
-  <ion-button (click)="goHome()">Continuar</ion-button>
+
+  <div class="button-centered">
+    <ion-button class="boton2" (click)="goHome()">Continuar &raquo;</ion-button>
+  </div>
 </ion-content>

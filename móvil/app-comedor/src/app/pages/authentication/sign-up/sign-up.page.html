@@ -1,31 +1,47 @@
-<ion-header>
+<ion-header color="primary">
   <ion-toolbar>
     <div class="row">
-      <ion-button (click)="goBack()">Go Back</ion-button>
-      <p>Registrate</p>
+      <ion-button class="boton-redondo" (click)="goBack()">&#8592;</ion-button>     
+      <p style="margin-left: 23vw; color: white;">Regístrate</p>
     </div>
 
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
-  <p>Ingresa los siguientes datos</p>
-  <p>Información personal</p>
+
+
+
+  <div style="text-align: center;">
+    <p> Ingresa los siguientes datos</p>
+  </div>
+
+  <div style="text-align: center;background-color: #034A91;">
+    <p style="display: inline-block; padding: 0.2vh; color: white;"> Información personal</p>
+  </div>
+  
   <ul>
-    <input placeholder="Número de Cédula">
-    <input placeholder="Nombre">
-    <input placeholder="Apellidos">
-    <input placeholder="Fecha de nacimiento">
+    <ion-input placeholder="Número de Cédula"></ion-input>
+    <ion-input placeholder="Nombre"></ion-input>
+    <ion-input placeholder="Apellidos"></ion-input>
+    <ion-input placeholder="Fecha de nacimiento"></ion-input>
   </ul>
-  <p>Dirección</p>
+  <div style="text-align: center;background-color: #034A91;">
+    <p style="display: inline-block; padding: 0.2vh; color: white;"> Dirección</p>
+  </div>
   <ul>
-    <input placeholder="Provincia">
-    <input placeholder="Cantón">
-    <input placeholder="Distrito">
-  </ul>
-  <p>Teléfonos</p>
+    <ion-input placeholder="Provincia"></ion-input>
+    <ion-input placeholder="Cantón"></ion-input>
+    <ion-input placeholder="Distrito"></ion-input>
+  </ul >
+  <div style="text-align: center;background-color: #034A91;">
+    <p style="display: inline-block; padding: 0.2vh; color: white;"> Teléfonos</p>
+  </div>
   <ul>
-    <input placeholder="Telefono-1">
-    <input placeholder="Telefono-2">
+    <ion-input placeholder="Teléfono-1"></ion-input>
+    <ion-input placeholder="Teléfono-2"></ion-input>
   </ul>
-  <ion-button (click)="moveToMore()">Continuar</ion-button>
+  <div class="button-centered">
+    <ion-button class="boton2" (click)="moveToMore()">Continuar &raquo;</ion-button>
+  </div>
+
 </ion-content>
