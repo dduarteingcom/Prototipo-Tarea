@@ -1,46 +1,69 @@
 <ion-content>
-    <header>ComeTec</header>
-    <div (click)="moveToCarrito()" class="carrito">
-      <img style="height: 4vh;" src="../../../../assets/images/carrito.png">
-    </div>
-    <p>Menú</p>
-    <swiper-container  swiper [modules]="swiperModules">
-    <swiper-slide *ngFor="let plato of platos">
-      <div class="plato">
-        <div class="row">
-          <p>{{plato.nombre}}</p>
-        </div>
-        <div class="row">
-          <p>Descripción:</p>
-          <p>{{plato.descripcion}}</p>
-        </div>
-        <div class="row">
-          <p>Precio:</p>
-          <p>{{plato.precio}}</p>
-        </div>
-        <div class="row">
-          <p>Tipo:</p>
-          <p>{{plato.tipo}}</p>
-        </div>
-        <div class="row">
-          <p>Cálorias</p>
-          <p>{{plato.cantidadCalorias}}</p>
-        </div>
-        <div class="row">
-          <p>Duración</p>
-          <p>{{plato.duracion}}</p>
-        </div>
-        <div class="row">
-          <p>Ingredientes</p>
-          <ul>
-            <li *ngFor="let ingrediente of plato.ingredientes" >{{ingrediente}}</li>
-          </ul>
-        </div>
-        <ion-button (click)="addToCarrito(plato.nombre)">Añadir a carrito</ion-button>
+  <ion-header color="primary">
+    <ion-toolbar>
+      <div style = "text-align: center;">
+        <p style="color: white; font-size: 2.5vb;">RestTEC</p>
       </div>
-    </swiper-slide>
+      
+    </ion-toolbar>
+    </ion-header>
+    <div (click)="moveToCarrito()" class="carrito">
+      <img style="margin-top: 1vh;margin-bottom: -4vh;margin-left: 85vw ;height: 5vh;" src="../../../../assets/images/carrito.png">
+    </div>
+
+
+    <div class="negrita">
+      <p style="text-align: center; color: #140E39;">Menú</p>
+    </div>
+    <div class="slides">
+      <swiper-container  swiper [modules]="swiperModules" [slidesPerView] = "1" [loop] = "true" [initialSlide] = "1" [centeredSlides] = "true">
+        <swiper-slide *ngFor="let plato of platos">
+          
+          <div class="plato">
+            
+            <div>
+              <p class="textoplato">{{plato.nombre}}</p>
+            </div>
+
+            <div class="row">
+              <p class="textodes">Descripción:</p>
+              <p class="texto">{{plato.descripcion}}</p>
+            </div>
+            <div class="row">
+              <p class="textodes">Precio:</p>
+              <p class="texto">{{plato.precio}}</p>
+            </div>
+            <div class="row">
+              <p class="textodes">Tipo:</p>
+              <p class="texto">{{plato.tipo}}</p>
+            </div>
+            <div class="row">
+              <p class="textodes">Calorías:</p>
+              <p class="texto">{{plato.cantidadCalorias}}</p>
+            </div>
+            <div class="row">
+              <p class="textodes">Duración:</p>
+              <p class="texto">{{plato.duracion}}</p>
+            </div>
+            <div class="row">
+              <p class="textodes">Ingredientes:</p>
+              <ul>
+                <li  class="texto" *ngFor="let ingrediente of plato.ingredientes" >{{ingrediente}}</li>
+              </ul>
+            </div>
+            <div class="button-container">
+              <ion-button class="boton" expand="block" (click)="addToCarrito(plato.nombre)">Añadir a carrito</ion-button>
+            </div>
+          </div>
+        </swiper-slide>
+      
+      </swiper-container>
+    </div>
+    <div class="rectangle"> </div>
+
+    
+    
   
-  </swiper-container>
 </ion-content>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
