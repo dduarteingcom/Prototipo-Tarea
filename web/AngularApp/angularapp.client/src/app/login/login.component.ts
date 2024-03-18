@@ -10,33 +10,23 @@ import { HttpClient } from '@angular/common/http';
 export class LoginComponent {
 
 
-  readonly APIUrl = "https://localhost:7258/cliente";
+  readonly APIUrl = "https://localhost:7258/cliente/";
   email: string = '';
   password: string = '';
   constructor(private http: HttpClient) { }
 
-  notes:string | undefined;
+  notes:any;
 
 
   prueba() {
-    this.http.get(this.APIUrl + '/encontrarCedula' + '?cedula=118620970').subscribe(data => { this.notes = data; })
-    console.log("Hola");
-    console.log(this.notes);
-
+    this.http.get(this.APIUrl + 'mostrarClientes').subscribe(data => {
+      this.notes = data;
+    });
   }
-
   login() {
     const formData = new FormData();
     formData.append('email', this.email);
     formData.append('password', this.password);
 
-    this.http.post(this.APIUrl, formData).subscribe({
-      next: response => {
-        // Handle successful login
-      },
-      error: error => {
-        // Handle login error
-      }
-    });
   }
 }
