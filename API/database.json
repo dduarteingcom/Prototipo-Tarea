@@ -3,15 +3,15 @@
     {
       "cedula": 118620970,
       "nombre": {
-        "primerNombre": "Juan",
+        "primerNombre": "Mauricio",
         "apellido1": "Luna",
         "apellido2": "Acuña"
       },
-      "correo": null,
-      "contraseña": null,
+      "correo": "mluna@gmail.com",
+      "contraseña": "Mauro26",
       "direccion": {
         "distrito": "Concepcion",
-        "cantón": null,
+        "cantón": "La Union",
         "provincia": "Cartago"
       },
       "fechaNacimiento": "0001-01-01T00:00:00",
@@ -27,11 +27,11 @@
         "apellido1": "Duarte",
         "apellido2": "Cordero"
       },
-      "correo": null,
-      "contraseña": null,
+      "correo": "duartecor@gmail.com",
+      "contraseña": "dU@rT3",
       "direccion": {
         "distrito": "San Antonio",
-        "cantón": null,
+        "cantón": "Desamparados",
         "provincia": "San José"
       },
       "fechaNacimiento": "0001-01-01T00:00:00",
@@ -40,6 +40,26 @@
         60161269
       ],
       "menu": null
+    }
+  ],
+  "administradores": [
+    {
+      "correo": "fjimenez@gmail.com",
+      "contraseña": "F3lip3"
+    },
+    {
+      "correo": "nibem68@gmail.com",
+      "contraseña": "NIBEM"
+    }
+  ],
+  "chefs": [
+    {
+      "correo": "andres@gmail.com",
+      "contraseña": "Andr3s"
+    },
+    {
+      "correo": "mauro@gmail.com",
+      "contraseña": "m@Uro"
     }
   ]
 }
