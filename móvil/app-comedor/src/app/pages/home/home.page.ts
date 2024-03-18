@@ -8,6 +8,7 @@ import { IonicModule, IonicSlides } from '@ionic/angular';
 import { CarritoService } from 'src/app/services/carrito.service';
 import { HttpClientModule } from '@angular/common/http';
 
+
 register();
 
 @Component({
@@ -24,7 +25,7 @@ export class HomePage {
   pedidos: IDish[] =[];
   platos: IDish[] =[
     {
-     nombre: 'hamburguesa',
+     nombre: 'Hamburguesa',
      precio: 3000,
      descripcion: 'Rica hamburguesa',
     ingredientes: ['pan',' queso'],
@@ -33,7 +34,7 @@ export class HomePage {
     duracion: 20 },
 
     {
-     nombre: 'pizza',
+     nombre: 'Pizza',
      precio: 3000,
      descripcion: 'Rica pizza',
     ingredientes: ['pan',' queso'],
@@ -43,8 +44,8 @@ export class HomePage {
     {
      nombre: 'sushi',
      precio: 5500,
-     descripcion: 'Rica sushi',
-    ingredientes: ['pescado',' alga'],
+     descripcion: 'Rica sushifawfwafaf wafwafwaf wafwafwafwa waffwafsas',
+    ingredientes: ['pescado',' alga',' alga',' alga',' alga',' alga',' alga'],
     tipo:'marisco',
     cantidadCalorias: 403,
     duracion: 18
