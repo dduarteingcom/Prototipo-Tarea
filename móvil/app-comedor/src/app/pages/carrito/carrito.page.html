@@ -3,7 +3,15 @@
     <div class="row">
       <ion-button class="boton-redondo" (click)="goBack()">&#8592;</ion-button>
       <p style="margin-left: 15vw; color: white;">Carrito de Compras</p>
-      
     </div>
   </ion-toolbar>
 </ion-header>
+<ion-content>
+  <ul>
+    <div class="pedido" *ngFor="let pedido of pedidos">
+      <button (click)="removeItem(pedido.nombre)">borrar</button>
+      <p>{{pedido.nombre}}</p>
+      <p>{{pedido.precio}}</p>
+    </div>
+  </ul>
+</ion-content>

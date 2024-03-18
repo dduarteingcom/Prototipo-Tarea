@@ -5,6 +5,8 @@ import { register } from 'swiper/element/bundle';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule, IonicSlides } from '@ionic/angular';
+import { CarritoService } from 'src/app/services/carrito.service';
+import { HttpClientModule } from '@angular/common/http';
 
 register();
 
@@ -14,9 +16,10 @@ register();
   templateUrl: './home.page.html',
   styleUrl: './home.page.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  imports: [CommonModule, FormsModule, IonicModule]
+  imports: [CommonModule, FormsModule, IonicModule, HttpClientModule,]
 })
 export class HomePage {
+
   swiperModules = [IonicSlides];
   pedidos: IDish[] =[];
   platos: IDish[] =[
@@ -48,17 +51,23 @@ export class HomePage {
     }
   ];
   constructor(
-    private _router : Router
+    private _router : Router,
+    private _carritoService: CarritoService
   ){
+  }
+  ngOnInit() {
+    
   }
   moveToCarrito(){
     this._router.navigate(['/carrito']);
   }
   addToCarrito(plato: string){
+    this.pedidos=this._carritoService.getPedidos();
     const newOrder = this.platos.filter((platos)=>
     platos.nombre.toLocaleLowerCase().includes(plato.toLowerCase())
     );
     this.pedidos.push(newOrder[0]);
-    console.log(this.pedidos);
+    console.log(this.pedidos)
+    this._carritoService.setPedidos(this.pedidos);
   }
 }

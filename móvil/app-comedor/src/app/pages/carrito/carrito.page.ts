@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { CarritoService } from 'src/app/services/carrito.service';
+import { IDish } from '../interfaces/plato.model';
 
 @Component({
   selector: 'app-carrito',
@@ -12,16 +14,27 @@ import { Router } from '@angular/router';
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class CarritoPage implements OnInit {
-
+  pedidos: IDish[] =[];
   constructor(
-    private _router : Router
-  ){}
+    private _router : Router,
+    private _carritoService: CarritoService,
+  ){
+
+  }
 
   ngOnInit() {
+
+    this.pedidos=this._carritoService.getPedidos();
   }
   goBack(){
     this._router.navigate(['/home'])
   }
+  removeItem(pedido:string){
+    this.pedidos = this.pedidos.filter((pedidos)=> pedidos.nombre !== pedido);
+    console.log(this.pedidos);
+    this._carritoService.setPedidos(this.pedidos);
+  }
+
 }
 
 
