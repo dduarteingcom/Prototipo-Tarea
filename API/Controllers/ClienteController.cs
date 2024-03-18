@@ -31,7 +31,7 @@ namespace API.Controllers
             {
                 if (cliente.cedula == cedula)
                 {
-                    return cliente.nombre.primerNombre;
+                    return cliente;
                 }
             }
 
@@ -58,6 +58,27 @@ namespace API.Controllers
 
             return clientesCoincidentes.Count > 0 ? clientesCoincidentes : null;
         }
+
+        [HttpGet]
+        [Route("encontrarCorreoPasswd")]
+
+        public dynamic encontrarCorreoPasswd(string correo, string password)
+        {
+            string json = System.IO.File.ReadAllText("database.json");
+            Clientes clientes = JsonConvert.DeserializeObject<Clientes>(json);
+
+            foreach (Cliente cliente in clientes.clientes)
+            {
+                if (cliente.correo == correo && cliente.contraseña == password)
+                {
+                    return cliente;
+                }
+            }
+
+            return null;
+        }
+
+
 
         [HttpPut]
         [Route("modificarPrimerNombre")]
