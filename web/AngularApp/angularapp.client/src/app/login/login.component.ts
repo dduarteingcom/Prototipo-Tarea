@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,9 +14,11 @@ export class LoginComponent {
   readonly APIUrl = "https://localhost:7258/cliente/";
   email: string = '';
   password: string = '';
-  constructor(private http: HttpClient) { }
+  errorMessage: string = '';
+  constructor(private http: HttpClient, private router: Router) { }
 
-  notes:any;
+  notes: any;
+  response: any;
 
 
   prueba() {
@@ -24,9 +27,29 @@ export class LoginComponent {
     });
   }
   login() {
+    this.errorMessage = '';
     const formData = new FormData();
     formData.append('email', this.email);
     formData.append('password', this.password);
-
+    this.checklogin();
+  }
+  checklogin() {
+    this.http.get(this.APIUrl + 'encontrarCorreoPasswd?correo=' + this.email + '&password=' + this.password).subscribe({
+      next: response => {
+        if (response) {
+          // Navigate to the dashboard upon successful login
+          this.errorMessage = 'Login exitoso'
+          this.router.navigate(['/dashboard']);
+        } else {
+          // Show error message if the response is null
+          this.errorMessage = 'Credenciales invalidas';
+        }
+      },
+      error: error => {
+        console.error('Login error:', error);
+        // Handle login error
+        this.errorMessage = 'Error occurred during login';
+      }
+    });
   }
 }

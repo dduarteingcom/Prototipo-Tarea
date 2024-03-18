@@ -5,17 +5,17 @@
 <form (ngSubmit)="login()" #loginForm="ngForm">
   <div>
     <label>Email:</label>
-    <input type="email" name="email" ngModel required>
+    <input type="email" name="email" [(ngModel)] ="email" required>
   </div>
   <div>
     <label>Password:</label>
-    <input type="password" name="password" ngModel required>
+    <input type="password" name="password"  [(ngModel)] ="password" required>
   </div>
-  <button (click)="prueba()">Login</button>
+  <button type="button" (click)="login()">Login</button>
 </form>
 
-<h3 *ngFor ="let note of notes">
+<h3>
 
-  <b>{{note.nombre.primerNombre}}</b>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
 
 </h3>
