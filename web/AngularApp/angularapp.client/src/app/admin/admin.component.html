@@ -2,7 +2,12 @@
   <button class="back-btn" (click)="goHomepage()">Back</button>
 </div>
 
+<input [(ngModel)]="inputBoxValue" type="text" placeholder="Type you input" />
+
 <div class="container">
+  <div>
+    <button (click)="newDish()">Insert Dish</button>
+  </div>
 
   <h2>Dish list</h2>
   <div class="dish-list">
