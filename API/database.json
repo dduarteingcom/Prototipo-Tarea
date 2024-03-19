@@ -58,14 +58,23 @@
   ],
   "chefs": [
     {
-      "pedidosAsigandos": null,
+      "pedidosAsigandos": [
+        1
+      ],
       "correo": "andres@gmail.com",
       "contraseña": "Andr3s"
     },
     {
-      "pedidosAsigandos": null,
-      "correo": "mauro@gmail.com",
-      "contraseña": "m@Uro"
+      "pedidosAsigandos": [
+        2,
+        3
+      ],
+        "correo"
+        :
+        "mauro@gmail.com",
+        "contraseña"
+        :
+        "m@Uro"
     }
   ],
   "pedidos": [
@@ -89,6 +98,17 @@
       ],
       "tiempoPreparacion": 25,
       "estado": false
+    },
+    {
+      "Id": 3,
+      "cliente": "118620970",
+      "chef": "mauro@gmail.com",
+      "platos": [
+        2,
+        3
+      ],
+      "tiempoPreparacion": 45,
+      "estado": true
     }
   ],
   "platos": [
