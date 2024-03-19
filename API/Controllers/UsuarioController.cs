@@ -20,7 +20,7 @@ namespace API.Controllers
             {
                 if (admin.correo == correo && admin.contraseña == password)
                 {
-                    return new { tipo = "administrador", datos = admin };
+                    return 1;
                 }
             }
 
@@ -29,7 +29,7 @@ namespace API.Controllers
             {
                 if (chef.correo == correo && chef.contraseña == password)
                 {
-                    return new { tipo = "chef", datos = chef };
+                    return 2;
                 }
             }
 

@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class LoginComponent {
 
 
-  readonly APIUrl = "https://localhost:7258/cliente/";
+  readonly APIUrl = "https://localhost:7258/usuario/";
   email: string = '';
   password: string = '';
   errorMessage: string = '';
@@ -36,11 +36,16 @@ export class LoginComponent {
   checklogin() {
     this.http.get(this.APIUrl + 'encontrarCorreoPasswd?correo=' + this.email + '&password=' + this.password).subscribe({
       next: response => {
-        if (response) {
+        if (response == 1) {
           // Navigate to the dashboard upon successful login
-          this.errorMessage = 'Login exitoso'
-          this.router.navigate(['/dashboard']);
-        } else {
+          this.errorMessage = 'Login exitoso admin'
+          this.router.navigate(['/menu']);
+        }
+        else if (response == 2) {
+          this.errorMessage = 'Login exitoso chef'
+          this.router.navigate(['/admin-platos']);
+        }
+        else {
           // Show error message if the response is null
           this.errorMessage = 'Credenciales invalidas';
         }
