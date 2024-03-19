@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+interface Dish {
+  id: number;
+  name: string;
+}
 
 @Component({
   selector: 'app-admin',
@@ -8,8 +12,10 @@ import { Router } from '@angular/router';
   styleUrl: './admin.component.css'
 })
 export class AdminComponent {
-  taskList: string[] = [];
+  //testList: Dish[] = [];
+  dishList: Dish[] = [];
   inputBoxValue: string = '';
+  dishIdCounter: number = 0;
 
   constructor(private router: Router) { }
 
@@ -17,11 +23,31 @@ export class AdminComponent {
     this.router.navigate(['/menu']);
   }
 
-  newDish() {
+  newDishT() {
     if (this.inputBoxValue.trim() !== '') {
-      this.taskList.push(this.inputBoxValue);
+      const newDish: Dish = {
+        id: this.dishIdCounter++,
+        name: this.inputBoxValue
+      };
+      this.dishList.push(newDish);
       this.inputBoxValue = ''; // Clear input box after adding task
     }
+    else {
+      alert("You must type something!")
+    }
   }
+
+  deleteDish(dishId: number) {
+    this.dishList = this.dishList.filter(dish => dish.id !== dishId);
+  }
+
+  //newDish() {
+  //  if (this.inputBoxValue.trim() !== '') {
+  //    this.dishList.push(this.inputBoxValue);
+  //    this.inputBoxValue = ''; // Clear input box after adding task
+  //  }
+  //  else {
+  //    alert("You must type something!")}
+  //}
 
 }

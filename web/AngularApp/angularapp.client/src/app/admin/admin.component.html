@@ -2,19 +2,19 @@
   <button class="back-btn" (click)="goHomepage()">Back</button>
 </div>
 
-<input [(ngModel)]="inputBoxValue" type="text" placeholder="Type you input" />
-
 <div class="container">
   <div>
-    <button (click)="newDish()">Insert Dish</button>
+    <input [(ngModel)]="inputBoxValue" type="text" placeholder="Type your input" />
+    <button (click)="newDishT()">Insert Dish</button>
   </div>
 
   <h2>Dish list</h2>
   <div class="dish-list">
     <ul id="options-container">
-      <li>Dish 1</li>
-      <li>Dish 2</li>
-      <li>Dish 3</li>
+      <li *ngFor="let dish of dishList">
+        {{dish.name}}
+        <button (click)="deleteDish(dish.id)">X</button>
+      </li>
     </ul>
   </div>
 
