@@ -1,6 +1,41 @@
+.container {
+  display: flex;
+  justify-content: space-between; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column;
+  height: 80vh; /* Full viewport height */
+}
+
+.back-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dish-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 ul li {
-    list-style: none;
-    padding: 12px 8px 12px 50px;
-    user-select: none;
-    cursor: pointer;
+  list-style: none;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+}
+
+#top {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  margin-left: auto;
 }
