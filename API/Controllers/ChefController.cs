@@ -64,6 +64,7 @@ namespace API.Controllers
 
             // Actualizar los datos del plato
             pedido.chef = correo;
+            pedido.estado = true;
 
             // Guardar los cambios en el archivo json
             json = JsonConvert.SerializeObject(data, Formatting.Indented);
