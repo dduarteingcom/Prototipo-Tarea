@@ -29,6 +29,18 @@ export const routes: Routes = [
   {
     path: 'sign-up-more',
     loadComponent: () => import('./pages/authentication/sign-up/sign-up-more/sign-up-more.page').then( m => m.SignUpMorePage)
+  },  {
+    path: 'pedido',
+    loadComponent: () => import('./pages/pedido/pedido.page').then( m => m.PedidoPage)
   },
+  {
+    path: 'feedback',
+    loadComponent: () => import('./pages/feedback/feedback.page').then( m => m.FeedbackPage)
+  },
+  {
+    path: 'config',
+    loadComponent: () => import('./pages/config/config.page').then( m => m.ConfigPage)
+  },
+
 
 ];

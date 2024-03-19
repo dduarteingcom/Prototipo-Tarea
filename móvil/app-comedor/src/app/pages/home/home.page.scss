@@ -6,7 +6,9 @@
     left: 0;
     
   }
-
+  ion-header {
+    --ion-background-color: #140E39; /* Color de fondo personalizado */
+  }
 .plato{
   position: relative;
   height: auto;
@@ -45,7 +47,8 @@
 .texto{
   color:black;
   margin-left: 2vw;
-  font-weight: 700;
+  font-weight: 400;
+  //font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

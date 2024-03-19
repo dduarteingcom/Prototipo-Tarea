@@ -11,7 +11,10 @@
     <div class="pedido" *ngFor="let pedido of pedidos">
       <button (click)="removeItem(pedido.nombre)">borrar</button>
       <p>{{pedido.nombre}}</p>
-      <p>{{pedido.precio}}</p>
+      <p>₡{{pedido.precio}}</p>
     </div>
   </ul>
+  <div class="button-centered">
+    <ion-button class="boton2" (click)="goPedido()">Realizar pedido &raquo;</ion-button>
+  </div>
 </ion-content>
