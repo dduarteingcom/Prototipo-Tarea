@@ -53,5 +53,34 @@ namespace API.Controllers
 
             return Ok(nuevoPlato);
         }
+
+        [HttpPut]
+        [Route("modificarPlato")]
+        public dynamic modificarNombre(int id, string nuevoNombre, string nuevoTipo, int nuevoCalorias, int nuevoPrecio)
+        {
+            string path = "database.json";
+            string json = System.IO.File.ReadAllText(path);
+            Platos platos = JsonConvert.DeserializeObject<Platos>(json);
+
+            foreach (Plato plato in platos.platos)
+            {
+                if (plato.Id == id)
+                {
+                    plato.nombre = nuevoNombre;
+                    plato.tipo = nuevoTipo;
+                    plato.calorias = nuevoCalorias;
+                    plato.precio = nuevoPrecio;
+
+
+                    // Sobrescribe el archivo JSON con los datos actualizados
+                    string jsonActualizado = JsonConvert.SerializeObject(platos, Formatting.Indented);
+                    System.IO.File.WriteAllText(path, jsonActualizado);
+
+                    return platos;
+                }
+            }
+            return null;
+        }
+
     }
 }

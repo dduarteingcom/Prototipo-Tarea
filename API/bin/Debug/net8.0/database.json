@@ -120,6 +120,13 @@
       "tipo": "desayuno",
       "calorias": 300,
       "precio": 1500
+    },
+    {
+      "Id": 5,
+      "nombre": "ensalada cesar",
+      "tipo": "ensalada",
+      "calorias": 300,
+      "precio": 1500
     }
   ]
 }
