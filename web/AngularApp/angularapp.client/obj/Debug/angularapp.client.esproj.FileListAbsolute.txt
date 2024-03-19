@@ -1,1 +1,2 @@
 C:\Users\andre\Desktop\TEC\Bases\TareaCorta3\Prototipo-Tarea\web\AngularApp\angularapp.client\obj\Debug\angularapp.client.esproj.CoreCompileInputs.cache
+C:\Users\Mano-\Documents\TEC\Semestre-I-2024\Bases-de-datos\rest-tec\web\AngularApp\angularapp.client\obj\Debug\angularapp.client.esproj.CoreCompileInputs.cache
