@@ -2,6 +2,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,7 @@ export class LoginComponent {
   email: string = '';
   password: string = '';
   errorMessage: string = '';
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient, private router: Router, private userService: UserService) { }
 
   notes: any;
   response: any;
@@ -40,6 +41,7 @@ export class LoginComponent {
           // Navigate to the dashboard upon successful login
           this.errorMessage = 'Login exitoso admin'
           this.router.navigate(['/menu']);
+          this.userService.setUserId(this.email);
         }
         else if (response == 2) {
           this.errorMessage = 'Login exitoso chef'

@@ -1,15 +1,35 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute } from '@angular/router';
+import { UserService } from '../user.service';
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-
-  constructor() { }
-
+  usermail!: string;
+  readonly APIUrl = "https://localhost:7258/admin/";
+  activeOrders: any;
+  constructor(private route: ActivatedRoute, private userService: UserService, private http: HttpClient) { }
+  response: any;
   ngOnInit(): void {
+    this.getActiveOrders();
+    this.usermail = this.userService.getUserId();
+
+  }
+
+  getActiveOrders() {
+    this.http.get(this.APIUrl + 'obtenerPedidosActivos').subscribe({
+      next: response => {
+        console.log(response);
+        this.activeOrders = response;
+        console.log(this.activeOrders[0]);
+      }
+    });
+    
+
   }
 
 }
