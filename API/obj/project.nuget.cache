@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M/ADIkGtbkB6jmBGegC18GKFvHxZ2NVSY53oHYMBhaseHMVAhKqjiYNvboqPbbrULvpg3Bb/maCM3bZlVWXdgA==",
+  "dgSpecHash": "w+IYId0xyAw/VSxCGUwUtkYdEdcKKUAhg5vD0fxORafA2zgZ0uqXjl2dyvQg3Ca7I42h56W8akpe0bi2ApjUXg==",
   "success": true,
-  "projectFilePath": "D:\\Bases\\API\\API.csproj",
+  "projectFilePath": "D:\\Bases\\Prototipo-Tarea\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\maulu\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.3\\microsoft.aspnetcore.jsonpatch.8.0.3.nupkg.sha512",
     "C:\\Users\\maulu\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\8.0.3\\microsoft.aspnetcore.mvc.newtonsoftjson.8.0.3.nupkg.sha512",

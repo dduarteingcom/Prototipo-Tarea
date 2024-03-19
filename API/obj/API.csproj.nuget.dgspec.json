@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bases\\API\\API.csproj": {}
+    "D:\\Bases\\Prototipo-Tarea\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\Bases\\API\\API.csproj": {
+    "D:\\Bases\\Prototipo-Tarea\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bases\\API\\API.csproj",
+        "projectUniqueName": "D:\\Bases\\Prototipo-Tarea\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Bases\\API\\API.csproj",
+        "projectPath": "D:\\Bases\\Prototipo-Tarea\\API\\API.csproj",
         "packagesPath": "C:\\Users\\maulu\\.nuget\\packages\\",
-        "outputPath": "D:\\Bases\\API\\obj\\",
+        "outputPath": "D:\\Bases\\Prototipo-Tarea\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maulu\\AppData\\Roaming\\NuGet\\NuGet.Config",
