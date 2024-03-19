@@ -133,25 +133,5 @@
       "calorias": 200,
       "precio": 1500
     }
-  ],
-  "administradores": [
-    {
-      "correo": "fjimenez@gmail.com",
-      "contraseña": "F3lip3"
-    },
-    {
-      "correo": "nibem68@gmail.com",
-      "contraseña": "NIBEM"
-    }
-  ],
-  "chefs": [
-    {
-      "correo": "andres@gmail.com",
-      "contraseña": "Andr3s"
-    },
-    {
-      "correo": "mauro@gmail.com",
-      "contraseña": "m@Uro"
-    }
   ]
 }
