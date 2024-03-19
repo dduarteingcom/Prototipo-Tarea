@@ -2,12 +2,12 @@
 {
     public class Pedido
     {
-        public int Id { get; set; } 
-        public Cliente cliente { get; set; }
-        public Chef chef { get; set; }  
-        public List<Plato> platos { get; set; }
+        public int Id { get; set; }
+        public string cliente { get; set; }
+        public string chef { get; set; }
+        public List<int> platos { get; set; }
 
-        public int tiempoPreparacion {  get; set; } 
+        public int tiempoPreparacion { get; set; }
 
         public bool estado { get; set; }
 

@@ -2,6 +2,6 @@
 {
     public class Chef : Usuario
     {
-        public List<Pedido> pedidosAsignados { get; set; }
+        public List<int> pedidosAsigandos { get; set; }
     }
 }

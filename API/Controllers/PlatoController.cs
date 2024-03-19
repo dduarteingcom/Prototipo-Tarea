@@ -56,30 +56,30 @@ namespace API.Controllers
 
         [HttpPut]
         [Route("modificarPlato")]
-        public dynamic modificarNombre(int id, string nuevoNombre, string nuevoTipo, int nuevoCalorias, int nuevoPrecio)
+        public IActionResult UpdatePlato(int id, string nuevoNombre, string nuevoTipo, int nuevoCalorias, int nuevoPrecio)
         {
-            string path = "database.json";
-            string json = System.IO.File.ReadAllText(path);
-            Platos platos = JsonConvert.DeserializeObject<Platos>(json);
+            // Leer el archivo json
+            var json = System.IO.File.ReadAllText("database.json");
+            var data = JsonConvert.DeserializeObject<Root>(json);
 
-            foreach (Plato plato in platos.platos)
+            // Buscar el plato con el id proporcionado
+            var plato = data.platos.FirstOrDefault(p => p.Id == id);
+            if (plato == null)
             {
-                if (plato.Id == id)
-                {
-                    plato.nombre = nuevoNombre;
-                    plato.tipo = nuevoTipo;
-                    plato.calorias = nuevoCalorias;
-                    plato.precio = nuevoPrecio;
-
-
-                    // Sobrescribe el archivo JSON con los datos actualizados
-                    string jsonActualizado = JsonConvert.SerializeObject(platos, Formatting.Indented);
-                    System.IO.File.WriteAllText(path, jsonActualizado);
-
-                    return platos;
-                }
+                return NotFound();
             }
-            return null;
+
+            // Actualizar los datos del plato
+            plato.nombre = nuevoNombre;
+            plato.tipo = nuevoTipo;
+            plato.calorias = nuevoCalorias;
+            plato.precio = nuevoPrecio;
+
+            // Guardar los cambios en el archivo json
+            json = JsonConvert.SerializeObject(data, Formatting.Indented);
+            System.IO.File.WriteAllText("database.json", json);
+
+            return Ok(plato);
         }
 
     }

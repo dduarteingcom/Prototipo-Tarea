@@ -19,7 +19,8 @@
         62912132
       ],
       "menu": null,
-      "pedido": 1
+      "carrito": null,
+      "pedidos": null
     },
     {
       "cedula": 108660494,
@@ -40,7 +41,9 @@
         72021332,
         60161269
       ],
-      "menu": null
+      "menu": null,
+      "carrito": null,
+      "pedidos": null
     }
   ],
   "administradores": [
@@ -55,24 +58,29 @@
   ],
   "chefs": [
     {
-      "correo": "andres@gmail.com",
-      "contraseña": "Andr3s",
-      "pedidosAsignados": [
+      "pedidosAsigandos": [
         1
-      ]
+      ],
+      "correo": "andres@gmail.com",
+      "contraseña": "Andr3s"
     },
     {
-      "correo": "mauro@gmail.com",
-      "contraseña": "m@Uro",
-      "pedidosAsignados": [
-        2
-      ]
+      "pedidosAsigandos": [
+        2,
+        3
+      ],
+        "correo"
+        :
+        "mauro@gmail.com",
+        "contraseña"
+        :
+        "m@Uro"
     }
   ],
   "pedidos": [
     {
       "Id": 1,
-      "cliente": 118620970,
+      "cliente": "118620970",
       "chef": "andres@gmail.com",
       "platos": [
         1,
@@ -83,13 +91,24 @@
     },
     {
       "Id": 2,
-      "cliente": 108660494,
+      "cliente": "108660494",
       "chef": "mauro@gmail.com",
       "platos": [
         3
       ],
       "tiempoPreparacion": 25,
       "estado": false
+    },
+    {
+      "Id": 3,
+      "cliente": "118620970",
+      "chef": "mauro@gmail.com",
+      "platos": [
+        2,
+        3
+      ],
+      "tiempoPreparacion": 45,
+      "estado": true
     }
   ],
   "platos": [
@@ -102,30 +121,16 @@
     },
     {
       "Id": 2,
-      "nombre": "Pasta a la carbonara",
-      "tipo": "pasta",
-      "calorias": 425,
-      "precio": 3800
+      "nombre": "Pasta a la boloñesa",
+      "tipo": "Pasta",
+      "calorias": 450,
+      "precio": 4500
     },
     {
       "Id": 3,
-      "nombre": "Ensalada rusa",
-      "tipo": "ensalada",
+      "nombre": "Philly Cheese",
+      "tipo": "sandwich",
       "calorias": 200,
-      "precio": 2500
-    },
-    {
-      "Id": 4,
-      "nombre": "pinto",
-      "tipo": "desayuno",
-      "calorias": 300,
-      "precio": 1500
-    },
-    {
-      "Id": 5,
-      "nombre": "ensalada cesar",
-      "tipo": "ensalada",
-      "calorias": 300,
       "precio": 1500
     }
   ]

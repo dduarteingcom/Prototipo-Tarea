@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using API.Models;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace API.Controllers
@@ -13,14 +14,14 @@ namespace API.Controllers
         public dynamic encontrarCorreoPasswd(string correo, string password)
         {
             string json = System.IO.File.ReadAllText("database.json");
-            var data = JsonConvert.DeserializeObject<dynamic>(json);
+            var data = JsonConvert.DeserializeObject<Root>(json);
 
             // Buscar entre los administradores
             foreach (var admin in data.administradores)
             {
                 if (admin.correo == correo && admin.contraseña == password)
                 {
-                    return 1;
+                    return new { tipo = "admin", admin};
                 }
             }
 
@@ -29,7 +30,8 @@ namespace API.Controllers
             {
                 if (chef.correo == correo && chef.contraseña == password)
                 {
-                    return 2;
+                    return new { tipo = "chef", chef };
+
                 }
             }
 
