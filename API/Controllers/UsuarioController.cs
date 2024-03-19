@@ -14,7 +14,7 @@ namespace API.Controllers
         public dynamic encontrarCorreoPasswd(string correo, string password)
         {
             string json = System.IO.File.ReadAllText("database.json");
-            var data = JsonConvert.DeserializeObject<dynamic>(json);
+            var data = JsonConvert.DeserializeObject<Root>(json);
 
             // Buscar entre los administradores
             foreach (var admin in data.administradores)
