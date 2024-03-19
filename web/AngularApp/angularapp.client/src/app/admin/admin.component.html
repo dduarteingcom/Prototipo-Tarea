@@ -8,11 +8,12 @@
     <button (click)="newDishT()">Insert Dish</button>
   </div>
 
-  <h2>Dish list</h2>
+  <h2>Lista de Platillos</h2>
   <div class="dish-list">
     <ul id="options-container">
       <li *ngFor="let dish of dishList">
-        {{dish.name}}
+        <input type="checkbox" [(ngModel)]="dish.active">
+        <span>{{dish.name}}</span>
         <button (click)="deleteDish(dish.id)">X</button>
       </li>
     </ul>

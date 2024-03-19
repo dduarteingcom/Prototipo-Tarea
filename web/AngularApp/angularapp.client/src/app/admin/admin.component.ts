@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 interface Dish {
   id: number;
   name: string;
+  active: boolean;
 }
 
 @Component({
@@ -27,7 +28,8 @@ export class AdminComponent {
     if (this.inputBoxValue.trim() !== '') {
       const newDish: Dish = {
         id: this.dishIdCounter++,
-        name: this.inputBoxValue
+        name: this.inputBoxValue,
+        active: false
       };
       this.dishList.push(newDish);
       this.inputBoxValue = ''; // Clear input box after adding task

@@ -26,11 +26,31 @@
   cursor: pointer;
 }
 
-ul li {
+/*ul li {
   list-style: none;
   padding: 12px 8px 12px 50px;
   user-select: none;
   cursor: pointer;
+}*/
+
+#options-container li {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+  min-width: 200px;
+  padding: 12px 50px 12px 25px;
+}
+
+#options-container button {
+  border: none;
+  border-radius: 360px;
+  background-color: gray;
+}
+
+#options-container button:hover{
+  border:none;
+  border-radius:360px;
+  background-color: red;
 }
 
 #top {
