@@ -1,0 +1,21 @@
+
+<div class="login-container">
+  <img src="assets/login-wallpaper.jpg" alt="Login Wallpaper">
+  <div class="form-container">
+    <form (ngSubmit)="login()" #loginForm="ngForm">
+      <div>
+        <label>Correo electrónico:</label>
+        <input type="email" name="email" [(ngModel)]="email" required>
+      </div>
+      <div>
+        <label>Contraseña:</label>
+        <input type="password" name="password" [(ngModel)]="password" required>
+      </div>
+      <button type="button" (click)="login()">Ingresar</button>
+    </form>
+  </div>
+  
+</div>
+
+<div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
