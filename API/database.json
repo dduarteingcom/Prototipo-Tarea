@@ -109,7 +109,19 @@
       ],
       "tiempoPreparacion": 45,
       "estado": true
+    },
+    {
+      "Id": 4,
+      "cliente": "108660494",
+      "chef": null,
+      "platos": [
+        1,
+        3
+      ],
+      "tiempoPreparacion": 55,
+      "estado": false
     }
+
   ],
   "platos": [
     {
