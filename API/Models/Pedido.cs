@@ -11,5 +11,7 @@
 
         public bool estado { get; set; }
 
+        public int monto { get; set; }
+
     }
 }
