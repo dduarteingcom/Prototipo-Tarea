@@ -89,7 +89,23 @@ namespace API.Controllers
             var data = JsonConvert.DeserializeObject<dynamic>(json);
 
             
-            return data.platos.Id;
+            return data.platos;
+        }
+
+        [HttpGet]
+        [Route("mostrarIdPlatos")]
+        public dynamic mostrarIdPlatos()
+        {
+            string json = System.IO.File.ReadAllText("database.json");
+            var data = JsonConvert.DeserializeObject<dynamic>(json);
+            var ids = new List<int>();
+
+            foreach (var plato in data.platos)
+            {
+                ids.Add((int)plato.Id);
+            }
+
+            return ids;
         }
 
     }
