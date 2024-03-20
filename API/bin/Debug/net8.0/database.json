@@ -8,17 +8,17 @@
         "apellido2": "Acuña"
       },
       "correo": "mluna@gmail.com",
-      "contraseña": "Mauro26",
+      "contraseña": "maurito12",
       "direccion": {
         "distrito": "Concepcion",
         "cantón": "La Union",
         "provincia": "Cartago"
       },
-      "fechaNacimiento": "0001-01-01T00:00:00",
+      "fechaNacimiento": "12-12-2002",
       "telefonos": [
         62912132
       ],
-      "menu": null,
+      "menu": 1,
       "carrito": null,
       "pedidos": null
     },
@@ -36,12 +36,35 @@
         "cantón": "Desamparados",
         "provincia": "San José"
       },
-      "fechaNacimiento": "0001-01-01T00:00:00",
+      "fechaNacimiento": "15-06-2004",
       "telefonos": [
         72021332,
         60161269
       ],
-      "menu": null,
+      "menu": 1,
+      "carrito": null,
+      "pedidos": null
+    },
+    {
+      "cedula": 104886970,
+      "nombre": {
+        "primerNombre": "Carlos",
+        "apellido1": "Rodriguez",
+        "apellido2": "Segura"
+      },
+      "correo": "casegura@gmail.com",
+      "contraseña": "c@rlos",
+      "direccion": {
+        "distrito": "La Rivera",
+        "cantón": "Belen",
+        "provincia": "Heredia"
+      },
+      "fechaNacimiento": "05-03-2004",
+      "telefonos": [
+        70411259,
+        69093213
+      ],
+      "menu": 1,
       "carrito": null,
       "pedidos": null
     }
@@ -69,12 +92,8 @@
         2,
         3
       ],
-        "correo"
-        :
-        "mauro@gmail.com",
-        "contraseña"
-        :
-        "m@Uro"
+      "correo": "mauro@gmail.com",
+      "contraseña": "m@Uro"
     }
   ],
   "pedidos": [
@@ -121,7 +140,6 @@
       "tiempoPreparacion": 55,
       "estado": false
     }
-
   ],
   "platos": [
     {
@@ -129,21 +147,52 @@
       "nombre": "Sopa azteca",
       "tipo": "sopa",
       "calorias": 350,
-      "precio": 5000
+      "precio": 5000,
+      "ingredientes": [
+        "tomate",
+        "cebolla",
+        "culantro"
+      ],
+      "duracion": 6
     },
     {
       "Id": 2,
       "nombre": "Pasta a la boloñesa",
       "tipo": "Pasta",
       "calorias": 450,
-      "precio": 4500
+      "precio": 4500,
+      "ingredientes": [
+        "pasta",
+        "salsa de tomate",
+        "carne"
+      ],
+      "duracion": 10
     },
     {
       "Id": 3,
       "nombre": "Philly Cheese",
       "tipo": "sandwich",
       "calorias": 200,
-      "precio": 1500
+      "precio": 1500,
+      "ingredientes": [
+        "pan",
+        "queso",
+        "carne"
+      ],
+      "duracion": 6
+    },
+    {
+      "Id": 4,
+      "nombre": "Hamburguesa con queso",
+      "tipo": "hamburguesa",
+      "calorias": 600,
+      "precio": 3300,
+      "ingredientes": [
+        "pan",
+        "carne",
+        "queso"
+      ],
+      "duracion": 4
     }
   ]
 }

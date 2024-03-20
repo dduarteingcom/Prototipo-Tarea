@@ -96,9 +96,6 @@ export class AdminComponent implements OnInit {
 
   getDefaultOptions(){
     this.http.get(this.APIUrl + 'obtenerPlatos').subscribe({
-      next: response => {
-        this.defaultOptions = response;
-      }
     });
   }
 

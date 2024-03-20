@@ -95,5 +95,6 @@ namespace API.Controllers
             return data.platos;
         }
 
+
     }
 }

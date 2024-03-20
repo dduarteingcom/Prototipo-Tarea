@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\database.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:database.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\controllers\\platocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:controllers\\platocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\database.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:database.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\models\\plato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -86,8 +86,7 @@
               "RelativeToolTip": "Models\\Usuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T02:46:13.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T02:46:13.273Z"
             },
             {
               "$type": "Document",
@@ -99,31 +98,30 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T02:46:06.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T02:46:06.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PlatoController.cs",
               "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Controllers\\PlatoController.cs",
               "RelativeDocumentMoniker": "Controllers\\PlatoController.cs",
               "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Controllers\\PlatoController.cs",
               "RelativeToolTip": "Controllers\\PlatoController.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAAAF8AAAApAAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAcwGAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-19T01:56:58.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "database.json",
               "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\database.json",
               "RelativeDocumentMoniker": "database.json",
               "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\database.json",
               "RelativeToolTip": "database.json",
-              "ViewState": "AQIAAJgAAAAAAAAAAAAAAMAAAAABAAAA",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAAAMAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-03-19T02:50:09.241Z",
               "EditorCaption": ""
@@ -138,8 +136,7 @@
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAiwCQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T02:46:25.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T02:46:25.191Z"
             },
             {
               "$type": "Document",
@@ -151,8 +148,7 @@
               "RelativeToolTip": "Controllers\\AdminController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T02:23:04.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T02:23:04.202Z"
             },
             {
               "$type": "Document",
@@ -164,8 +160,7 @@
               "RelativeToolTip": "Models\\Plato.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T01:52:05.947Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T01:52:05.947Z"
             },
             {
               "$type": "Document",
