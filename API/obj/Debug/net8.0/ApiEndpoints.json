@@ -1,6 +1,16 @@
 [
   {
-    "ContainingType": "WebApplication1.Controllers.ClienteController",
+    "ContainingType": "API.Controllers.AdminController",
+    "Method": "ObtenerPedidosActivos",
+    "RelativePath": "admin/obtenerPedidosActivos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ClienteController",
     "Method": "encontrarCedula",
     "RelativePath": "cliente/encontrarCedula",
     "HttpMethod": "GET",
@@ -16,10 +26,10 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApplication1.Controllers.ClienteController",
-    "Method": "encontrarPrimerNombre",
-    "RelativePath": "cliente/encontrarNombre",
-    "HttpMethod": "GET",
+    "ContainingType": "API.Controllers.PlatoController",
+    "Method": "AddPlato",
+    "RelativePath": "plato/agregarPlato",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -27,25 +37,76 @@
         "Name": "nombre",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "tipo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "calorias",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "precio",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApplication1.Controllers.ClienteController",
-    "Method": "modificarNombre",
-    "RelativePath": "cliente/modificarNombre",
+    "ContainingType": "API.Controllers.PlatoController",
+    "Method": "UpdatePlato",
+    "RelativePath": "plato/modificarPlato",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cedula",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": false
       },
       {
         "Name": "nuevoNombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "nuevoTipo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "nuevoCalorias",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "nuevoPrecio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.UsuarioController",
+    "Method": "encontrarCorreoPasswd",
+    "RelativePath": "usuario/encontrarCorreoPasswd",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "correo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
         "Type": "System.String",
         "IsRequired": false
       }

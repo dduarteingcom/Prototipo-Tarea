@@ -3,7 +3,7 @@
     public class Plato
     {   
 
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         public string nombre { get; set; }
 

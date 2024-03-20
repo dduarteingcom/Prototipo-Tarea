@@ -7,23 +7,25 @@
         "apellido1": "Luna",
         "apellido2": "Acuña"
       },
-      "correo": "mauluna52@gmail.com",
-      "contraseña": "Valeria2326$",
+      "correo": "mluna@gmail.com",
+      "contraseña": "Mauro26",
       "direccion": {
         "distrito": "Concepcion",
         "cantón": "La Union",
         "provincia": "Cartago"
       },
-      "fechaNacimiento": "2002-12-12",
+      "fechaNacimiento": "0001-01-01T00:00:00",
       "telefonos": [
         62912132
       ],
-      "menu": null
+      "menu": null,
+      "carrito": null,
+      "pedidos": null
     },
     {
-      "cedula": 987350485,
+      "cedula": 108660494,
       "nombre": {
-        "primerNombre": "Mauricio",
+        "primerNombre": "Daniel",
         "apellido1": "Duarte",
         "apellido2": "Cordero"
       },
@@ -34,12 +36,114 @@
         "cantón": "Desamparados",
         "provincia": "San José"
       },
-      "fechaNacimiento": "1997-08-21",
+      "fechaNacimiento": "0001-01-01T00:00:00",
       "telefonos": [
         72021332,
         60161269
       ],
-      "menu": null
+      "menu": null,
+      "carrito": null,
+      "pedidos": null
+    }
+  ],
+  "administradores": [
+    {
+      "correo": "fjimenez@gmail.com",
+      "contraseña": "F3lip3"
+    },
+    {
+      "correo": "nibem68@gmail.com",
+      "contraseña": "NIBEM"
+    }
+  ],
+  "chefs": [
+    {
+      "pedidosAsigandos": [
+        1
+      ],
+      "correo": "andres@gmail.com",
+      "contraseña": "Andr3s"
+    },
+    {
+      "pedidosAsigandos": [
+        2,
+        3
+      ],
+        "correo"
+        :
+        "mauro@gmail.com",
+        "contraseña"
+        :
+        "m@Uro"
+    }
+  ],
+  "pedidos": [
+    {
+      "Id": 1,
+      "cliente": "118620970",
+      "chef": "andres@gmail.com",
+      "platos": [
+        1,
+        2
+      ],
+      "tiempoPreparacion": 30,
+      "estado": true
+    },
+    {
+      "Id": 2,
+      "cliente": "108660494",
+      "chef": "mauro@gmail.com",
+      "platos": [
+        3
+      ],
+      "tiempoPreparacion": 25,
+      "estado": false
+    },
+    {
+      "Id": 3,
+      "cliente": "118620970",
+      "chef": "mauro@gmail.com",
+      "platos": [
+        2,
+        3
+      ],
+      "tiempoPreparacion": 45,
+      "estado": true
+    },
+    {
+      "Id": 4,
+      "cliente": "108660494",
+      "chef": null,
+      "platos": [
+        1,
+        3
+      ],
+      "tiempoPreparacion": 55,
+      "estado": false
+    }
+
+  ],
+  "platos": [
+    {
+      "Id": 1,
+      "nombre": "Sopa azteca",
+      "tipo": "sopa",
+      "calorias": 350,
+      "precio": 5000
+    },
+    {
+      "Id": 2,
+      "nombre": "Pasta a la boloñesa",
+      "tipo": "Pasta",
+      "calorias": 450,
+      "precio": 4500
+    },
+    {
+      "Id": 3,
+      "nombre": "Philly Cheese",
+      "tipo": "sandwich",
+      "calorias": 200,
+      "precio": 1500
     }
   ]
 }

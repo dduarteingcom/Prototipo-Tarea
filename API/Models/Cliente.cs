@@ -3,14 +3,14 @@ namespace API.Models
 {
     public class Cliente : Usuario
     {
-        public int cedula { get; set;}
-        public Nombre nombre { get; set;}
+        public int cedula { get; set; }
+        public Nombre nombre { get; set; }
 
-        public string correo { get; set;}
+        public string correo { get; set; }
 
-        public string contraseña { get; set;}
+        public string contraseña { get; set; }
 
-        public Direccion direccion { get; set;}
+        public Direccion direccion { get; set; }
 
         public string fechaNacimiento { get; set; }
 
@@ -20,7 +20,6 @@ namespace API.Models
 
         public Carrito carrito { get; set; }
 
-        public List<Pedido> pedidos { get; set; }
-
+        public List<int> pedidos { get; set; }
     }
 }

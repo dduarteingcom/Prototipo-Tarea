@@ -1,21 +1,21 @@
-<h1 id="tableLabel">ResTEC</h1>
 
-<p>Bienvenido a ResTEC, por favor inicie sesión</p>
-
-<form (ngSubmit)="login()" #loginForm="ngForm">
-  <div>
-    <label>Email:</label>
-    <input type="email" name="email" ngModel required>
+<div class="login-container">
+  <img src="assets/login-wallpaper.jpg" alt="Login Wallpaper">
+  <div class="form-container">
+    <form (ngSubmit)="login()" #loginForm="ngForm">
+      <div>
+        <label>Correo electrónico:</label>
+        <input type="email" name="email" [(ngModel)]="email" required>
+      </div>
+      <div>
+        <label>Contraseña:</label>
+        <input type="password" name="password" [(ngModel)]="password" required>
+      </div>
+      <button type="button" (click)="login()">Ingresar</button>
+    </form>
   </div>
-  <div>
-    <label>Password:</label>
-    <input type="password" name="password" ngModel required>
-  </div>
-  <button (click)="prueba()">Login</button>
-</form>
+  
+</div>
 
-<h3 *ngFor ="let note of notes">
+<div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
 
-  <b>{{note.nombre.primerNombre}}</b>
-
-</h3>

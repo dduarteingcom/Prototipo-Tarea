@@ -6,6 +6,5 @@
         public string apellido1 { get; set;}
         public string apellido2 { get; set;}
 
-      
     }
 }
