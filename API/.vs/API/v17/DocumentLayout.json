@@ -1,70 +1,74 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\",
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\database.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:database.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\models\\root.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\root.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\controllers\\platocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:controllers\\platocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\database.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:database.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\models\\plato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\plato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\plato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\models\\direccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\direccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\models\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\controllers\\platocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:controllers\\platocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\api\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\root.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\root.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\direccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\direccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,41 +78,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-19T21:58:05.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "database.json",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\database.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\database.json",
               "RelativeDocumentMoniker": "database.json",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\database.json",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\database.json",
               "RelativeToolTip": "database.json",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAADMAAAAbAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-03-19T02:50:09.241Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Controllers\\UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAiwCQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T02:46:25.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T02:46:25.191Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Usuario.cs",
               "RelativeToolTip": "Models\\Usuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -116,11 +136,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -128,11 +148,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Controllers\\AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Controllers\\AdminController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -140,11 +160,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "Plato.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Plato.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Plato.cs",
               "RelativeDocumentMoniker": "Models\\Plato.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Plato.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Plato.cs",
               "RelativeToolTip": "Models\\Plato.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -152,11 +172,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Pedido.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Pedido.cs",
               "RelativeDocumentMoniker": "Models\\Pedido.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Pedido.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Pedido.cs",
               "RelativeToolTip": "Models\\Pedido.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -164,23 +184,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "Models\\Cliente.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Cliente.cs",
               "RelativeToolTip": "Models\\Cliente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T01:50:59.214Z"
+              "WhenOpened": "2024-03-19T01:50:59.214Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Controllers\\ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "Controllers\\ClienteController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -188,11 +209,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "PlatoController.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Controllers\\PlatoController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\PlatoController.cs",
               "RelativeDocumentMoniker": "Controllers\\PlatoController.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Controllers\\PlatoController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\PlatoController.cs",
               "RelativeToolTip": "Controllers\\PlatoController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -200,11 +221,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "Carrito.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Carrito.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Carrito.cs",
               "RelativeDocumentMoniker": "Models\\Carrito.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Carrito.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Carrito.cs",
               "RelativeToolTip": "Models\\Carrito.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -212,11 +233,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Root.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Root.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Root.cs",
               "RelativeDocumentMoniker": "Models\\Root.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Root.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Root.cs",
               "RelativeToolTip": "Models\\Root.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -224,11 +245,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Admin.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Admin.cs",
               "RelativeDocumentMoniker": "Models\\Admin.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Admin.cs",
               "RelativeToolTip": "Models\\Admin.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -236,11 +257,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Factura.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Factura.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Factura.cs",
               "RelativeDocumentMoniker": "Models\\Factura.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Factura.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Factura.cs",
               "RelativeToolTip": "Models\\Factura.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -248,11 +269,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Direccion.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Direccion.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Direccion.cs",
               "RelativeDocumentMoniker": "Models\\Direccion.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Direccion.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Direccion.cs",
               "RelativeToolTip": "Models\\Direccion.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -260,11 +281,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Chef.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Chef.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Chef.cs",
               "RelativeDocumentMoniker": "Models\\Chef.cs",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Models\\Chef.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Chef.cs",
               "RelativeToolTip": "Models\\Chef.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

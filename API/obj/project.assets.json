@@ -660,19 +660,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\andre\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\obj\\",
+      "projectPath": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -735,7 +735,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

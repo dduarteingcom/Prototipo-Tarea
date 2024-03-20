@@ -12,6 +12,8 @@ import { Router } from '@angular/router';
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class SignUpMorePage implements OnInit {
+  correo: string = "";
+  contraseña: string = "";
 
   constructor(
     private _router: Router
