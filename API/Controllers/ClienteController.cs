@@ -107,7 +107,30 @@ namespace API.Controllers
 
             return Ok(nuevoCliente);
         }
-        
+        [HttpPut]
+        [Route("modificarContraseña")]
+        public IActionResult modificarContraseña(int cedula, string nuevaContraseña)
+        {
+            // Leer el archivo json
+            var json = System.IO.File.ReadAllText("database.json");
+            var data = JsonConvert.DeserializeObject<Root>(json);
+
+            // Buscar el plato con el id proporcionado
+            var cliente = data.clientes.FirstOrDefault(p => p.cedula == cedula);
+            if (cliente == null)
+            {
+                return NotFound();
+            }
+
+            // Actualizar los datos del plato
+            cliente.contraseña = nuevaContraseña;
+            // Guardar los cambios en el archivo json
+            json = JsonConvert.SerializeObject(data, Formatting.Indented);
+            System.IO.File.WriteAllText("database.json", json);
+
+            return Ok(cliente);
+        }
+
 
     }
 
