@@ -16,7 +16,7 @@ namespace API.Models
 
         public List<int> telefonos { get; set; }
 
-        public Menu menu { get; set; }
+        public int menu { get; set; }
 
         public Carrito carrito { get; set; }
 
