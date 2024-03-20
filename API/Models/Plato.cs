@@ -17,5 +17,7 @@
 
         public int duracion { get; set; }
 
+        public string descripcion { get; set; }
+
     }
 }

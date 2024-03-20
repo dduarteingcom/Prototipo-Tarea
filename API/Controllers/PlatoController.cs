@@ -4,11 +4,6 @@ using Newtonsoft.Json;
 
 namespace API.Controllers
 {
-    public class Platos
-    {
-        public List<Plato> platos { get; set; }
-    }
-
     [ApiController]
     [Route("plato")]
 
@@ -16,7 +11,7 @@ namespace API.Controllers
     {
         [HttpPost]
         [Route("agregarPlato")]
-        public IActionResult AddPlato(string nombre, string tipo, int calorias, int precio, List<string> ingredientes, int duracion)
+        public IActionResult AddPlato(string nombre, string tipo, int calorias, int precio, List<string> ingredientes, int duracion, string descripcion)
         {
             // Obtén el objeto JSON completo
             var json = System.IO.File.ReadAllText("database.json");
@@ -34,7 +29,8 @@ namespace API.Controllers
                 calorias = calorias,
                 precio = precio,
                 ingredientes = ingredientes,
-                duracion = duracion
+                duracion = duracion,
+                descripcion = descripcion
             };
 
             // Convierte el objeto Plato a un objeto dinámico
@@ -58,7 +54,7 @@ namespace API.Controllers
 
         [HttpPut]
         [Route("modificarPlato")]
-        public IActionResult UpdatePlato(int id, string nuevoNombre, string nuevoTipo, int nuevoCalorias, int nuevoPrecio)
+        public IActionResult UpdatePlato(int id, string nuevoNombre, string nuevoTipo, int nuevoCalorias, int nuevoPrecio, string nuevaDescripcion)
         {
             // Leer el archivo json
             var json = System.IO.File.ReadAllText("database.json");
@@ -76,6 +72,7 @@ namespace API.Controllers
             plato.tipo = nuevoTipo;
             plato.calorias = nuevoCalorias;
             plato.precio = nuevoPrecio;
+            plato.descripcion = nuevaDescripcion;
 
             // Guardar los cambios en el archivo json
             json = JsonConvert.SerializeObject(data, Formatting.Indented);
@@ -92,7 +89,7 @@ namespace API.Controllers
             var data = JsonConvert.DeserializeObject<dynamic>(json);
 
             
-            return data.platos;
+            return data.platos.Id;
         }
 
     }
