@@ -16,7 +16,7 @@ namespace API.Controllers
     {
         [HttpPost]
         [Route("agregarPlato")]
-        public IActionResult AddPlato(string nombre, string tipo, int calorias, int precio)
+        public IActionResult AddPlato(string nombre, string tipo, int calorias, int precio, List<string> ingredientes, int duracion)
         {
             // Obtén el objeto JSON completo
             var json = System.IO.File.ReadAllText("database.json");
@@ -32,7 +32,9 @@ namespace API.Controllers
                 nombre = nombre,
                 tipo = tipo,
                 calorias = calorias,
-                precio = precio
+                precio = precio,
+                ingredientes = ingredientes,
+                duracion = duracion
             };
 
             // Convierte el objeto Plato a un objeto dinámico
@@ -83,22 +85,14 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        [Route("obtenerPlatos")]
-        public IActionResult ObtenerPlatos()
+        [Route("mostrarPlatos")]
+        public dynamic mostrarPlatos()
         {
-            // Leer el archivo json
-            var json = System.IO.File.ReadAllText("database.json");
-            var data = JsonConvert.DeserializeObject<Root>(json);
+            string json = System.IO.File.ReadAllText("database.json");
+            var data = JsonConvert.DeserializeObject<dynamic>(json);
 
-            // Filtrar los pedidos cuyo estado sea true
-            var platosActivos = data.platos.ToList();
-
-            if (platosActivos.Count == 0)
-            {
-                return NotFound();
-            }
-
-            return Ok(platosActivos);
+            
+            return data.platos;
         }
 
     }
