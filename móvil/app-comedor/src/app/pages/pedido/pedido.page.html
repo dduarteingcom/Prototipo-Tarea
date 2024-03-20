@@ -8,11 +8,11 @@
 </ion-header>
 
 <ion-content>
-  
+
   <div class="textoFactura">
     <p style="font-size: 3vb; font-weight: bolder;">FACTURA</p>
   </div>
-  
+
   <div class="grid-container">
     <div class="grid-row">
       <div class="grid-col1" style="font-weight: bolder;">N° de factura:</div>
@@ -39,8 +39,8 @@
         <div class="grid-col2" style="font-weight: bolder; font-size: 2.5vb;">Precio</div>
       </div>
       <div class="pedido" *ngFor="let pedido of pedidos">
-        
-          
+
+
           <div class="grid-row">
             <div class="grid-col1">{{pedido.nombre}}</div>
             <div class="grid-col2">₡{{pedido.precio}}</div>
@@ -51,7 +51,7 @@
   <div class="grid-container">
     <div class="grid-row">
       <div class="grid-col1" style="font-weight: bolder; font-size: 2.5vb;">Monto total:</div>
-      <div class="grid-col2" style="font-size: 2.5vb;">MONTO</div>
+      <div class="grid-col2" style="font-size: 2.5vb;">{{montoTotal}}</div>
     </div>
 
   </div>
@@ -59,7 +59,7 @@
   <div class="textoFactura">
     <p style="font-size: 3vb; font-weight: bolder;">ESTADO DEL PEDIDO</p>
   </div>
-  
+
 </ion-content>
 
 

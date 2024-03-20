@@ -15,6 +15,7 @@ import { IDish } from '../interfaces/plato.model';
 })
 export class PedidoPage implements OnInit {
   pedidos: IDish[] =[];
+  montoTotal: number = 0;
   constructor(
     private _router: Router,
     private _carritoService: CarritoService,
@@ -22,10 +23,16 @@ export class PedidoPage implements OnInit {
 
   ngOnInit() {
     this.pedidos=this._carritoService.getPedidos();
+    this.getMontoTotal();
   }
 
   goBack(){
     this._router.navigate(['/carrito'])
+  }
+  getMontoTotal():void{
+    this.pedidos.forEach(pedido=>{
+      this.montoTotal += pedido.precio;
+    })
   }
 
 }
