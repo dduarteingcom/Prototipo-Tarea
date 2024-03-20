@@ -14,8 +14,8 @@ namespace API.Controllers
     public class ClienteController : ControllerBase
     {
         [HttpGet]
-        [Route("encontrarCedula")]
-        public dynamic encontrarCedula(int cedula)
+        [Route("encontrarPorCedula")]
+        public dynamic encontrarPorCedula(int cedula)
         {
             string json = System.IO.File.ReadAllText("database.json");
             var data = JsonConvert.DeserializeObject<dynamic>(json);
@@ -31,5 +31,25 @@ namespace API.Controllers
 
             return null;
         }
+        [HttpGet]
+        [Route("encontrarCorreoPasswd")]
+        public dynamic encontrarCorreoPasswd(string correo, string password)
+        {
+            string json = System.IO.File.ReadAllText("database.json");
+            var data = JsonConvert.DeserializeObject<Root>(json);
+
+            // Buscar entre los administradores
+            foreach (var cliente in data.clientes)
+            {
+                if (cliente.correo == correo && cliente.contraseña == password)
+                {
+                    return cliente;
+                }
+            }
+
+            return null;
+        }
+
     }
+
 }
