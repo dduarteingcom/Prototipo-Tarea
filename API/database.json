@@ -69,12 +69,8 @@
         2,
         3
       ],
-        "correo"
-        :
-        "mauro@gmail.com",
-        "contraseña"
-        :
-        "m@Uro"
+      "correo": "mauro@gmail.com",
+      "contraseña": "m@Uro"
     }
   ],
   "pedidos": [
@@ -121,7 +117,6 @@
       "tiempoPreparacion": 55,
       "estado": false
     }
-
   ],
   "platos": [
     {
@@ -144,6 +139,55 @@
       "tipo": "sandwich",
       "calorias": 200,
       "precio": 1500
+    },
+    {
+      "Id": 4,
+      "nombre": "Pinto",
+      "tipo": "desayuno",
+      "calorias": 300,
+      "precio": 2000
+    },
+    {
+      "Id": 5,
+      "nombre": "Huevo",
+      "tipo": "desayuno",
+      "calorias": 150,
+      "precio": 300
+    },
+    {
+      "Id": 6,
+      "nombre": "Huevo",
+      "tipo": "desayuno",
+      "calorias": 150,
+      "precio": 300
+    },
+    {
+      "Id": 7,
+      "nombre": "Chuleta",
+      "tipo": "Carne",
+      "calorias": 300,
+      "precio": 1000
+    },
+    {
+      "Id": 8,
+      "nombre": "Atun",
+      "tipo": "Pescado",
+      "calorias": 300,
+      "precio": 800
+    },
+    {
+      "Id": 9,
+      "nombre": "Ceviche",
+      "tipo": "Pescado",
+      "calorias": 344,
+      "precio": 342
+    },
+    {
+      "Id": 10,
+      "nombre": "Arroz con camarones",
+      "tipo": "Pescado",
+      "calorias": 400,
+      "precio": 2000
     }
   ]
 }

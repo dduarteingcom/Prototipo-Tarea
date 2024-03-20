@@ -3,10 +3,6 @@
 </div>
 
 <div class="container">
-  <div>
-    <input [(ngModel)]="inputBoxValue" type="text" placeholder="Type your input" />
-    <button (click)="newDishT()">Insert Dish</button>
-  </div>
 
   <h2>Lista de Platillos</h2>
   <div class="dish-list">
@@ -18,9 +14,65 @@
       </li>
     </ul>
   </div>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Calorías</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dish of activeDishes">
+        <td>{{ dish.Id }}</td>
+        <td>{{ dish.nombre }}</td>
+        <td>{{ dish.tipo }}</td>
+        <td>{{ dish.calorias }}</td>
+        <td>{{ dish.precio }}</td>
+      </tr>
+    </tbody>
+  </table>
 
   <div>
-    <button class="dish-btn">Add Dish</button>
+    <button (click)="toggleForm()" class="dish-btn">Crear plato</button>
+    <button (click) ="toggleForm2()" class=" dish-btn">Modificar plato</button>
+    <button class="dish-btn">Eliminar plato</button>
+  </div>
+  <div *ngIf="showForm">
+    <form (ngSubmit)="submitForm()" #form="ngForm">
+      <!-- Form fields go here -->
+      <label>Nombre </label>
+      <input type="text" name="Nombre" [(ngModel)]="dishName" required placeholder="Nombre">
+      <label>Tipo </label>
+      <input type="text" name="Tipo" [(ngModel)]="dishType" required placeholder="Tipo">
+      <label>Calorías </label>
+      <input type="number" name="Calorías" [(ngModel)]="dishCalories" required placeholder="Calorías">
+      <label>Precio </label>
+      <input type="number" name="Precio" [(ngModel)]="dishPrice" required placeholder="Precio">
+      <!-- Add more form fields as needed -->
+
+      <button (click)="submitForm()" type="submit"> Crear</button>
+    </form>
+  </div>
+  <div *ngIf="showForm2">
+    <form (ngSubmit)="submitForm2()" #form="ngForm">
+      <!-- Form fields go here -->
+      <label>ID </label>
+      <select name="ID" [(ngModel)]="formData.selectedOptionId">
+        <option *ngFor="let option of defaultOptions" [value]="option.id">{{ option.name }}</option>
+      </select>
+      <label>Tipo </label>
+      <input type="text" name="Tipo" [(ngModel)]="dishType" required placeholder="Tipo">
+      <label>Calorías </label>
+      <input type="number" name="Calorías" [(ngModel)]="dishCalories" required placeholder="Calorías">
+      <label>Precio </label>
+      <input type="number" name="Precio" [(ngModel)]="dishPrice" required placeholder="Precio">
+      <!-- Add more form fields as needed -->
+
+      <button (click)="submitForm()" type="submit"> Crear</button>
+    </form>
   </div>
 
 </div>

@@ -3,48 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\menu\\menu.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\menu\\menu.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\admin\\admin.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\admin\\admin.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\menu\\menu.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\menu\\menu.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\menu\\menu.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\menu\\menu.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\admin\\admin.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\admin\\admin.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\login\\login.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\login\\login.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\app.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\app.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\menu\\menu.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\menu\\menu.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\login\\login.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\login\\login.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\app.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\app.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\user.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\user.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\login\\login.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\login\\login.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\menu\\menu.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\menu\\menu.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\menu\\menu.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\menu\\menu.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\.eslintrc.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|solutionrelative:angularapp.client\\src\\app\\.eslintrc.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC1B4AB9-5A0F-43BE-9E26-7780D7A76C11}|angularapp.client\\angularapp.client.esproj|c:\\users\\andre\\desktop\\tec\\bases\\tareacorta3\\prototipo-tarea\\web\\angularapp\\angularapp.client\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -58,8 +70,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "admin.component.ts",
+              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\admin\\admin.component.ts",
+              "RelativeDocumentMoniker": "angularapp.client\\src\\app\\admin\\admin.component.ts",
+              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\admin\\admin.component.ts",
+              "RelativeToolTip": "angularapp.client\\src\\app\\admin\\admin.component.ts",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwGMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-20T01:11:20.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "admin.component.html",
+              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\admin\\admin.component.html",
+              "RelativeDocumentMoniker": "angularapp.client\\src\\app\\admin\\admin.component.html",
+              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\admin\\admin.component.html",
+              "RelativeToolTip": "angularapp.client\\src\\app\\admin\\admin.component.html",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowD8AAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-20T01:06:04.32Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -68,14 +106,14 @@
               "RelativeDocumentMoniker": "angularapp.client\\src\\app\\menu\\menu.component.ts",
               "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\menu\\menu.component.ts",
               "RelativeToolTip": "angularapp.client\\src\\app\\menu\\menu.component.ts",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAB/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-03-19T03:42:45.916Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "login.component.spec.ts",
               "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\login\\login.component.spec.ts",
               "RelativeDocumentMoniker": "angularapp.client\\src\\app\\login\\login.component.spec.ts",
@@ -88,91 +126,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "menu.component.html",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\menu\\menu.component.html",
-              "RelativeDocumentMoniker": "angularapp.client\\src\\app\\menu\\menu.component.html",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\menu\\menu.component.html",
-              "RelativeToolTip": "angularapp.client\\src\\app\\menu\\menu.component.html",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-19T03:44:20.353Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "login.component.html",
               "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\login\\login.component.html",
               "RelativeDocumentMoniker": "angularapp.client\\src\\app\\login\\login.component.html",
               "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\login\\login.component.html",
               "RelativeToolTip": "angularapp.client\\src\\app\\login\\login.component.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-03-19T03:42:28.966Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "app-routing.module.ts",
               "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\app-routing.module.ts",
               "RelativeDocumentMoniker": "angularapp.client\\src\\app\\app-routing.module.ts",
               "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\app-routing.module.ts",
               "RelativeToolTip": "angularapp.client\\src\\app\\app-routing.module.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-03-19T04:02:50.967Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "menu.component.spec.ts",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\menu\\menu.component.spec.ts",
-              "RelativeDocumentMoniker": "angularapp.client\\src\\app\\menu\\menu.component.spec.ts",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\menu\\menu.component.spec.ts",
-              "RelativeToolTip": "angularapp.client\\src\\app\\menu\\menu.component.spec.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-03-19T03:39:40.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "app.component.spec.ts",
               "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\app.component.spec.ts",
               "RelativeDocumentMoniker": "angularapp.client\\src\\app\\app.component.spec.ts",
               "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\app.component.spec.ts",
               "RelativeToolTip": "angularapp.client\\src\\app\\app.component.spec.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-03-19T04:13:50.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "app.module.ts",
               "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\app.module.ts",
               "RelativeDocumentMoniker": "angularapp.client\\src\\app\\app.module.ts",
               "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\app.module.ts",
               "RelativeToolTip": "angularapp.client\\src\\app\\app.module.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAASAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-03-17T20:04:07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "app.component.ts",
               "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\app.component.ts",
               "RelativeDocumentMoniker": "angularapp.client\\src\\app\\app.component.ts",
               "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\app.component.ts",
               "RelativeToolTip": "angularapp.client\\src\\app\\app.component.ts",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-03-19T04:13:46.61Z",
               "EditorCaption": ""
@@ -192,7 +204,57 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "login.component.ts",
+              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\login\\login.component.ts",
+              "RelativeDocumentMoniker": "angularapp.client\\src\\app\\login\\login.component.ts",
+              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\login\\login.component.ts",
+              "RelativeToolTip": "angularapp.client\\src\\app\\login\\login.component.ts",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-19T22:29:58.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "menu.component.html",
+              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\menu\\menu.component.html",
+              "RelativeDocumentMoniker": "angularapp.client\\src\\app\\menu\\menu.component.html",
+              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\menu\\menu.component.html",
+              "RelativeToolTip": "angularapp.client\\src\\app\\menu\\menu.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-19T03:44:20.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "menu.component.spec.ts",
+              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\menu\\menu.component.spec.ts",
+              "RelativeDocumentMoniker": "angularapp.client\\src\\app\\menu\\menu.component.spec.ts",
+              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\menu\\menu.component.spec.ts",
+              "RelativeToolTip": "angularapp.client\\src\\app\\menu\\menu.component.spec.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-19T03:39:40.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": ".eslintrc.json",
+              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\.eslintrc.json",
+              "RelativeDocumentMoniker": "angularapp.client\\src\\app\\.eslintrc.json",
+              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\.eslintrc.json",
+              "RelativeToolTip": "angularapp.client\\src\\app\\.eslintrc.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-19T22:31:46.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "app.component.html",
               "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\app.component.html",
               "RelativeDocumentMoniker": "angularapp.client\\src\\app\\app.component.html",
@@ -201,40 +263,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-03-17T19:54:07.152Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "93502619-46d3-463e-a2d9-fe1fd0c6e388",
-        "Display": 1,
-        "X": 18,
-        "Y": 177,
-        "Width": 1907,
-        "Height": 815,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "login.component.ts",
-              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\login\\login.component.ts",
-              "RelativeDocumentMoniker": "angularapp.client\\src\\app\\login\\login.component.ts",
-              "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\web\\AngularApp\\angularapp.client\\src\\app\\login\\login.component.ts",
-              "RelativeToolTip": "angularapp.client\\src\\app\\login\\login.component.ts",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAxwCgAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-03-19T03:38:15.176Z",
-              "EditorCaption": ""
             }
           ]
         }

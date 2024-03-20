@@ -82,5 +82,24 @@ namespace API.Controllers
             return Ok(plato);
         }
 
+        [HttpGet]
+        [Route("obtenerPlatos")]
+        public IActionResult ObtenerPlatos()
+        {
+            // Leer el archivo json
+            var json = System.IO.File.ReadAllText("database.json");
+            var data = JsonConvert.DeserializeObject<Root>(json);
+
+            // Filtrar los pedidos cuyo estado sea true
+            var platosActivos = data.platos.ToList();
+
+            if (platosActivos.Count == 0)
+            {
+                return NotFound();
+            }
+
+            return Ok(platosActivos);
+        }
+
     }
 }
