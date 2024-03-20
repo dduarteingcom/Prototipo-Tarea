@@ -1,3 +1,6 @@
+ion-header {
+  --ion-background-color: #140E39; /* Color de fondo personalizado */
+}
 .main-container{
   position: absolute;
   top: 0;
@@ -28,7 +31,7 @@
 .boton2{
   --background: #140E39;
   border: 1px solid white;
-  width: 40%;
+  width: 50%;
 }
 
 

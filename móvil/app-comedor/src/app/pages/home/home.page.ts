@@ -42,7 +42,7 @@ export class HomePage {
     cantidadCalorias: 443,
     duracion: 30 },
     {
-     nombre: 'sushi',
+     nombre: 'Sushi',
      precio: 5500,
      descripcion: 'Rica sushifawfwafaf wafwafwaf wafwafwafwa waffwafsas',
     ingredientes: ['pescado',' alga',' alga',' alga',' alga',' alga',' alga'],
@@ -70,5 +70,8 @@ export class HomePage {
     this.pedidos.push(newOrder[0]);
     console.log(this.pedidos)
     this._carritoService.setPedidos(this.pedidos);
+  }
+  moveToConfig(){
+    this._router.navigate(['/config'])
   }
 }

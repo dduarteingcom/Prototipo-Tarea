@@ -1,0 +1,75 @@
+.row{
+    display: flex;
+    margin-left: 3vw;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .grid-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vb;
+  }
+  
+  .grid-col1 {
+    padding: 10px;
+    margin: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vb;
+  }
+  .grid-col2 {
+    flex-basis: 50%; /* Ancho deseado de las columnas */
+    padding: 10px;
+    margin: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vb;
+  }
+
+  
+ion-header {
+    --ion-background-color: #4665BF; /* Color de fondo personalizado */
+}
+
+
+.boton{
+    --background: #4665BF;
+    width: 40%;
+}
+  
+.button-centered{
+    background-color: #4665BF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.boton2{
+    --background: #4665BF;
+    border: 1px solid white;
+    width: 40%;
+}
+  
+  
+.boton-redondo {
+    --background: #4665BF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 2.5vb;
+}
+
+.textoFactura{
+    margin-left: 1.5vb; 
+    color: #140E39;
+    font-family:'Times New Roman', Times, serif; 
+    margin-bottom: 6vh;
+}
+  
+
