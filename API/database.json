@@ -99,7 +99,7 @@
   "pedidos": [
     {
       "Id": 1,
-      "cliente": "118620970",
+      "cliente": 118620970,
       "chef": "andres@gmail.com",
       "platos": [
         1,
@@ -107,11 +107,11 @@
       ],
       "tiempoPreparacion": 30,
       "estado": true,
-      "monto":  9500
+      "monto": 9500
     },
     {
       "Id": 2,
-      "cliente": "108660494",
+      "cliente": 108660494,
       "chef": "mauro@gmail.com",
       "platos": [
         3
@@ -122,7 +122,7 @@
     },
     {
       "Id": 3,
-      "cliente": "118620970",
+      "cliente": 118620970,
       "chef": "mauro@gmail.com",
       "platos": [
         2,
@@ -134,7 +134,7 @@
     },
     {
       "Id": 4,
-      "cliente": "108660494",
+      "cliente": 108660494,
       "chef": null,
       "platos": [
         1,
@@ -143,6 +143,18 @@
       "tiempoPreparacion": 55,
       "estado": false,
       "monto": 6500
+    },
+    {
+      "Id": 5,
+      "cliente": 118620970,
+      "chef": null,
+      "platos": [
+        3,
+        4
+      ],
+      "tiempoPreparacion": 10,
+      "estado": true,
+      "monto": 4800
     }
   ],
   "platos": [
