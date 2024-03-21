@@ -3,6 +3,9 @@
     public class Factura
     {
         public int Id { get; set; }
+
+        public int cedula { get; set; }    
+
         public Fecha fecha { get;  set; }
 
         public string hora { get; set; }
