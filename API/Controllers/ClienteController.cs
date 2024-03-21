@@ -106,6 +106,8 @@ namespace API.Controllers
             System.IO.File.WriteAllText("database.json", JsonConvert.SerializeObject(data, settings));
 
             return Ok(nuevoCliente);
+
+
         }
         [HttpPut]
         [Route("modificarContraseña")]
@@ -131,7 +133,33 @@ namespace API.Controllers
             return Ok(cliente);
         }
 
+        [HttpPost]
+        [Route("eliminarCliente")]
 
+        public IActionResult eliminarCliente(int cedula)
+        {
+            var json = System.IO.File.ReadAllText("database.json");
+            var data = JsonConvert.DeserializeObject<dynamic>(json);
+
+            var listaClientes = data.clientes;
+
+            for (int i = 0; i < listaClientes.Count; i++)
+            {
+                if (listaClientes[i].cedula == cedula)
+                {
+                    listaClientes.RemoveAt(i);
+                    break;
+                }
+            }
+
+            var settings = new JsonSerializerSettings
+            {
+                Formatting = Formatting.Indented, // Esto hará que el JSON se formatee con indentación
+                TypeNameHandling = TypeNameHandling.Auto
+            };
+            System.IO.File.WriteAllText("database.json", JsonConvert.SerializeObject(data, settings));
+
+            return Ok();
+        }
     }
-
 }  
