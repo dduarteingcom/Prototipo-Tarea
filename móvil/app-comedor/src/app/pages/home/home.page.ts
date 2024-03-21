@@ -6,7 +6,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule, IonicSlides } from '@ionic/angular';
 import { CarritoService } from 'src/app/services/carrito.service';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CheckUserService } from 'src/app/services/check-user.service';
 
 
 register();
@@ -20,51 +21,31 @@ register();
   imports: [CommonModule, FormsModule, IonicModule, HttpClientModule,]
 })
 export class HomePage {
-
+    userName: string = "";
   swiperModules = [IonicSlides];
   pedidos: IDish[] =[];
-  platos: IDish[] =[
-    {
-     nombre: 'Hamburguesa',
-     precio: 3000,
-     descripcion: 'Rica hamburguesa',
-    ingredientes: ['pan',' queso'],
-    tipo:'delicioso',
-    cantidadCalorias: 443,
-    duracion: 20 },
-
-    {
-     nombre: 'Pizza',
-     precio: 3000,
-     descripcion: 'Rica pizza',
-    ingredientes: ['pan',' queso'],
-    tipo:'sabroso',
-    cantidadCalorias: 443,
-    duracion: 30 },
-    {
-     nombre: 'Sushi',
-     precio: 5500,
-     descripcion: 'Rica sushifawfwafaf wafwafwaf wafwafwafwa waffwafsas',
-    ingredientes: ['pescado',' alga',' alga',' alga',' alga',' alga',' alga'],
-    tipo:'marisco',
-    cantidadCalorias: 403,
-    duracion: 18
-    }
-  ];
+  platos: any;
+  readonly APIUrl = "https://192.168.18.134/plato/"
   constructor(
     private _router : Router,
-    private _carritoService: CarritoService
+    private _carritoService: CarritoService,
+    private _checkUser : CheckUserService,
+    private _http: HttpClient
   ){
   }
   ngOnInit() {
-    
+    this.userName = this._checkUser.geNombre();
+    this._http.get(this.APIUrl +'mostrarPlatos').subscribe((data: any )=>{
+        this.platos = data;
+    }
+    )
   }
   moveToCarrito(){
     this._router.navigate(['/carrito']);
   }
   addToCarrito(plato: string){
     this.pedidos=this._carritoService.getPedidos();
-    const newOrder = this.platos.filter((platos)=>
+    const newOrder = this.platos.filter((platos: { nombre: string; })=>
     platos.nombre.toLocaleLowerCase().includes(plato.toLowerCase())
     );
     this.pedidos.push(newOrder[0]);

@@ -8,7 +8,6 @@ export class CarritoService {
   pedidos: IDish[] =[];
   constructor() { }
   setPedidos(data: IDish[]){
-    console.log(data)
     this.pedidos = data;
   }
   getPedidos(): IDish[]{

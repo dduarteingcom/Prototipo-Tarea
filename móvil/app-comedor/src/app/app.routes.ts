@@ -6,11 +6,6 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/home/home.page').then((m) => m.HomePage),
   },
   {
-    path: '',
-    redirectTo: 'authenticathion',
-    pathMatch: 'full',
-  },
-  {
     path: 'authentication',
     loadComponent: () => import('./pages/authentication/authentication.page').then( m => m.AuthenticationPage)
   },
@@ -29,7 +24,8 @@ export const routes: Routes = [
   {
     path: 'sign-up-more',
     loadComponent: () => import('./pages/authentication/sign-up/sign-up-more/sign-up-more.page').then( m => m.SignUpMorePage)
-  },  {
+  },
+  {
     path: 'pedido',
     loadComponent: () => import('./pages/pedido/pedido.page').then( m => m.PedidoPage)
   },
@@ -41,6 +37,10 @@ export const routes: Routes = [
     path: 'config',
     loadComponent: () => import('./pages/config/config.page').then( m => m.ConfigPage)
   },
-
+  {
+    path: '',
+    redirectTo: 'authentication',
+    pathMatch: 'full',
+  },
 
 ];

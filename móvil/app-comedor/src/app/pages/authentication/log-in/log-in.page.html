@@ -18,6 +18,7 @@
   </ul>
 
   <div class="button-centered">
-    <ion-button class="boton2" (click)="goHome()">Continuar &raquo;</ion-button>
+    <ion-button class="boton2" (click)="checkInfo()">Continuar &raquo;</ion-button>
   </div>
+  <p *ngIf="error === true">Correo y/o contraseña incorrectos</p>
 </ion-content>

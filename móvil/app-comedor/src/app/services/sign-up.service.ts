@@ -16,5 +16,6 @@ export class SignUpService {
   }
   setClient(nClient: IClient){
     this.client = nClient;
+    console.log(this.client);
   }
 }

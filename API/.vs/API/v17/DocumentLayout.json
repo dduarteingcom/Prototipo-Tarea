@@ -3,72 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\UsuarioController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\UsuarioController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\database.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:database.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\database.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:database.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\AdminController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\AdminController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Plato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Plato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\plato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\plato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\ClienteController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\ClienteController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\PlatoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\PlatoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\direccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\direccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Root.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Root.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Direccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Direccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|c:\\users\\asus\\onedrive - estudiantes itcr\\documentos\\github\\prototipo-tarea\\api\\models\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF3FB03-CF38-4225-AABC-D020F66A0733}|API.csproj|solutionrelative:models\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,33 +70,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-19T21:58:05.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "database.json",
               "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\database.json",
               "RelativeDocumentMoniker": "database.json",
               "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\database.json",
               "RelativeToolTip": "database.json",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABkAAAAZAAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAE0AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-03-19T02:50:09.241Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
@@ -120,21 +91,7 @@
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAiwCQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T02:46:25.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Usuario.cs",
-              "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T02:46:13.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T02:46:25.191Z"
             },
             {
               "$type": "Document",
@@ -144,13 +101,63 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAArwCEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-19T02:46:06.234Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T04:05:50.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Cliente.cs",
+              "RelativeToolTip": "Models\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAYwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T01:50:59.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Usuario.cs",
+              "RelativeToolTip": "Models\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T02:46:13.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-19T21:58:05.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
@@ -162,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Plato.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Plato.cs",
               "RelativeDocumentMoniker": "Models\\Plato.cs",
@@ -174,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Pedido.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Pedido.cs",
               "RelativeDocumentMoniker": "Models\\Pedido.cs",
@@ -186,91 +193,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Cliente.cs",
-              "RelativeDocumentMoniker": "Models\\Cliente.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Cliente.cs",
-              "RelativeToolTip": "Models\\Cliente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T01:50:59.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "Controllers\\ClienteController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T04:05:50.283Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "PlatoController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\PlatoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PlatoController.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Controllers\\PlatoController.cs",
-              "RelativeToolTip": "Controllers\\PlatoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T01:56:58.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "Carrito.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Carrito.cs",
               "RelativeDocumentMoniker": "Models\\Carrito.cs",
               "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Carrito.cs",
               "RelativeToolTip": "Models\\Carrito.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-19T01:50:43.028Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Root.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Root.cs",
-              "RelativeDocumentMoniker": "Models\\Root.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Root.cs",
-              "RelativeToolTip": "Models\\Root.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T01:48:57.822Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Admin.cs",
-              "RelativeDocumentMoniker": "Models\\Admin.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Admin.cs",
-              "RelativeToolTip": "Models\\Admin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T01:50:37.102Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Factura.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Factura.cs",
-              "RelativeDocumentMoniker": "Models\\Factura.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Factura.cs",
-              "RelativeToolTip": "Models\\Factura.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T01:49:43.07Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 11,
               "Title": "Direccion.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Direccion.cs",
               "RelativeDocumentMoniker": "Models\\Direccion.cs",
@@ -282,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 12,
               "Title": "Chef.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive - Estudiantes ITCR\\Documentos\\GitHub\\Prototipo-Tarea\\API\\Models\\Chef.cs",
               "RelativeDocumentMoniker": "Models\\Chef.cs",

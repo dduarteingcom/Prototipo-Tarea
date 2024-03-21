@@ -1,5 +1,4 @@
-<ion-content>
-  <ion-header color="primary">
+<ion-header color="primary">
     <ion-toolbar>
       <div (click)="moveToConfig()" class="carrito">
         <img style="margin-top: 1vh;margin-bottom: -6vh;margin-left: 4vw ;height: 5vh;" src="../../../../assets/images/config.png">
@@ -9,7 +8,9 @@
       </div>
       
     </ion-toolbar>
-    </ion-header>
+</ion-header>
+<ion-content>
+    <p>Bienvenido {{userName}}</p>
     <div (click)="moveToCarrito()" class="carrito">
       <img style="margin-top: 1vh;margin-bottom: -4vh;margin-left: 85vw ;height: 5vh;" src="../../../../assets/images/carrito.png">
     </div>
@@ -19,7 +20,8 @@
       <p style="text-align: center; color: #140E39;">Menú</p>
     </div>
     <div class="slides">
-      <swiper-container  swiper [modules]="swiperModules" [slidesPerView] = "1" [loop] = "true" [initialSlide] = "1" [centeredSlides] = "true">
+      <swiper-container  swiper [modules]="swiperModules" [slidesPerView] = "1" [loop] = "true" 
+      [initialSlide] = "1" [centeredSlides] = "true" [pagination]="{clickeable:true, dynamicBullets:true}">
         <swiper-slide *ngFor="let plato of platos">
           
           <div class="plato">
@@ -42,11 +44,11 @@
             </div>
             <div class="row">
               <p class="textodes">Calorías:</p>
-              <p class="texto">{{plato.cantidadCalorias}}</p>
+              <p class="texto">{{plato.calorias}}</p>
             </div>
             <div class="row">
               <p class="textodes">Duración:</p>
-              <p class="texto">{{plato.duracion}}</p>
+              <p class="texto">{{plato.duracion}} min</p>
             </div>
             <div class="row">
               <p class="textodes">Ingredientes:</p>

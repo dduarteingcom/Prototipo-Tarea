@@ -18,6 +18,7 @@ export class LogInPage implements OnInit {
   readonly APIUrl = "https://192.168.18.134/cliente/"
   correo: string = "";
   contrasena: string = "";
+  error: boolean = false;
   constructor(
     private _router: Router,
     private _httpClient: HttpClient,
@@ -25,21 +26,26 @@ export class LogInPage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.pruebita()
   }
   goBack(){
     this._router.navigate(['/authentication']);
   }
-  goHome(){
-    this._router.navigate(['/home']);
-  }
-  pruebita(){
-    this._httpClient.get(this.APIUrl + 'encontrarCorreoPasswd?correo=' + this.correo + '&password' + this.contrasena).subscribe((data:any)=>
+  checkInfo(){
+    if(this.correo!==""&& this.contrasena!==""){
+      this._httpClient.get(this.APIUrl + 'encontrarCorreoPasswd?correo=' + this.correo + '&password=' + this.contrasena ).subscribe((data:any)=>
     {
-      if(1){
+      if(data){
+        this._checkUser.setNombre(data.nombre.primerNombre);
+        this._checkUser.setCedula(data.cedula)
         this._router.navigate(['/home']);
+        this.error = false;
+      }
+      else{
+        this.error = true;
       }
     })
+    }
+
   }
 
 }
