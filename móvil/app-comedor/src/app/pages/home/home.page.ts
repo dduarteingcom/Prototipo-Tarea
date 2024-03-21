@@ -8,7 +8,7 @@ import { IonicModule, IonicSlides } from '@ionic/angular';
 import { CarritoService } from 'src/app/services/carrito.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CheckUserService } from 'src/app/services/check-user.service';
-
+import {CONFIG} from '../../../config/config'
 
 register();
 
@@ -25,7 +25,7 @@ export class HomePage {
   swiperModules = [IonicSlides];
   pedidos: IDish[] =[];
   platos: any;
-  readonly APIUrl = "https://192.168.18.134/plato/"
+  readonly APIUrl = CONFIG.apiUrl + "plato/"
   constructor(
     private _router : Router,
     private _carritoService: CarritoService,

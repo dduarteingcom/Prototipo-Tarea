@@ -5,6 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CheckUserService } from 'src/app/services/check-user.service';
+import {CONFIG} from '../../../../config/config'
 
 @Component({
   selector: 'app-log-in',
@@ -15,14 +16,14 @@ import { CheckUserService } from 'src/app/services/check-user.service';
 })
 export class LogInPage implements OnInit {
 
-  readonly APIUrl = "https://192.168.18.134/cliente/"
+  readonly APIUrl = CONFIG.apiUrl + "cliente/"
   correo: string = "";
   contrasena: string = "";
   error: boolean = false;
   constructor(
     private _router: Router,
     private _httpClient: HttpClient,
-    private _checkUser: CheckUserService
+    private _checkUser: CheckUserService,
   ) { }
 
   ngOnInit() {

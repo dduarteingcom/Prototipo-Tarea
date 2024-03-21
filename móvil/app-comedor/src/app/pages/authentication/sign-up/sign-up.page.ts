@@ -5,6 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { SignUpService } from 'src/app/services/sign-up.service';
 import { IClient } from '../../interfaces/cliente.model';
+import { CONFIG } from '../../../../config/config';
 
 @Component({
 
@@ -15,7 +16,7 @@ import { IClient } from '../../interfaces/cliente.model';
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class SignUpPage implements OnInit {
-  readonly APIUrl = "https://192.168.18.134/cliente/"
+  readonly APIUrl = CONFIG.apiUrl + "cliente/"
   cedula: number | undefined;
   nombre: string = "";
   apellido1: string = "";
@@ -32,6 +33,7 @@ export class SignUpPage implements OnInit {
   constructor(
     private _router: Router,
     private _signService: SignUpService,
+
   ) {
 
    }

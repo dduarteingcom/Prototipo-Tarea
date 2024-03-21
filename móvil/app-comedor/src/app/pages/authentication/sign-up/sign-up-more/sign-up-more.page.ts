@@ -7,6 +7,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { SignUpService } from 'src/app/services/sign-up.service';
 import { IClient } from 'src/app/pages/interfaces/cliente.model';
 import { CheckUserService } from 'src/app/services/check-user.service';
+import {CONFIG} from '../../../../../config/config'
 
 @Component({
   selector: 'app-sign-up-more',
@@ -16,7 +17,7 @@ import { CheckUserService } from 'src/app/services/check-user.service';
   imports: [IonicModule, CommonModule, FormsModule, HttpClientModule]
 })
 export class SignUpMorePage implements OnInit {
-  readonly APIUrl = "https://192.168.140.85/cliente/"
+  readonly APIUrl = CONFIG.apiUrl + "cliente/"
   correo: string = "";
   contrasena: string = "";
   ccontrasena: string = "";
@@ -46,7 +47,7 @@ export class SignUpMorePage implements OnInit {
       this._http.post(this.APIUrl + 'agregarCliente?cedula=' + this.clientInfo.cedula + '&primerNombre=' + this.clientInfo.nombre +
       '&apellido1=' + this.clientInfo.apellido1 + '&apellido2=' + this.clientInfo.apellido2 + '&correo=' + this.correo
       + '&contraseña=' + this.contrasena + '&distrito=' + this.clientInfo.distrito + '&canton=' + this.clientInfo.canton +
-      '&provincia=' + this.clientInfo.provincia + '&fechaNacimiento=' + this.clientInfo.fechaNacimiento
+      '&provincia=' + this.clientInfo.provincia + '&fechaNacimiento=' + this.clientInfo.fechaNacimiento + this.clientInfo.telefonos
        , 'agregarCliente').subscribe()
      this._router.navigate(['/home']);
      this._checkUser.setNombre(this.clientInfo.nombre);

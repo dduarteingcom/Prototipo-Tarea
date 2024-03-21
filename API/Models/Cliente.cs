@@ -14,7 +14,7 @@ namespace API.Models
 
         public string fechaNacimiento { get; set; }
 
-
+        public List<int> telefonos { get; set; }
         public int menu { get; set; }
 
         public Carrito carrito { get; set; }
