@@ -7,6 +7,8 @@
         public string chef { get; set; }
         public List<int> platos { get; set; }
 
+        public string horaDePedido { get; set; }
+
         public int tiempoPreparacion { get; set; }
 
         public bool estado { get; set; }

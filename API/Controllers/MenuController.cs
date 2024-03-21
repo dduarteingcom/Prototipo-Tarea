@@ -15,7 +15,7 @@ namespace API.Controllers
             string json = System.IO.File.ReadAllText("database.json");
             var data = JsonConvert.DeserializeObject<dynamic>(json);
 
-            var menuIds = new List<int>(data.menu[0].platos.ToObject<int[]>());
+            var menuIds = new List<int>(data.menu.platos.ToObject<int[]>());
             var platos = new List<dynamic>();
 
             foreach (var plato in data.platos)
@@ -25,7 +25,6 @@ namespace API.Controllers
                     platos.Add(plato);
                 }
             }
-
             return platos;
         }
 
@@ -36,7 +35,7 @@ namespace API.Controllers
             string json = System.IO.File.ReadAllText("database.json");
             var data = JsonConvert.DeserializeObject<dynamic>(json);
 
-            data.menu[0].platos.Add(id);
+            data.menu.platos.Add(id);
 
             string output = JsonConvert.SerializeObject(data, Formatting.Indented);
             System.IO.File.WriteAllText("database.json", output);
@@ -49,13 +48,12 @@ namespace API.Controllers
             string json = System.IO.File.ReadAllText("database.json");
             var data = JsonConvert.DeserializeObject<dynamic>(json);
 
-            List<int> platos = data.menu[0].platos.ToObject<List<int>>();
+            List<int> platos = data.menu.platos.ToObject<List<int>>();
             platos.Remove(id);
-            data.menu[0].platos = JArray.FromObject(platos);
+            data.menu.platos = JArray.FromObject(platos);
 
             string output = JsonConvert.SerializeObject(data, Formatting.Indented);
             System.IO.File.WriteAllText("database.json", output);
         }
-
     }
 }

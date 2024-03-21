@@ -54,7 +54,7 @@ namespace API.Controllers
     
         [HttpPost]
         [Route("agregarCliente")]
-        public IActionResult agregarCliente([FromBody] Cliente nuevoCliente)
+        public IActionResult agregarCliente([FromBody] ClienteRequest nuevoClienteRequest)
         {
             // Obtén el objeto JSON completo
             var json = System.IO.File.ReadAllText("database.json");
@@ -62,6 +62,31 @@ namespace API.Controllers
 
             // Accede a la lista de clientes
             var listaClientes = data.clientes;
+
+            // Crea un nuevo cliente
+            var nuevoCliente = new Cliente
+            {
+                cedula = nuevoClienteRequest.cedula,
+                nombre = new Nombre
+                {
+                    primerNombre = nuevoClienteRequest.primerNombre,
+                    apellido1 = nuevoClienteRequest.apellido1,
+                    apellido2 = nuevoClienteRequest.apellido2,
+                },
+                correo = nuevoClienteRequest.correo,
+                contraseña = nuevoClienteRequest.contraseña,
+                direccion = new Direccion
+                {
+                    distrito = nuevoClienteRequest.distrito,
+                    cantón = nuevoClienteRequest.canton,
+                    provincia = nuevoClienteRequest.provincia,
+                },
+                fechaNacimiento = nuevoClienteRequest.fechaNacimiento,
+                telefonos = nuevoClienteRequest.telefonos,
+                menu = 1,
+                carrito = null,
+                pedidos = null
+            };
 
             // Añade el nuevo cliente a la lista
             listaClientes.Add(nuevoCliente);
@@ -102,7 +127,7 @@ namespace API.Controllers
             return Ok(cliente);
         }
 
-        [HttpPost]
+        [HttpDelete]
         [Route("eliminarCliente")]
 
         public IActionResult eliminarCliente(int cedula)
