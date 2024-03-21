@@ -1,6 +1,7 @@
 ﻿using API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System;
 
 namespace API.Controllers
 {
@@ -12,6 +13,8 @@ namespace API.Controllers
         [Route("agregarPedido")]
         public IActionResult AgregarPedido(int cliente, List<int> platos)
         {
+            DateTime hora = DateTime.Now;
+
             // Obtén el objeto JSON completo
             var json = System.IO.File.ReadAllText("database.json");
             var data = JsonConvert.DeserializeObject<Root>(json);
@@ -28,7 +31,8 @@ namespace API.Controllers
                 cliente = cliente,
                 chef = null,
                 platos = platos,
-                estado = true
+                estado = true,
+                horaDePedido = hora.ToString("HH:mm:ss")
             };
 
             // Calcula el monto total del pedido
