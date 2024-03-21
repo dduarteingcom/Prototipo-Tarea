@@ -44,11 +44,25 @@ export class SignUpMorePage implements OnInit {
     console.log(this.clientInfo.apellido1);
     console.log(this.clientInfo.apellido2);
     if(this.contrasena === this.ccontrasena && this.contrasena!=="" && this.correo!==""){
-      this._http.post(this.APIUrl + 'agregarCliente?cedula=' + this.clientInfo.cedula + '&primerNombre=' + this.clientInfo.nombre +
-      '&apellido1=' + this.clientInfo.apellido1 + '&apellido2=' + this.clientInfo.apellido2 + '&correo=' + this.correo
-      + '&contraseña=' + this.contrasena + '&distrito=' + this.clientInfo.distrito + '&canton=' + this.clientInfo.canton +
-      '&provincia=' + this.clientInfo.provincia + '&fechaNacimiento=' + this.clientInfo.fechaNacimiento + this.clientInfo.telefonos
-       , 'agregarCliente').subscribe()
+      // this._http.post(this.APIUrl + 'agregarCliente?cedula=' + this.clientInfo.cedula + '&primerNombre=' + this.clientInfo.nombre +
+      // '&apellido1=' + this.clientInfo.apellido1 + '&apellido2=' + this.clientInfo.apellido2 + '&correo=' + this.correo
+      // + '&contraseña=' + this.contrasena + '&distrito=' + this.clientInfo.distrito + '&canton=' + this.clientInfo.canton +
+      // '&provincia=' + this.clientInfo.provincia + '&fechaNacimiento=' + this.clientInfo.fechaNacimiento + this.clientInfo.telefonos
+      //  , 'agregarCliente').subscribe()
+      let cliente = {
+        cedula: this.clientInfo.cedula,
+        primerNombre: this.clientInfo.nombre,
+        apellido1: this.clientInfo.apellido1,
+        apellido2: this.clientInfo.apellido2,
+        correo: this.correo,
+        contraseña: this.contrasena,
+        distrito: this.clientInfo.distrito,
+        canton: this.clientInfo.canton,
+        provincia: this.clientInfo.provincia,
+        fechaNacimiento: this.clientInfo.fechaNacimiento,
+        telefonos: this.clientInfo.telefonos
+      };
+      this._http.post(this.APIUrl + 'agregarCliente', cliente).subscribe();
      this._router.navigate(['/home']);
      this._checkUser.setNombre(this.clientInfo.nombre);
      this._checkUser.setCedula(this.clientInfo.cedula);

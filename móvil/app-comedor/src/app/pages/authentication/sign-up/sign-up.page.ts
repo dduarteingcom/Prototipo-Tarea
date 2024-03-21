@@ -27,8 +27,8 @@ export class SignUpPage implements OnInit {
   provincia: string = "";
   canton: string = "";
   distrito: string = "";
-  telefono1: string = ""
-  telefono2: string = "";
+  telefono1: number | undefined;
+  telefono2: number | undefined;
 
   constructor(
     private _router: Router,
@@ -55,7 +55,7 @@ export class SignUpPage implements OnInit {
         provincia: this.provincia,
         canton: this.canton,
         distrito: this.distrito,
-        telefonos: [this.telefono1, this.telefono2]
+        telefonos: [this.telefono1!, this.telefono2!]
       }
       this._signService.setClient(client);
       this._router.navigate(['/sign-up-more'])

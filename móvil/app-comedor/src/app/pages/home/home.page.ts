@@ -25,7 +25,7 @@ export class HomePage {
   swiperModules = [IonicSlides];
   pedidos: IDish[] =[];
   platos: any;
-  readonly APIUrl = CONFIG.apiUrl + "plato/"
+  readonly APIUrl = CONFIG.apiUrl + "menu/"
   constructor(
     private _router : Router,
     private _carritoService: CarritoService,
@@ -35,7 +35,7 @@ export class HomePage {
   }
   ngOnInit() {
     this.userName = this._checkUser.geNombre();
-    this._http.get(this.APIUrl +'mostrarPlatos').subscribe((data: any )=>{
+    this._http.get(this.APIUrl +'mostrarPlatosDisponibles').subscribe((data: any )=>{
         this.platos = data;
     }
     )

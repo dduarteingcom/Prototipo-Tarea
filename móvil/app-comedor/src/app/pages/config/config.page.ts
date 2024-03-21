@@ -22,4 +22,7 @@ export class ConfigPage implements OnInit {
   goBack(){
     this._router.navigate(['/home']);
   }
+  movetoAuth(){
+    this._router.navigate(['/authentication'])
+  }
 }

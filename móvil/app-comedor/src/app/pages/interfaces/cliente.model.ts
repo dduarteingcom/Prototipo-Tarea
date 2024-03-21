@@ -7,5 +7,5 @@ export interface IClient{
   provincia: string;
   canton: string;
   distrito: string;
-  telefonos: string[];
+  telefonos: number[];
 }

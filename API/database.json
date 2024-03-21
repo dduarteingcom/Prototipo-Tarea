@@ -46,23 +46,23 @@
       "pedidos": null
     },
     {
-      "cedula": 104886970,
+      "cedula": 478945654,
       "nombre": {
-        "primerNombre": "Carlos",
-        "apellido1": "Rodriguez",
-        "apellido2": "Segura"
+        "primerNombre": "Siu",
+        "apellido1": "Nou",
+        "apellido2": "Maybe"
       },
-      "correo": "casegura@gmail.com",
-      "contraseña": "c@rlos",
+      "correo": "dddddd",
+      "contraseña": "ok",
       "direccion": {
-        "distrito": "La Rivera",
-        "cantón": "Belen",
-        "provincia": "Heredia"
+        "distrito": "pavas",
+        "cantón": "pf",
+        "provincia": "San Josep"
       },
-      "fechaNacimiento": "05-03-2004",
+      "fechaNacimiento": "12-98-4565",
       "telefonos": [
-        70411259,
-        69093213
+        4545,
+        8989
       ],
       "menu": 1,
       "carrito": null,
