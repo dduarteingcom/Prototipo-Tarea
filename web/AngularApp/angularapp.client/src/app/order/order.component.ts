@@ -30,13 +30,41 @@ export class OrderComponent {
   activeOrders: any;
   dishIdCounter: number = 0;
   usermail!: string;
+  isActive: boolean = false;
+
+  orders = [
+    {
+      "Id": 2,
+      "cliente": "108660494",
+      "chef": "mauro@gmail.com",
+      "platos": [
+        3
+      ],
+      "tiempoPreparacion": 25,
+      "estado": true
+    },
+    {
+      "Id": 3,
+      "cliente": "118620970",
+      "chef": "mauro@gmail.com",
+      "platos": [
+        2,
+        3
+      ],
+      "tiempoPreparacion": 45,
+      "estado": true
+    }];
 
   constructor(private router: Router, private route: ActivatedRoute, private userService: UserService, private http: HttpClient) { }
 
   ngOnInit(): void {
     this.usermail = this.userService.getUserId();
-    this.getActiveOrders();
+    //this.getActiveOrders();
 
+  }
+
+  faqInteract() {
+    this.isActive = !this.isActive;
   }
 
   //calls queue Angular View

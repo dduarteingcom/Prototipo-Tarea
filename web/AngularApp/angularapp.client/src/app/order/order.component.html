@@ -10,12 +10,19 @@
 
   <h2>Ordenes en curso</h2>
   <span>{{this.usermail}}</span>
-  <div *ngFor="let order of activeOrders" class="order-list">
-    <h3>Platillo No.{{order.Id}}</h3>
-    <p>
+  <div *ngFor="let order of orders" class="order-list">
+    <h3>Orden No.{{order.Id}}</h3>
+    <div>
       No.Cliente: {{order.cliente}}<br />
       Platos de la orden: {{order.platos}}
-    </p>
+      <div [class.active]="isActive" (click)="faqInteract()" class="dishDesc">
+        <span class="expand-tag">Ver más</span>
+        <div class="desc">{{order.platos}}</div>
+      </div>
+      Tiempo estimado de entrega: {{order.tiempoPreparacion}}<br />
+      Tiempo restante:
+    </div>
+    <button>Terminar Orden</button>
   </div>
 
   <div>
