@@ -660,19 +660,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\andre\\.nuget\\packages\\": {}
+    "C:\\Users\\Mano-\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Mano-\\Documents\\TEC\\Semestre-I-2024\\Bases-de-datos\\rest-tec\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\obj\\",
+      "projectPath": "C:\\Users\\Mano-\\Documents\\TEC\\Semestre-I-2024\\Bases-de-datos\\rest-tec\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\Mano-\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mano-\\Documents\\TEC\\Semestre-I-2024\\Bases-de-datos\\rest-tec\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mano-\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

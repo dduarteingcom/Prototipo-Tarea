@@ -3,18 +3,23 @@
 </div>
 
 <div class="container">
+  <div>
+    <input [(ngModel)]="inputBoxValue" type="text" placeholder="Type your input" />
+    <button (click)="newOrder()">New Order</button>
+  </div>
 
-  <h2>My Orders</h2>
-  <div class="order-list">
-    <ul id="order-container">
-      <li>Order 1</li>
-      <li>Order 2</li>
-      <li>Order 3</li>
-    </ul>
+  <h2>Ordenes en curso</h2>
+  <span>{{this.usermail}}</span>
+  <div *ngFor="let order of activeOrders" class="order-list">
+    <h3>Platillo No.{{order.Id}}</h3>
+    <p>
+      No.Cliente: {{order.cliente}}<br />
+      Platos de la orden: {{order.platos}}
+    </p>
   </div>
 
   <div>
-    <button class="new-order-btn" (click)="goToQueue()">Take Order</button>
+    <button [disabled]="clicked" class="new-order-btn" (click)="goToQueue()">Take Order</button>
   </div>
 
 </div>

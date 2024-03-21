@@ -1,18 +1,73 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { UserService } from '../user.service';
+import { HttpClient } from '@angular/common/http';
+
+interface chefOrder {
+  id: number;
+  dishes: number[];
+  timer: number;
+  active: boolean;
+}
 
 @Component({
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   selector: 'app-order',
   templateUrl: './order.component.html',
   styleUrl: './order.component.css'
 })
 
 export class OrderComponent {
+  //API variables
+  readonly APIUrl = "https://localhost:7258/chef/";
+  response: any;
 
-  constructor(private router:Router) { }
+  //Binding variables
+  inputBoxValue = '';
+  clicked = false;
+  chefOwnOrders: chefOrder[] = [];
+  activeOrders: any;
+  dishIdCounter: number = 0;
+  usermail!: string;
 
-  goToQueue() {
-    this.router.navigate(['/queue']);
+  constructor(private router: Router, private route: ActivatedRoute, private userService: UserService, private http: HttpClient) { }
+
+  ngOnInit(): void {
+    this.usermail = this.userService.getUserId();
+    this.getActiveOrders();
+
   }
 
+  //calls queue Angular View
+  goToQueue() {
+    this.router.navigate(['/queue']);
+    this.usermail = this.userService.getUserId();
+  }
+
+  getActiveOrders() {
+    this.http.get(this.APIUrl + 'obtenerPedidosActivosChef?correo=' + this.usermail ).subscribe({
+      next: response => {
+        console.log(response);
+        this.activeOrders = response;
+        console.log(this.activeOrders[0]);
+      }
+    });
+  }
+
+  newOrder() {
+    if (this.inputBoxValue.trim() !== '') {
+      const newOrder: chefOrder = {
+        id: this.dishIdCounter++,
+        dishes: [1, 2],
+        timer:  Number(this.inputBoxValue),
+        active: false
+      };
+      this.chefOwnOrders.push(newOrder);
+      this.inputBoxValue = ''; // Clear input box after adding task
+    }
+    else {
+      alert("You must type something!")
+    }
+  }
 }

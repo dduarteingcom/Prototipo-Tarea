@@ -1,9 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\movil",
-    "\\movil\\src"
+    "\\API",
+    "\\API\\Controllers",
+    "\\web",
+    "\\web\\AngularApp",
+    "\\web\\AngularApp\\angularapp.client",
+    "\\web\\AngularApp\\angularapp.client\\src",
+    "\\web\\AngularApp\\angularapp.client\\src\\app",
+    "\\web\\AngularApp\\angularapp.client\\src\\app\\login",
+    "\\web\\AngularApp\\angularapp.client\\src\\app\\menu"
   ],
-  "SelectedNode": "\\movil\\src\\main.ts",
+  "SelectedNode": "\\API\\Controllers\\AdminController.cs",
   "PreviewInSolutionExplorer": false
 }
