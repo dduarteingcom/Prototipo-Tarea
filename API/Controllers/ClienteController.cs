@@ -54,46 +54,42 @@ namespace API.Controllers
     
         [HttpPost]
         [Route("agregarCliente")]
-        public IActionResult agregarCliente(int cedula, string primerNombre, string apellido1, string apellido2, string correo, string contraseña, string distrito, string canton, string provincia, string fechaNacimiento, List<int> telefonos)
+        public IActionResult agregarCliente([FromBody] ClienteRequest nuevoClienteRequest)
         {
             // Obtén el objeto JSON completo
             var json = System.IO.File.ReadAllText("database.json");
             var data = JsonConvert.DeserializeObject<dynamic>(json);
 
-            // Accede a la lista de platos
+            // Accede a la lista de clientes
             var listaClientes = data.clientes;
 
-            // Crea un nuevo plato
+            // Crea un nuevo cliente
             var nuevoCliente = new Cliente
             {
-                cedula = cedula,
+                cedula = nuevoClienteRequest.cedula,
                 nombre = new Nombre
                 {
-                    primerNombre = primerNombre,
-                    apellido1 = apellido1,
-                    apellido2 = apellido2,
+                    primerNombre = nuevoClienteRequest.primerNombre,
+                    apellido1 = nuevoClienteRequest.apellido1,
+                    apellido2 = nuevoClienteRequest.apellido2,
                 },
-                correo = correo,
-                contraseña = contraseña,
+                correo = nuevoClienteRequest.correo,
+                contraseña = nuevoClienteRequest.contraseña,
                 direccion = new Direccion
                 {
-                    distrito = distrito,
-                    cantón = canton,
-                    provincia = provincia,
+                    distrito = nuevoClienteRequest.distrito,
+                    cantón = nuevoClienteRequest.canton,
+                    provincia = nuevoClienteRequest.provincia,
                 },
-                fechaNacimiento = fechaNacimiento,
-                telefonos = telefonos,
+                fechaNacimiento = nuevoClienteRequest.fechaNacimiento,
+                telefonos = nuevoClienteRequest.telefonos,
                 menu = 1,
                 carrito = null,
                 pedidos = null
-
             };
 
-            // Convierte el objeto Plato a un objeto dinámico
-            var nuevoClienteDinamico = JsonConvert.DeserializeObject<dynamic>(JsonConvert.SerializeObject(nuevoCliente));
-
-            // Añade el nuevo plato a la lista
-            listaClientes.Add(nuevoClienteDinamico);
+            // Añade el nuevo cliente a la lista
+            listaClientes.Add(nuevoCliente);
 
             // Configura los ajustes de serialización
             var settings = new JsonSerializerSettings
@@ -102,12 +98,10 @@ namespace API.Controllers
                 TypeNameHandling = TypeNameHandling.Auto
             };
 
-            // Guarda la lista actualizada de platos en el archivo JSON
+            // Guarda la lista actualizada de clientes en el archivo JSON
             System.IO.File.WriteAllText("database.json", JsonConvert.SerializeObject(data, settings));
 
             return Ok(nuevoCliente);
-
-
         }
         [HttpPut]
         [Route("modificarContraseña")]
@@ -133,7 +127,7 @@ namespace API.Controllers
             return Ok(cliente);
         }
 
-        [HttpPost]
+        [HttpDelete]
         [Route("eliminarCliente")]
 
         public IActionResult eliminarCliente(int cedula)
