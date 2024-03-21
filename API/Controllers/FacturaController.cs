@@ -10,7 +10,7 @@ namespace API.Controllers
     {
         [HttpPost]
         [Route("agregarFactura")]
-        public IActionResult AgregarFactura(string dia, string mes, string año, string hora, List<int> pedidos)
+        public IActionResult AgregarFactura(int cedula, string dia, string mes, string año, string hora, List<int> pedidos)
         {
             // Obtén el objeto JSON completo
             var json = System.IO.File.ReadAllText("database.json");
@@ -25,6 +25,7 @@ namespace API.Controllers
             var nuevaFactura = new Factura
             {
                 Id = (listaFacturas.Count + 1), // Genera el Id basado en la cantidad de facturas existentes
+                cedula = cedula,
                 fecha = new Fecha
                 {
                     dia = dia,
