@@ -83,13 +83,15 @@ namespace API.Controllers
                 },
                 fechaNacimiento = nuevoClienteRequest.fechaNacimiento,
                 telefonos = nuevoClienteRequest.telefonos,
-                menu = 1,
                 carrito = null,
                 pedidos = null
             };
 
+            // Convierte el objeto Cliente a un objeto dinámico
+            var nuevoClienteDinamico = JsonConvert.DeserializeObject<dynamic>(JsonConvert.SerializeObject(nuevoCliente));
+
             // Añade el nuevo cliente a la lista
-            listaClientes.Add(nuevoCliente);
+            listaClientes.Add(nuevoClienteDinamico);
 
             // Configura los ajustes de serialización
             var settings = new JsonSerializerSettings
@@ -103,6 +105,8 @@ namespace API.Controllers
 
             return Ok(nuevoCliente);
         }
+
+
         [HttpPut]
         [Route("modificarContraseña")]
         public IActionResult modificarContraseña(int cedula, string nuevaContraseña)
