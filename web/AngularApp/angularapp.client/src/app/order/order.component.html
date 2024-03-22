@@ -10,8 +10,10 @@
 
   <h2>Ordenes en curso</h2>
   <span>{{this.usermail}}</span>
-  <div *ngFor="let order of orders" class="order-list">
+
+  <div *ngFor="let order of activeOrders; let i = index" class="order-list">
     <h3>Orden No.{{order.Id}}</h3>
+
     <div>
       No.Cliente: {{order.cliente}}<br />
       Platos de la orden: {{order.platos}}
@@ -22,6 +24,7 @@
       Tiempo estimado de entrega: {{order.tiempoPreparacion}}<br />
       Tiempo restante:
     </div>
+
     <button>Terminar Orden</button>
   </div>
 

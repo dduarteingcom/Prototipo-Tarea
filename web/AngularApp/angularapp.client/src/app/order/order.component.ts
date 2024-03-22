@@ -26,6 +26,7 @@ export class OrderComponent {
   //Binding variables
   inputBoxValue = '';
   clicked = false;
+  SavedOrders: any = [];
   chefOwnOrders: chefOrder[] = [];
   activeOrders: any;
   dishIdCounter: number = 0;
@@ -54,12 +55,11 @@ export class OrderComponent {
       "tiempoPreparacion": 45,
       "estado": true
     }];
-
   constructor(private router: Router, private route: ActivatedRoute, private userService: UserService, private http: HttpClient) { }
 
   ngOnInit(): void {
     this.usermail = this.userService.getUserId();
-    //this.getActiveOrders();
+    this.getActiveOrders();
 
   }
 

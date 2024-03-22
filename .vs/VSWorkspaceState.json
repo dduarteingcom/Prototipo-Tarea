@@ -7,9 +7,7 @@
     "\\web\\AngularApp\\angularapp.client",
     "\\web\\AngularApp\\angularapp.client\\src",
     "\\web\\AngularApp\\angularapp.client\\src\\app",
-    "\\web\\AngularApp\\angularapp.client\\src\\app\\login",
-    "\\web\\AngularApp\\angularapp.client\\src\\app\\menu"
+    "\\web\\AngularApp\\angularapp.client\\src\\app\\queue"
   ],
-  "SelectedNode": "\\API\\API.csproj",
   "PreviewInSolutionExplorer": false
 }
