@@ -16,7 +16,7 @@
       No.Cliente: {{order.cliente}}<br />
       Platos de la orden: {{order.platos}}
       <div [class.active]="isActive" (click)="faqInteract()" class="dishDesc">
-        <span class="expand-tag">Ver más</span>
+        <div class="expand-tag">Ver más</div>
         <div class="desc">{{order.platos}}</div>
       </div>
       Tiempo estimado de entrega: {{order.tiempoPreparacion}}<br />

@@ -45,13 +45,19 @@ ul li {
   padding-bottom: 1rem;
   border-bottom: 2px solid white;
   cursor: pointer;
-  display:inline;
+  display: flex;
+  justify-content:center;
+  flex-direction:column;
 }
 
 .expand-tag {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: grey;
+  border-radius: 100px;
+  width:75px;
+  margin:10px 162px 0px 163px;
 }
 
 .desc {
@@ -62,33 +68,4 @@ ul li {
 
 .dishDesc.active .desc {
   max-height: 200px;
-}
-
-.faq {
-  max-width: 700px;
-  margin-top: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid white;
-  cursor: pointer;
-}
-
-.question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.question h3 {
-    font-size: 1.8rem;
-}
-
-.answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-
-.faq.active .answer{
-    max-height: 200px;
 }
