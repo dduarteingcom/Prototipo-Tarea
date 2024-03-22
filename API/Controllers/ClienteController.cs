@@ -83,7 +83,6 @@ namespace API.Controllers
                 },
                 fechaNacimiento = nuevoClienteRequest.fechaNacimiento,
                 telefonos = nuevoClienteRequest.telefonos,
-                carrito = null,
                 pedidos = null
             };
 
