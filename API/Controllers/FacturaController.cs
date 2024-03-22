@@ -16,7 +16,7 @@ namespace API.Controllers
 
             // Obtén el objeto JSON completo
             var json = System.IO.File.ReadAllText("database.json");
-            var data = JsonConvert.DeserializeObject<Root>(json);
+            var data = JsonConvert.DeserializeObject<dynamic>(json);
 
             // Accede a la lista de facturas, pedidos y platos
             var listaFacturas = data.facturas;
@@ -53,10 +53,22 @@ namespace API.Controllers
             // Guarda la lista actualizada de facturas en el archivo JSON
             System.IO.File.WriteAllText("database.json", JsonConvert.SerializeObject(data, settings));
 
-            return Ok(nuevaFactura);
+
+            // Buscar entre los administradores
+            foreach (var factura in data.facturas)
+            {
+                if (factura.Id == nuevaFactura.Id)
+                {
+                    return factura;
+                }
+            }
+
+            return null;
 
 
         }
+
+
 
 
     }
