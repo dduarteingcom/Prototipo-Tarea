@@ -9,14 +9,14 @@ namespace API.Controllers
     public class FacturaController : ControllerBase
     {
         [HttpPost]
-        [Route("agregarFactura")]
-        public IActionResult AgregarFactura([FromBody] FacturaRequest facturaRequest)
+        [Route("CrearFactura")]
+        public IActionResult CrearFactura([FromBody] FacturaRequest facturaRequest)
         {
             DateTime date = DateTime.Now;
 
             // Obtén el objeto JSON completo
             var json = System.IO.File.ReadAllText("database.json");
-            var data = JsonConvert.DeserializeObject<dynamic>(json);
+            var data = JsonConvert.DeserializeObject<Root>(json);
 
             // Accede a la lista de facturas, pedidos y platos
             var listaFacturas = data.facturas;
@@ -53,22 +53,9 @@ namespace API.Controllers
             // Guarda la lista actualizada de facturas en el archivo JSON
             System.IO.File.WriteAllText("database.json", JsonConvert.SerializeObject(data, settings));
 
-
-            // Buscar entre los administradores
-            foreach (var factura in data.facturas)
-            {
-                if (factura.Id == nuevaFactura.Id)
-                {
-                    return factura;
-                }
-            }
-
-            return null;
-
+            return Ok(nuevaFactura);
 
         }
-
-
 
 
     }
