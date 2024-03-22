@@ -15,20 +15,28 @@
 
   <div class="grid-container">
     <div class="grid-row">
-      <div class="grid-col1" style="font-weight: bolder;">N° de factura:</div>
-      <div class="grid-col2">NumeroRandom</div>
+      <div class="id">
+        <div class="grid-col1" style="font-weight: bolder;">N° de factura:</div>
+        <div class="grid-col2">{{id}}</div>
+      </div>
     </div>
     <div class="grid-row">
-      <div class="grid-col1" style="font-weight: bolder;">Cliente:</div>
-      <div class="grid-col2">NombreCliente</div>
+      <div class="nombre">
+        <div class="grid-col1" style="font-weight: bolder;">Cliente:</div>
+        <div class="grid-col2">{{nombre}}</div>
+      </div>
     </div>
     <div class="grid-row">
-      <div class="grid-col1" style="font-weight: bolder;">Fecha de compra:</div>
-      <div class="grid-col2">Fecha</div>
+      <div class="Fecha">
+        <div class="grid-col1" style="font-weight: bolder;">Fecha de compra:</div>
+        <div class="grid-col2">{{fecha}}</div>
+      </div>
     </div>
     <div class="grid-row">
-      <div class="grid-col1" style="font-weight: bolder;">Hora de compra:</div>
-      <div class="grid-col2">Hora</div>
+      <div class="Hora">
+        <div class="grid-col1" style="font-weight: bolder;">Hora de compra:</div>
+        <div class="grid-col2">{{hora}}</div>
+      </div>
     </div>
   </div>
 
@@ -58,6 +66,10 @@
 
   <div class="textoFactura">
     <p style="font-size: 3vb; font-weight: bolder;">ESTADO DEL PEDIDO</p>
+  </div>
+
+  <div class="button-centered">
+    <ion-button class="boton2" (click)="goFeedback()">Realizado &raquo;</ion-button>
   </div>
 
 </ion-content>

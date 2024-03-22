@@ -5,6 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { CarritoService } from 'src/app/services/carrito.service';
 import { IDish } from '../interfaces/plato.model';
+import { FacturaService } from 'src/app/services/factura.service';
 
 @Component({
   selector: 'app-carrito',
@@ -18,20 +19,23 @@ export class CarritoPage implements OnInit {
   constructor(
     private _router : Router,
     private _carritoService: CarritoService,
+    private _facturaService: FacturaService,
   ){
 
   }
 
   ngOnInit() {
-
     this.pedidos=this._carritoService.getPedidos();
   }
   goBack(){
     this._router.navigate(['/home'])
   }
   goPedido(){
+    this._facturaService.setHora();
     if(this.pedidos.length>0){
-      this._router.navigate(['/pedido'])
+      this._facturaService.setFecha();
+      this._facturaService.setHora();
+      this._router.navigate(['/pedido']);
     }
 
   }
@@ -40,6 +44,8 @@ export class CarritoPage implements OnInit {
     console.log(this.pedidos);
     this._carritoService.setPedidos(this.pedidos);
   }
+
+
 
 }
 
