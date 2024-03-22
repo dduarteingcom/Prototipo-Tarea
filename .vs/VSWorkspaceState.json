@@ -2,7 +2,6 @@
   "ExpandedNodes": [
     "",
     "\\API",
-    "\\API\\Controllers",
     "\\web",
     "\\web\\AngularApp",
     "\\web\\AngularApp\\angularapp.client",
@@ -11,6 +10,6 @@
     "\\web\\AngularApp\\angularapp.client\\src\\app\\login",
     "\\web\\AngularApp\\angularapp.client\\src\\app\\menu"
   ],
-  "SelectedNode": "\\API\\Controllers\\AdminController.cs",
+  "SelectedNode": "\\API\\API.csproj",
   "PreviewInSolutionExplorer": false
 }
