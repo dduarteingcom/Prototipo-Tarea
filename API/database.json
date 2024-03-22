@@ -75,7 +75,7 @@
     {
       "Id": 1,
       "cliente": 118620970,
-      "chef": "andres@gmail.com",
+      "chef": "mauro@gmail.com",
       "platos": [
         1,
         2
@@ -88,19 +88,19 @@
     {
       "Id": 2,
       "cliente": 108660494,
-      "chef": "mauro@gmail.com",
+      "chef": null,
       "platos": [
         3
       ],
       "horaDePedido": null,
       "tiempoPreparacion": 25,
-      "estado": false,
+      "estado": true,
       "monto": 1500
     },
     {
       "Id": 3,
       "cliente": 118620970,
-      "chef": "mauro@gmail.com",
+      "chef": null,
       "platos": [
         2,
         3
@@ -139,7 +139,7 @@
     {
       "Id": 6,
       "cliente": 118620970,
-      "chef": "mauro@gmail.com",
+      "chef": null,
       "platos": [
         2,
         3

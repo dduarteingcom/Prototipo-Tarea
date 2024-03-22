@@ -7,10 +7,11 @@
   <div class="order-pool">
 
     <div *ngFor="let order of orders" class="food-order">
-      Platos de la orden: {{order.platos}}<br />
+      <h3>Orden No.{{order.Id}}</h3>
+      Platillos ordenados: {{order.platos}}<br />
       Hora de pedido: {{order.horaDePedido}}<br />
       Tiempo de preparación: {{order.tiempoPreparacion}}<br />
-      Motno: {{order.monto}}<br />
+      Monto: {{order.monto}}<br />
       <button (click)="selectOrder(order.Id)">Seleccionar</button>
 
     </div>

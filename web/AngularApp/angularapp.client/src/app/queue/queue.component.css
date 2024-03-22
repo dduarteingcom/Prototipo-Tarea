@@ -24,19 +24,45 @@
 
 .order-pool {
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     min-height: 400px;
+    max-width: 800px;
+    flex-wrap: wrap;
+    margin: 0px 0px 70px 120px;
 }
 
 .food-order {
     max-height: 130px;
     margin: 10px;
-    padding: 30px 10px 0 10px;
+    padding: 10px 10px 0 10px;
 }
 
-.food-order:nth-child(2n+1){
-    background-color:lightslategray;
+.food-order h3 {
+  max-height: 130px;
+  margin: 5px;
+}
+
+.food-order button {
+  padding: 5px 5px;
+  margin: 16px 10px;
+  background-color: forestgreen; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.food-order:nth-child(2n){
+    border-color:lightslategray;
+    border: 5px dashed lightslategray;
     border-radius:30px;
+}
+
+.food-order:nth-child(2n+1) {
+  background-color: lightslategray;
+  border-radius: 30px;
+  border: 5px solid lightslategray;
+
 }
 
 #header h2 {

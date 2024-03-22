@@ -3,6 +3,16 @@ import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from '../user.service';
 import { HttpClient } from '@angular/common/http';
+import { Time } from '@angular/common';
+interface FoodOrder {
+  Id: number;
+  cliente: number;
+  platos: number[];
+  horaDePedido: Time;
+  tiempoPreparacion: number;
+  estado: boolean;
+  monto: number;
+}
 
 @Component({
   /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -13,11 +23,10 @@ import { HttpClient } from '@angular/common/http';
 export class QueueComponent {
   //API variables
   readonly APIUrl = "https://localhost:7258/chef/"
-  response: any;
-  orders: any = [];
+  orders: any;
 
   //Other vars
-  usermail!: string;
+  usermail: string = '';
 
   //orders = [
   //  {
@@ -66,24 +75,44 @@ export class QueueComponent {
   }
 
   goToOrders() {
+    console.log(this.usermail)
     this.router.navigate(['/chef']);
+    console.log(this.usermail)
   }
 
   getActiveOrders() {
     this.http.get(this.APIUrl + 'obtenerPedidosDesasignados').subscribe({
       next: response => {
-        console.log(response);
+        console.log('API Resposnse: ' + response);
         this.orders = response;
-        console.log(this.orders[0]);
       }
     });
   }
 
-  selectOrder(orderId: number) {
-    this.http.put(this.APIUrl + 'agarrarPedido?id=' + orderId + '&correo=' + this.usermail, this.usermail ).subscribe({
-    });
+  reloadPage() {
+    // You can reload the page or re-render the component here
+    // For example, you can use location.reload() to reload the entire page
+    location.reload();
+    this.ngOnInit();
+  }
 
-    this.getActiveOrders();
-    //this.orders = this.orders.filter(order => order.Id !== orderId);
+  selectOrder(orderId: number) {
+    this.http.put(this.APIUrl + 'agarrarPedido?id=' + orderId + '&correo=' + this.usermail, this.usermail).subscribe();
+    this.orders = this.orders.filter((order: { Id: number; }) => order.Id !== orderId);
   }
 }
+
+  //selectOrderisms(orderId: number) {
+  //  this.http.put(this.APIUrl + 'agarrarPedido?id=' + orderId + '&correo=' + this.usermail, this.usermail).pipe(
+  //    tap(() => this.reloadPage())
+  //  ).subscribe(
+  //    () => {
+  //      console.log('PUT request completed');
+  //    },
+  //    (error) => {
+  //      console.error('Error occurred during PUT request:', error);
+  //    }
+  //  );
+  //}
+  //  //this.orders = this.orders.filter(order => order.Id !== orderId);
+  //}
