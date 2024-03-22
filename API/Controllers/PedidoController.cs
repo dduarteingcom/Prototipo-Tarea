@@ -11,7 +11,7 @@ namespace API.Controllers
     {
         [HttpPost]
         [Route("agregarPedido")]
-        public IActionResult AgregarPedido(int cliente, List<int> platos)
+        public IActionResult AgregarPedido([FromBody] PedidoRequest pedidoRequest)
         {
             DateTime hora = DateTime.Now;
 
@@ -28,9 +28,9 @@ namespace API.Controllers
             var nuevoPedido = new Pedido
             {
                 Id = (listaPedidos.Count + 1), // Genera el Id basado en la cantidad de pedidos existentes
-                cliente = cliente,
+                cliente = pedidoRequest.cliente,
                 chef = null,
-                platos = platos,
+                platos = pedidoRequest.platos,
                 estado = true,
                 horaDePedido = hora.ToString("HH:mm:ss")
             };
@@ -38,7 +38,7 @@ namespace API.Controllers
             // Calcula el monto total del pedido
             int montoTotal = 0;
             int tiempo = 0;
-            foreach (var platoId in platos)
+            foreach (var platoId in pedidoRequest.platos)
             {
                 var plato = listaPlatos.First(p => p.Id == platoId);
                 montoTotal += plato.precio;

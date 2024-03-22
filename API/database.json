@@ -124,6 +124,19 @@
       "tiempoPreparacion": 18,
       "estado": true,
       "monto": 4500
+    },
+    {
+      "Id": 5,
+      "cliente": 118620970,
+      "chef": null,
+      "platos": [
+        1,
+        3
+      ],
+      "horaDePedido": "19:10:29",
+      "tiempoPreparacion": 12,
+      "estado": true,
+      "monto": 6500
     }
   ],
   "platos": [
