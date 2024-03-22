@@ -65,6 +65,28 @@
       ],
       "carrito": null,
       "pedidos": null
+    },
+    {
+      "cedula": 45,
+      "nombre": {
+        "primerNombre": "45",
+        "apellido1": "45",
+        "apellido2": "45"
+      },
+      "correo": "45",
+      "contraseña": "45",
+      "direccion": {
+        "distrito": "45",
+        "cantón": "45",
+        "provincia": "45"
+      },
+      "fechaNacimiento": "45-45-45",
+      "telefonos": [
+        45,
+        45
+      ],
+      "carrito": null,
+      "pedidos": null
     }
   ],
   "administradores": [
