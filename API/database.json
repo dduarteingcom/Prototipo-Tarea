@@ -18,9 +18,8 @@
       "telefonos": [
         62912132
       ],
-      "menu": 1,
       "carrito": null,
-      "pedidos": null,
+      "pedidos": null
     },
     {
       "cedula": 108660494,
@@ -41,10 +40,8 @@
         72021332,
         60161269
       ],
-      "menu": 1,
       "carrito": null,
-      "pedidos": null,
-      "pedidosRealizados": 0
+      "pedidos": null
     }
   ],
   "administradores": [
@@ -138,6 +135,19 @@
       "tiempoPreparacion": 16,
       "estado": true,
       "monto": 9500
+    },
+    {
+      "Id": 6,
+      "cliente": 118620970,
+      "chef": null,
+      "platos": [
+        2,
+        3
+      ],
+      "horaDePedido": "17:48:10",
+      "tiempoPreparacion": 16,
+      "estado": true,
+      "monto": 6000
     }
   ],
   "platos": [
@@ -201,7 +211,7 @@
   "facturas": [
     {
       "Id": 1,
-      "cedula": 118620970,
+      "cliente": null,
       "fecha": {
         "dia": "04",
         "mes": "11",

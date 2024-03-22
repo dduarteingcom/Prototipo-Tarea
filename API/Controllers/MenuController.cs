@@ -15,7 +15,7 @@ namespace API.Controllers
             string json = System.IO.File.ReadAllText("database.json");
             var data = JsonConvert.DeserializeObject<dynamic>(json);
 
-            var menuIds = new List<int>(data.menu.platos.ToObject<int[]>());
+            var menuIds = new List<int>(data.menu.ToObject<int[]>());
             var platos = new List<dynamic>();
 
             foreach (var plato in data.platos)
