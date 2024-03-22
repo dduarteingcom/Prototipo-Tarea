@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 import { CarritoService } from 'src/app/services/carrito.service';
 import { IDish } from '../interfaces/plato.model';
 import { FacturaService } from 'src/app/services/factura.service';
+import { CheckUserService } from 'src/app/services/check-user.service';
 
 @Component({
   selector: 'app-pedido',
@@ -20,11 +21,12 @@ export class PedidoPage implements OnInit {
   fecha: string = "";
   hora: string = "";
   id: number = 0;
-  nombre: string = "Felipe";
+  nombre: string = "";
   constructor(
     private _router: Router,
     private _carritoService: CarritoService,
     private _facturaService: FacturaService,
+    private _checkUser : CheckUserService,
     ) { }
 
   ngOnInit() {
@@ -33,6 +35,7 @@ export class PedidoPage implements OnInit {
     this.fecha = this._facturaService.getFecha();
     this.hora = this._facturaService.getHora();
     this.id = Math.floor(Math.random() * (1000000 - 99999 + 1)) + 99999;
+    this.nombre = this._checkUser.geNombre();
   }
 
   goBack(){
