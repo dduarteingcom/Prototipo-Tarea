@@ -35,7 +35,8 @@ namespace API.Controllers
                 precio = platoRequest.precio,
                 ingredientes = platoRequest.ingredientes,
                 duracion = platoRequest.duracion,
-                descripcion = platoRequest.descripcion
+                descripcion = platoRequest.descripcion,
+                ventas = 0
             };
 
             // Convierte el objeto Plato a un objeto dinámico
