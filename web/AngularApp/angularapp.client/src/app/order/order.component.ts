@@ -3,13 +3,10 @@ import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from '../user.service';
 import { HttpClient } from '@angular/common/http';
+import { TimerConfig } from '../timer-confg.interface';
+import { ViewChildren, QueryList } from '@angular/core';
+import { TimerComponent } from '../timer/timer.component';
 
-interface chefOrder {
-  id: number;
-  dishes: number[];
-  timer: number;
-  active: boolean;
-}
 
 @Component({
   /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -26,8 +23,6 @@ export class OrderComponent {
   //Binding variables
   inputBoxValue = '';
   clicked = false;
-  SavedOrders: any = [];
-  chefOwnOrders: chefOrder[] = [];
   activeOrders: any;
   dishIdCounter: number = 0;
   usermail!: string;
@@ -55,12 +50,53 @@ export class OrderComponent {
       "tiempoPreparacion": 45,
       "estado": true
     }];
+
+  @ViewChildren(TimerComponent)
+  timers!: QueryList<TimerComponent>
   constructor(private router: Router, private route: ActivatedRoute, private userService: UserService, private http: HttpClient) { }
 
   ngOnInit(): void {
     this.usermail = this.userService.getUserId();
     this.getActiveOrders();
+    this.timers.forEach(timer => {
+      // Access and initialize data for each TimerComponent
+      // For example:
+      console.log('HELLO 300');
+      timer.minutes = 9;
+      console.log(timer.seconds)
+    });
+  }
 
+  //ngDoCheck(): void {
+  //  this.accessTimers();
+  //}
+
+  //ngOnChanges(): void {
+  //console.log('HELLO 1')
+    
+  //  this.accessTimers();
+  //}
+
+  ngAfterViewInit() {
+    console.log('HELLO 2: ' + this.timers.length);
+    // Access and use timers property here
+    this.timers.forEach(timer => {
+      // Access and initialize data for each TimerComponent
+      // For example:
+      console.log('HELLO 2');
+      timer.minutes = 9;
+      console.log(timer.seconds)
+
+    });
+  }
+
+
+  accessTimers() {
+    // Accessing all app-timer instances
+    this.timers.forEach(timer => {
+      // Perform actions on each app-timer instance
+      console.log(timer); // Example: Logging each timer instance
+    });
   }
 
   faqInteract() {
@@ -81,21 +117,5 @@ export class OrderComponent {
         console.log(this.activeOrders[0]);
       }
     });
-  }
-
-  newOrder() {
-    if (this.inputBoxValue.trim() !== '') {
-      const newOrder: chefOrder = {
-        id: this.dishIdCounter++,
-        dishes: [1, 2],
-        timer:  Number(this.inputBoxValue),
-        active: false
-      };
-      this.chefOwnOrders.push(newOrder);
-      this.inputBoxValue = ''; // Clear input box after adding task
-    }
-    else {
-      alert("You must type something!")
-    }
   }
 }

@@ -18,7 +18,8 @@
         <div class="desc">{{order.platos}}</div>
       </div>
       Tiempo estimado de entrega: {{order.tiempoPreparacion}}<br />
-      Tiempo restante:
+      Tiempo restante: <app-timer [minutes]="order.tiempoPreparacion"></app-timer>
+
     </div>
 
     <button>Terminar Orden</button>
