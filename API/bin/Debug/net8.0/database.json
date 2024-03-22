@@ -18,7 +18,6 @@
       "telefonos": [
         62912132
       ],
-      "menu": 1,
       "carrito": null,
       "pedidos": null
     },
@@ -41,30 +40,6 @@
         72021332,
         60161269
       ],
-      "menu": 1,
-      "carrito": null,
-      "pedidos": null
-    },
-    {
-      "cedula": 104886970,
-      "nombre": {
-        "primerNombre": "Carlos",
-        "apellido1": "Rodriguez",
-        "apellido2": "Segura"
-      },
-      "correo": "casegura@gmail.com",
-      "contraseña": "c@rlos",
-      "direccion": {
-        "distrito": "La Rivera",
-        "cantón": "Belen",
-        "provincia": "Heredia"
-      },
-      "fechaNacimiento": "05-03-2004",
-      "telefonos": [
-        70411259,
-        69093213
-      ],
-      "menu": 1,
       "carrito": null,
       "pedidos": null
     }
@@ -99,46 +74,69 @@
   "pedidos": [
     {
       "Id": 1,
-      "cliente": "118620970",
+      "cliente": 118620970,
+      "chef": "mauro@gmail.com",
+      "platos": [
+        1,
+        3
+      ],
+      "horaDePedido": "14:50:23",
+      "tiempoPreparacion": 12,
+      "estado": true,
+      "monto": 6500
+    },
+    {
+      "Id": 2,
+      "cliente": 18620970,
       "chef": "andres@gmail.com",
       "platos": [
         1,
         2
       ],
-      "tiempoPreparacion": 30,
-      "estado": true
-    },
-    {
-      "Id": 2,
-      "cliente": "108660494",
-      "chef": "mauro@gmail.com",
-      "platos": [
-        3
-      ],
-      "tiempoPreparacion": 25,
-      "estado": false
+      "horaDePedido": "15:04:55",
+      "tiempoPreparacion": 16,
+      "estado": true,
+      "monto": 9500
     },
     {
       "Id": 3,
-      "cliente": "118620970",
-      "chef": "mauro@gmail.com",
+      "cliente": 118620970,
+      "chef": null,
       "platos": [
         2,
         3
       ],
-      "tiempoPreparacion": 45,
-      "estado": true
+      "horaDePedido": "17:48:10",
+      "tiempoPreparacion": 16,
+      "estado": true,
+      "monto": 6000
     },
     {
       "Id": 4,
-      "cliente": "108660494",
+      "cliente": 118620970,
+      "chef": null,
+      "platos": [
+        3,
+        3,
+        3
+      ],
+      "horaDePedido": "18:48:25",
+      "tiempoPreparacion": 18,
+      "estado": true,
+      "monto": 4500
+    },
+    {
+      "Id": 5,
+      "cliente": 118620970,
       "chef": null,
       "platos": [
         1,
         3
       ],
-      "tiempoPreparacion": 55,
-      "estado": false
+      "horaDePedido": "19:10:29",
+      "tiempoPreparacion": 12,
+      "estado": true,
+      "monto": 6500
     }
   ],
   "platos": [
@@ -153,7 +151,8 @@
         "cebolla",
         "culantro"
       ],
-      "duracion": 6
+      "duracion": 6,
+      "descripcion": "Es una sopa tradicional mexicana preparada con tortilla, jitomate, y un toque de picante"
     },
     {
       "Id": 2,
@@ -166,7 +165,8 @@
         "salsa de tomate",
         "carne"
       ],
-      "duracion": 10
+      "duracion": 10,
+      "descripcion": "Es un plato italiano que combina pasta con una salsa hecha de carne picada, tomate, cebolla, zanahoria, apio y varias hierbas y especias"
     },
     {
       "Id": 3,
@@ -179,7 +179,8 @@
         "queso",
         "carne"
       ],
-      "duracion": 6
+      "duracion": 6,
+      "descripcion": "Es un sándwich popular de Filadelfia, EE. UU., hecho con finas rebanadas de bistec y queso derretido en un pan largo"
     },
     {
       "Id": 4,
@@ -192,7 +193,26 @@
         "carne",
         "queso"
       ],
-      "duracion": 4
+      "duracion": 4,
+      "descripcion": "Es una hamburguesa de carne de ternera, generalmente servida en un pan de hamburguesa con queso derretido encima"
     }
-  ]
+  ],
+  "facturas": [
+    {
+      "Id": 1,
+      "cliente": null,
+      "fecha": {
+        "dia": "04",
+        "mes": "11",
+        "año": "2024"
+      },
+      "hora": "14:55",
+      "pedidos": [
+        1,
+        2
+      ],
+      "montoTotal": 11000
+    }
+  ],
+  "menu": [1,2,3,4]
 }

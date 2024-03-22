@@ -195,6 +195,16 @@
       ],
       "duracion": 4,
       "descripcion": "Es una hamburguesa de carne de ternera, generalmente servida en un pan de hamburguesa con queso derretido encima"
+    },
+    {
+      "Id": 5,
+      "nombre": "Triple con queso",
+      "tipo": "Hamburguesa",
+      "calorias": 1000,
+      "precio": 3500,
+      "ingredientes": [],
+      "duracion": 23,
+      "descripcion": "Deliciosa hamburguesa con 3 tortas y un queso "
     }
   ],
   "facturas": [
@@ -214,5 +224,10 @@
       "montoTotal": 11000
     }
   ],
-  "menu": [1,2,3,4]
+  "menu": [
+    1,
+    2,
+    3,
+    4
+  ]
 }

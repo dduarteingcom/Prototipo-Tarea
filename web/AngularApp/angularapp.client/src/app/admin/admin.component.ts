@@ -1,8 +1,8 @@
+/* eslint-disable prefer-const */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Component, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
 
 
 interface Dish {
@@ -17,12 +17,15 @@ interface Dish {
   styleUrl: './admin.component.css'
 })
 export class AdminComponent implements OnInit {
-  defaultOptions: any[] = [];
+  defaultOptions: number[] = [];
   formData: any = {
     selectedOptionId: ''
   };
+  selectedId: number = 0;
+  productInfo: any = {};
   showForm: boolean = false;
   showForm2: boolean = false;
+  showForm3: boolean = false;
   //testList: Dish[] = [];
   dishList: Dish[] = [];
   inputBoxValue: string = '';
@@ -33,7 +36,10 @@ export class AdminComponent implements OnInit {
   dishType: string = '';
   dishCalories: number = 0;
   dishPrice: number = 0;
-  
+  dishIngredients: string[] = [];
+  dishTime = 0;
+  dishDesc = '';
+  count = 0;
 
   constructor(private router: Router, private http: HttpClient) { }
 
@@ -66,37 +72,85 @@ export class AdminComponent implements OnInit {
   }
 
   getDishes() {
-    this.http.get(this.APIUrl + 'obtenerPlatos').subscribe({
+    this.http.get(this.APIUrl + 'mostrarPlatos').subscribe({
       next: response => {
         this.activeDishes = response;
+        console.log(response);
       }
     });
   }
 
   toggleForm2() {
-    this.showForm2 = !this.showForm;
+    this.showForm2 = !this.showForm2;
     this.showForm = false;
+    this.showForm3 = false;
+    this.getDefaultOptions();
   }
   toggleForm() {
     this.showForm = !this.showForm;
     this.showForm2 = false;
+    this.showForm3 = false;
   }
-  submitForm() {
+  toggleForm3() {
+    this.showForm2 = false;
+    this.showForm = false;
+    this.showForm3 = !this.showForm3;
+    this.getDefaultOptions();
+  }
+  submitForm() { //Add Dish
+    let datos = {
+      nombre: this.dishName,
+      tipo: this.dishType,
+      calorias: this.dishCalories,
+      precio: this.dishPrice,
+      ingredientes: this.dishIngredients,
+      duracion: this.dishTime,
+      descripcion: this.dishDesc
+
+    }
+
+    this.http.post(this.APIUrl + 'agregarPlato', datos).subscribe(data => {
+      this.getDishes();
+    })
+    this.showForm = !this.showForm;
+  }
+  submitForm2() { //Change dish
     this.http.post(this.APIUrl + 'agregarPlato?' + 'nombre=' + this.dishName + '&tipo=' + this.dishType + '&calorias=' + this.dishCalories + '&precio=' + this.dishPrice, 'agregarPlato').subscribe(data => {
       this.getDishes();
     })
     this.showForm = !this.showForm;
   }
-  submitForm2() {
-    this.http.post(this.APIUrl + 'agregarPlato?' + 'nombre=' + this.dishName + '&tipo=' + this.dishType + '&calorias=' + this.dishCalories + '&precio=' + this.dishPrice, 'agregarPlato').subscribe(data => {
+  submitForm3() { //Delete dish
+    this.http.post(this.APIUrl + 'agregarPlato?', "datos").subscribe(data => {
       this.getDishes();
     })
     this.showForm = !this.showForm;
   }
 
   getDefaultOptions(){
-    this.http.get(this.APIUrl + 'obtenerPlatos').subscribe({
+    this.http.get<number[]>(this.APIUrl + 'mostrarIdPlatos').subscribe({
+      next: response => {
+        this.defaultOptions = response;
+      }
     });
+
+  }
+
+  onSelectionChange(event: Event) {
+    const selectedValue = Number((event.target as HTMLSelectElement).value);
+    this.count = 0;
+    for (let option of this.activeDishes) {
+      this.count = this.count + 1;
+      if (this.count == selectedValue) {
+        this.dishName = option.nombre;
+        this.dishType = option.tipo
+        this.dishCalories = option.calorias
+        this.dishPrice = option.precio
+        this.dishIngredients = Array(option.Ingredients)
+        this.dishTime = option.duracion
+        this.dishDesc = option.descripcion
+      }
+    }
   }
 
   //newDish() {

@@ -108,7 +108,7 @@
               "RelativeDocumentMoniker": "Controllers\\PlatoController.cs",
               "ToolTip": "C:\\Users\\andre\\Desktop\\TEC\\Bases\\TareaCorta3\\Prototipo-Tarea\\API\\Controllers\\PlatoController.cs",
               "RelativeToolTip": "Controllers\\PlatoController.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAcwGAAAAAAAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAmwGAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-19T01:56:58.965Z",
               "EditorCaption": ""
@@ -123,8 +123,7 @@
               "RelativeToolTip": "database.json",
               "ViewState": "AQIAAIkAAAAAAAAAAAAAAMAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-19T02:50:09.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T02:50:09.241Z"
             },
             {
               "$type": "Document",
