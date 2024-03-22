@@ -83,13 +83,15 @@ namespace API.Controllers
                 },
                 fechaNacimiento = nuevoClienteRequest.fechaNacimiento,
                 telefonos = nuevoClienteRequest.telefonos,
-                menu = 1,
                 carrito = null,
                 pedidos = null
             };
 
+            // Convierte el objeto Cliente a un objeto dinámico
+            var nuevoClienteDinamico = JsonConvert.DeserializeObject<dynamic>(JsonConvert.SerializeObject(nuevoCliente));
+
             // Añade el nuevo cliente a la lista
-            listaClientes.Add(nuevoCliente);
+            listaClientes.Add(nuevoClienteDinamico);
 
             // Configura los ajustes de serialización
             var settings = new JsonSerializerSettings
@@ -103,30 +105,6 @@ namespace API.Controllers
 
             return Ok(nuevoCliente);
         }
-        [HttpPut]
-        [Route("modificarContraseña")]
-        public IActionResult modificarContraseña(int cedula, string nuevaContraseña)
-        {
-            // Leer el archivo json
-            var json = System.IO.File.ReadAllText("database.json");
-            var data = JsonConvert.DeserializeObject<Root>(json);
-
-            // Buscar el plato con el id proporcionado
-            var cliente = data.clientes.FirstOrDefault(p => p.cedula == cedula);
-            if (cliente == null)
-            {
-                return NotFound();
-            }
-
-            // Actualizar los datos del plato
-            cliente.contraseña = nuevaContraseña;
-            // Guardar los cambios en el archivo json
-            json = JsonConvert.SerializeObject(data, Formatting.Indented);
-            System.IO.File.WriteAllText("database.json", json);
-
-            return Ok(cliente);
-        }
-
         [HttpDelete]
         [Route("eliminarCliente")]
 

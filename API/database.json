@@ -18,9 +18,8 @@
       "telefonos": [
         62912132
       ],
-      "menu": 1,
       "carrito": null,
-      "pedidos": null,
+      "pedidos": null
     },
     {
       "cedula": 108660494,
@@ -41,10 +40,31 @@
         72021332,
         60161269
       ],
-      "menu": 1,
       "carrito": null,
       "pedidos": null,
       "pedidosRealizados": 0
+    },
+    {
+      "cedula": 78,
+      "nombre": {
+        "primerNombre": "78",
+        "apellido1": "87",
+        "apellido2": "78"
+      },
+      "correo": "78",
+      "contraseña": "78",
+      "direccion": {
+        "distrito": "78",
+        "cantón": "78",
+        "provincia": "78"
+      },
+      "fechaNacimiento": "78-78-78",
+      "telefonos": [
+        78,
+        78
+      ],
+      "carrito": null,
+      "pedidos": null
     }
   ],
   "administradores": [
@@ -215,5 +235,10 @@
       "montoTotal": 11000
     }
   ],
-  "menus": null
+  "menu": [
+    1,
+    2,
+    3,
+    4
+  ]
 }

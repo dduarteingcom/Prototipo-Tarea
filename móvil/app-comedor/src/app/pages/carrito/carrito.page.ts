@@ -30,7 +30,10 @@ export class CarritoPage implements OnInit {
     this._router.navigate(['/home'])
   }
   goPedido(){
-    this._router.navigate(['/pedido'])
+    if(this.pedidos.length>0){
+      this._router.navigate(['/pedido'])
+    }
+
   }
   removeItem(pedido:string){
     this.pedidos = this.pedidos.filter((pedidos)=> pedidos.nombre !== pedido);
