@@ -20,17 +20,23 @@ namespace API.Controllers
             // Accede a la lista de platos
             var listaPlatos = data.platos;
 
+            // Obtiene el Id del último plato en la lista
+            int ultimoId = listaPlatos[listaPlatos.Count - 1].Id;
+
             // Crea un nuevo plato
             var nuevoPlato = new Plato
             {
-                Id = (listaPlatos.Count + 1), // Genera el Id basado en la cantidad de platos existentes
+
+                Id = (ultimoId + 1), // Genera el Id basado en el Id del último plato
+
                 nombre = platoRequest.nombre,
                 tipo = platoRequest.tipo,
                 calorias = platoRequest.calorias,
                 precio = platoRequest.precio,
                 ingredientes = platoRequest.ingredientes,
                 duracion = platoRequest.duracion,
-                descripcion = platoRequest.descripcion
+                descripcion = platoRequest.descripcion,
+                ventas = 0
             };
 
             // Convierte el objeto Plato a un objeto dinámico
@@ -106,6 +112,35 @@ namespace API.Controllers
             }
 
             return ids;
+        }
+
+        [HttpDelete]
+        [Route("eliminarPlato")]
+
+        public IActionResult eliminarPlato(int id)
+        {
+            var json = System.IO.File.ReadAllText("database.json");
+            var data = JsonConvert.DeserializeObject<dynamic>(json);
+
+            var listaPlatos = data.platos;
+
+            for (int i = 0; i < listaPlatos.Count; i++)
+            {
+                if (listaPlatos[i].Id == id)
+                {
+                    listaPlatos.RemoveAt(i);
+                    break;
+                }
+            }
+
+            var settings = new JsonSerializerSettings
+            {
+                Formatting = Formatting.Indented, // Esto hará que el JSON se formatee con indentación
+                TypeNameHandling = TypeNameHandling.Auto
+            };
+            System.IO.File.WriteAllText("database.json", JsonConvert.SerializeObject(data, settings));
+
+            return Ok();
         }
 
     }

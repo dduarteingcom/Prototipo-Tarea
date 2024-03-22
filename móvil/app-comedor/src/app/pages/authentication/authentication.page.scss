@@ -1,0 +1,32 @@
+ion-header {
+  --ion-background-color: #140E39; /* Color de fondo personalizado */
+}
+.main-container{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.boton{
+  --background: #140E39;
+  border: 1px solid white;
+  width: 40%;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+.button-container{
+  background-color: #140E39;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container{
+  max-width: 100%; 
+  height: auto; 
+  overflow: hidden;
+}
