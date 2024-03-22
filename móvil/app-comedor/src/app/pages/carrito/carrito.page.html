@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="row">
+      <ion-button class="boton-redondo" (click)="goBack()">&#8592;</ion-button>
+      <p style="margin-left: 15vw; color: white;">Carrito de Compras</p>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ul>
+    <div class="pedido" *ngFor="let pedido of pedidos">
+      <button (click)="removeItem(pedido.nombre)">borrar</button>
+      <p>{{pedido.nombre}}</p>
+      <p>₡{{pedido.precio}}</p>
+    </div>
+  </ul>
+  <div class="button-centered">
+    <ion-button class="boton2" (click)="goPedido()">Realizar pedido &raquo;</ion-button>
+  </div>
+</ion-content>
