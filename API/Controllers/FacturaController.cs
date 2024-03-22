@@ -9,8 +9,8 @@ namespace API.Controllers
     public class FacturaController : ControllerBase
     {
         [HttpPost]
-        [Route("agregarFactura")]
-        public IActionResult AgregarFactura([FromBody] FacturaRequest facturaRequest)
+        [Route("CrearFactura")]
+        public IActionResult CrearFactura([FromBody] FacturaRequest facturaRequest)
         {
             DateTime date = DateTime.Now;
 
@@ -54,7 +54,6 @@ namespace API.Controllers
             System.IO.File.WriteAllText("database.json", JsonConvert.SerializeObject(data, settings));
 
             return Ok(nuevaFactura);
-
 
         }
 

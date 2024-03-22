@@ -84,6 +84,34 @@ namespace API.Controllers
             return data.pedidos;
         }
 
+        [HttpPut]
+        [Route("terminarPedido")]
+        public IActionResult terminarPedido(int id)
+        {
+            // Leer el archivo json
+            var json = System.IO.File.ReadAllText("database.json");
+            var data = JsonConvert.DeserializeObject<Root>(json);
+
+            // Buscar el plato con el id proporcionado
+            var pedido = data.pedidos.FirstOrDefault(p => p.Id == id);
+            if (pedido == null)
+            {
+                return NotFound();
+            }
+
+            if (pedido.estado == true)
+            {
+                pedido.estado = false;
+            }
+
+            // Guardar los cambios en el archivo json
+            json = JsonConvert.SerializeObject(data, Formatting.Indented);
+            System.IO.File.WriteAllText("database.json", json);
+
+            return Ok(pedido);
+        }
+
+
 
 
 

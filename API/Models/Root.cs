@@ -8,7 +8,5 @@
         public List<Pedido> pedidos { get; set; }
         public List<Plato> platos { get; set; }
         public List<Factura> facturas { get; set; }
-
-        public List<Menu> menus { get; set; }
     }
 }
