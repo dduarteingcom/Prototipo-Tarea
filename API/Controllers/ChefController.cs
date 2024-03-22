@@ -73,6 +73,18 @@ namespace API.Controllers
             return Ok(pedido);
         }
 
+        [HttpGet]
+        [Route("mostrarTodosPedidos")]
+        public dynamic mostrarTodosPedidos()
+        {
+            string json = System.IO.File.ReadAllText("database.json");
+            var data = JsonConvert.DeserializeObject<dynamic>(json);
+
+
+            return data.pedidos;
+        }
+
+
 
 
 

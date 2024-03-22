@@ -13,5 +13,11 @@
 
         public int precio { get; set; }
 
+        public List<string> ingredientes { get; set; }
+
+        public int duracion { get; set; }
+
+        public string descripcion { get; set; }
+
     }
 }
