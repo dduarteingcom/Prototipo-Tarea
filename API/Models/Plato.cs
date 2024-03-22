@@ -19,5 +19,7 @@
 
         public string descripcion { get; set; }
 
+        public int ventas { get; set; }
+
     }
 }
