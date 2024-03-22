@@ -2,6 +2,8 @@
 {
     public class Menu
     {
-        public List<Plato> platos { get; set;}
+        public List<int> platos { get; set;}
+
+
     }
 }

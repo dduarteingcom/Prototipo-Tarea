@@ -11,7 +11,7 @@ namespace API.Controllers
     {
         [HttpPost]
         [Route("agregarPlato")]
-        public IActionResult AddPlato(string nombre, string tipo, int calorias, int precio, List<string> ingredientes, int duracion, string descripcion)
+        public IActionResult AddPlato([FromBody] PlatoRequest platoRequest)
         {
             // Obtén el objeto JSON completo
             var json = System.IO.File.ReadAllText("database.json");
@@ -24,13 +24,13 @@ namespace API.Controllers
             var nuevoPlato = new Plato
             {
                 Id = (listaPlatos.Count + 1), // Genera el Id basado en la cantidad de platos existentes
-                nombre = nombre,
-                tipo = tipo,
-                calorias = calorias,
-                precio = precio,
-                ingredientes = ingredientes,
-                duracion = duracion,
-                descripcion = descripcion
+                nombre = platoRequest.nombre,
+                tipo = platoRequest.tipo,
+                calorias = platoRequest.calorias,
+                precio = platoRequest.precio,
+                ingredientes = platoRequest.ingredientes,
+                duracion = platoRequest.duracion,
+                descripcion = platoRequest.descripcion
             };
 
             // Convierte el objeto Plato a un objeto dinámico
