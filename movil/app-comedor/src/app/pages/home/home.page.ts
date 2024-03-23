@@ -40,8 +40,11 @@ export class HomePage {
     this.userName = this._checkUser.geNombre();
     this._http.get(this.APIUrl +'mostrarPlatosDisponibles').subscribe((data: any )=>{
         this.platos = data;
+        console.log(this.platos);
     }
+    
     )
+    
   }
   /**
    * Función que redirige a la página de carrito

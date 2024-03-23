@@ -14,9 +14,11 @@
     Cambio de contraseña
   </header>
   <ul>
-    <ion-input placeholder="Escriba su contraseña anterior"></ion-input>
-    <ion-input placeholder="Escriba su nueva contraseña"></ion-input>
+    <ion-input placeholder="Escriba su nueva contraseña" [(ngModel)] ="nPassword"></ion-input>
   </ul>
+  <div class="button-centered">
+    <ion-button class="boton2" (click)="changePassword()">Cambiar contraseña</ion-button>
+  </div>
   <header style="display: flex; justify-content: center;">
     Eliminar cuenta
   </header>

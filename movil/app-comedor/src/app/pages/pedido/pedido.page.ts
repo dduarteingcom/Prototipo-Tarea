@@ -5,11 +5,8 @@ import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { CarritoService } from 'src/app/services/carrito.service';
 import { IDish } from '../interfaces/plato.model';
-<<<<<<< HEAD
-=======
 import { FacturaService } from 'src/app/services/factura.service';
 import { CheckUserService } from 'src/app/services/check-user.service';
->>>>>>> origin/Pedidos-móvil
 
 @Component({
   selector: 'app-pedido',
@@ -19,18 +16,6 @@ import { CheckUserService } from 'src/app/services/check-user.service';
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class PedidoPage implements OnInit {
-<<<<<<< HEAD
-  pedidos: IDish[] =[];
-  montoTotal: number = 0;
-  constructor(
-    private _router: Router,
-    private _carritoService: CarritoService,
-    ) { }
-
-  ngOnInit() {
-    this.pedidos=this._carritoService.getPedidos();
-    this.getMontoTotal();
-=======
   intervalId: any;
   pedidos: IDish[] =[];
   montoTotal: number = 0;
@@ -38,7 +23,7 @@ export class PedidoPage implements OnInit {
   hora: string = "";
   id: number = 0;
   nombre: string = "";
-  tiempoRestante: number = 2;
+  tiempoRestante: number = 0;
   mostrarDiv: boolean = false;
   textoRestante: string = "Faltan " + this.tiempoRestante + " minutos para que se complete tu pedido.";
   constructor(
@@ -49,9 +34,9 @@ export class PedidoPage implements OnInit {
     ) { }
 
   ngOnInit() {
-    this.setDuracion();
     this.pedidos=this._carritoService.getPedidos();
     this.getMontoTotal();
+    this.setDuracion();
     this.fecha = this._facturaService.getFecha();
     this.hora = this._facturaService.getHora();
     this.id = Math.floor(Math.random() * (1000000 - 99999 + 1)) + 99999;
@@ -76,7 +61,6 @@ export class PedidoPage implements OnInit {
     if (this.intervalId) {
       clearInterval(this.intervalId);
     }
->>>>>>> origin/Pedidos-móvil
   }
 
   goBack(){
@@ -88,18 +72,17 @@ export class PedidoPage implements OnInit {
     })
   }
 
-<<<<<<< HEAD
-=======
   goFeedback(){
     this._router.navigate(['/feedback'])
   }
 
-  setDuracion(){
-    for (let pedido of this.pedidos){
-      this.tiempoRestante += pedido.duracion;
-    }
-  }
-  
 
->>>>>>> origin/Pedidos-móvil
-}
+  setDuracion():void{
+    this.pedidos.forEach(pedido=>{
+      this.tiempoRestante += pedido.duracion;
+    })
+  }
+  }
+
+
+

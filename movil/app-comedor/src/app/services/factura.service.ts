@@ -11,9 +11,9 @@ export class FacturaService {
   second: string = "";
   date: Date = new Date();
   constructor(
-    
-  ) { 
-    
+
+  ) {
+
   }
   setFecha(){
     this.fecha = this.date.getDate() + "/" + Number(this.date.getMonth() + 1) + "/" + this.date.getFullYear();
@@ -38,12 +38,13 @@ export class FacturaService {
       this.second = "0" + this.date.getSeconds();
     }
 
-    this.hora = this.hour + ":" + this.minute + ":" + this.second; 
+    this.hora = this.hour + ":" + this.minute + ":" + this.second;
   }
 
   getHora(){
     return this.hora;
   }
+
 
 }
 

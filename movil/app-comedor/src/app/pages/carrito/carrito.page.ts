@@ -10,8 +10,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CONFIG } from 'src/config/config';
 import { CheckUserService } from 'src/app/services/check-user.service';
 
-
-
 @Component({
   selector: 'app-carrito',
   templateUrl: './carrito.page.html',
@@ -31,7 +29,6 @@ export class CarritoPage implements OnInit {
     private _checkUser: CheckUserService,
 
   ){
-
   }
 
   ngOnInit() {
@@ -46,9 +43,13 @@ export class CarritoPage implements OnInit {
   /**
    * Función que redirige a la página de pedido
    */
-  goPedido(){
-    for(let idplato of this.pedidos){
-      this.idplatos.push(idplato.id);
+  goPedido():void{
+    const temporal = this._carritoService.getPedidos();
+    //console.log(temporal)
+    for(let idplato of temporal){
+      console.log(temporal);
+      console.log(idplato.Id)
+      this.idplatos.push(idplato.Id);
     }
     let pedidoSolicitado = {
       cliente: this._checkUser.getCedula(),
@@ -61,6 +62,7 @@ export class CarritoPage implements OnInit {
       this._facturaService.setHora();
       this._router.navigate(['/pedido']);
     }
+
 
 
   }

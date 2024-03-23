@@ -18,7 +18,7 @@ import { HttpClient,HttpClientModule } from '@angular/common/http';
 })
 export class ConfigPage implements OnInit {
   readonly APIUrl = CONFIG.apiUrl + "cliente/"
-
+  nPassword: string = "";
   constructor( private _router : Router,
                private _checkUserService: CheckUserService,
                private _http: HttpClient,
@@ -44,5 +44,11 @@ export class ConfigPage implements OnInit {
   deleteAccount(){
     this._http.delete(this.APIUrl + 'eliminarCliente?cedula=' + this._checkUserService.getCedula()).subscribe();
     this.movetoAuth();
+  }
+  changePassword(){
+    console.log('Here')
+    if(this.nPassword!==""){
+      this._http.put(this.APIUrl + 'modificarContraseña?cedula=' + this._checkUserService.getCedula() + '&nuevaContraseña=' + this.nPassword, 'modificarContraseña').subscribe()
+    }
   }
 }

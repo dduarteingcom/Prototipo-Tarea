@@ -7,5 +7,5 @@ export interface IDish
   cantidadCalorias: number;
   ingredientes: string[];
   duracion: number;
-  id:number;
+  Id:number;
 }
