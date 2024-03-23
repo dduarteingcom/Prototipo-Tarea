@@ -1,7 +1,9 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { interval, Subscription } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Input } from '@angular/core';
+import { OrderComponent } from '../order/order.component'
+import { OrderInt } from '../order.interface'
 
 
 @Component({
@@ -11,9 +13,12 @@ import { Input } from '@angular/core';
 })
 export class TimerComponent implements OnInit{
 
+  @Input() parent!: OrderComponent;
+  @Input() order!: OrderInt;
   @Input() minutes: number = 0;
   seconds: number = 10;
   timerSubscription: Subscription = new Subscription;
+  usermail: string = '';
 
   constructor(private http: HttpClient) { }
 
@@ -25,9 +30,10 @@ export class TimerComponent implements OnInit{
     this.timerSubscription = interval(1000).subscribe(() => {
       if (this.seconds === 0) {
         if (this.minutes === 0) {
-          console.log('FINISH');
-          this.timerSubscription.unsubscribe(); // Stop the timer
-      //    this.sendPutRequest(); // Trigger PUT request
+          console.log('order: ' + this.order);
+          console.log('order id: ' + this.order.Id);
+          this.timerSubscription.unsubscribe();
+          this.parent.closeOrder(this.order.Id);
         } else {
           this.minutes--;
           this.seconds = 59;
@@ -36,20 +42,6 @@ export class TimerComponent implements OnInit{
         this.seconds--;
       }
     });
-  }
-
-  sendPutRequest() {
-    const url = 'your_api_endpoint';
-    const newData = { /* Updated data object */ };
-
-    this.http.put(url, newData).subscribe(
-      () => {
-        console.log('PUT request completed');
-      },
-      (error) => {
-        console.error('Error occurred during PUT request:', error);
-      }
-    );
   }
 
   ngOnDestroy() {

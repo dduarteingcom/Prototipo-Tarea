@@ -11,6 +11,7 @@
     <h3>Orden No.{{order.Id}}</h3>
 
     <div>
+
       No.Cliente: {{order.cliente}}<br />
       Platos de la orden: {{order.platos}}
       <div [class.active]="isActive" (click)="faqInteract()" class="dishDesc">
@@ -18,7 +19,7 @@
         <div class="desc">{{order.platos}}</div>
       </div>
       Tiempo estimado de entrega: {{order.tiempoPreparacion}}<br />
-      Tiempo restante: <app-timer [minutes]="order.tiempoPreparacion"></app-timer>
+      Tiempo restante: <app-timer [minutes]="order.tiempoPreparacion" [parent]="this" [order]="order"></app-timer>
 
     </div>
 
@@ -30,4 +31,3 @@
   </div>
 
 </div>
-

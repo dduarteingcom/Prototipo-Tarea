@@ -30,8 +30,6 @@ export class MenuComponent implements OnInit {
         console.log(this.activeOrders[0]);
       }
     });
-    
-
   }
 
   goToMenu() {

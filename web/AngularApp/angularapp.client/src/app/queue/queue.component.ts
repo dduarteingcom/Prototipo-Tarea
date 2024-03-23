@@ -4,15 +4,6 @@ import { ActivatedRoute } from '@angular/router';
 import { UserService } from '../user.service';
 import { HttpClient } from '@angular/common/http';
 import { Time } from '@angular/common';
-interface FoodOrder {
-  Id: number;
-  cliente: number;
-  platos: number[];
-  horaDePedido: Time;
-  tiempoPreparacion: number;
-  estado: boolean;
-  monto: number;
-}
 
 @Component({
   /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -22,7 +13,7 @@ interface FoodOrder {
 })
 export class QueueComponent {
   //API variables
-  readonly APIUrl = "https://localhost:7258/chef/"
+  readonly APIUrl = "http://localhost:5000/chef/"
   orders: any;
 
   //Other vars
@@ -100,6 +91,7 @@ export class QueueComponent {
     this.http.put(this.APIUrl + 'agarrarPedido?id=' + orderId + '&correo=' + this.usermail, this.usermail).subscribe();
     this.orders = this.orders.filter((order: { Id: number; }) => order.Id !== orderId);
   }
+
 }
 
   //selectOrderisms(orderId: number) {

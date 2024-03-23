@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from '../user.service';
 import { HttpClient } from '@angular/common/http';
-import { TimerConfig } from '../timer-confg.interface';
 import { ViewChildren, QueryList } from '@angular/core';
 import { TimerComponent } from '../timer/timer.component';
 
@@ -17,7 +16,7 @@ import { TimerComponent } from '../timer/timer.component';
 
 export class OrderComponent {
   //API variables
-  readonly APIUrl = "https://localhost:7258/chef/";
+  readonly APIUrl = "http://localhost:5000/chef/";
   response: any;
 
   //Binding variables
@@ -101,6 +100,12 @@ export class OrderComponent {
 
   faqInteract() {
     this.isActive = !this.isActive;
+  }
+
+  closeOrder(orderId: number) {
+    console.log('CERRANDOOOO')
+    this.http.put(this.APIUrl + 'terminarPedido?id=' + orderId, this.usermail).subscribe();
+    this.activeOrders = this.activeOrders.filter((order: { Id: number; }) => order.Id !== orderId);
   }
 
   //calls queue Angular View
