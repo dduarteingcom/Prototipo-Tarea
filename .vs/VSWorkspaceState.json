@@ -1,13 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\API",
-    "\\web",
-    "\\web\\AngularApp",
-    "\\web\\AngularApp\\angularapp.client",
-    "\\web\\AngularApp\\angularapp.client\\src",
-    "\\web\\AngularApp\\angularapp.client\\src\\app",
-    "\\web\\AngularApp\\angularapp.client\\src\\app\\queue"
+    "\\movil",
+    "\\movil\\src"
   ],
+  "SelectedNode": "\\movil\\src\\main.ts",
   "PreviewInSolutionExplorer": false
 }

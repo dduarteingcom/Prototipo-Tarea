@@ -8,7 +8,6 @@ import { TimerComponent } from '../timer/timer.component';
 
 
 @Component({
-  /* eslint-disable @typescript-eslint/no-explicit-any */
   selector: 'app-order',
   templateUrl: './order.component.html',
   styleUrl: './order.component.css'
@@ -56,7 +55,6 @@ export class OrderComponent {
 
   goToQueue() {
     this.router.navigate(['/queue']);
-    this.usermail = this.userService.getUserId();
   }
 
   getActiveOrders() {

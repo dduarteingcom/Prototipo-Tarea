@@ -45,8 +45,7 @@ export class LoginComponent {
         }
         else if (response == 2) {
           this.errorMessage = 'Login exitoso chef'
-          this.router.navigate(['/chef']);
-          this.userService.setUserId(this.email);
+          this.router.navigate(['/admin-platos']);
         }
         else {
           // Show error message if the response is null

@@ -39,33 +39,3 @@ ul li {
   flex-direction: column;
   margin-left: auto;
 }
-
-.dishDesc {
-  max-width: 400px;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid white;
-  cursor: pointer;
-  display: flex;
-  justify-content:center;
-  flex-direction:column;
-}
-
-.expand-tag {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: grey;
-  border-radius: 100px;
-  width:75px;
-  margin:10px 162px 0px 163px;
-}
-
-.desc {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-}
-
-.dishDesc.active .desc {
-  max-height: 200px;
-}

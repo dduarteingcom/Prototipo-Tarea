@@ -11,6 +11,8 @@ import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { DishOptComponent } from './dish-opt/dish-opt.component';
 import { TimerComponent } from './timer/timer.component';
+import { MenuManComponent } from './menu-man/menu-man.component';
+import { ReportsComponent } from './reports/reports.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { TimerComponent } from './timer/timer.component';
     OrderComponent,
     QueueComponent,
     DishOptComponent,
-    TimerComponent
+    TimerComponent,
+    MenuManComponent,
+    ReportsComponent
   ],
   imports: [
     FormsModule,

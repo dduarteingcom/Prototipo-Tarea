@@ -186,6 +186,7 @@ C:\Users\ASUS\OneDrive - Estudiantes ITCR\Documentos\GitHub\Prototipo-Tarea\API\
 C:\Users\ASUS\OneDrive - Estudiantes ITCR\Documentos\GitHub\Prototipo-Tarea\API\obj\Debug\net8.0\API.pdb
 C:\Users\ASUS\OneDrive - Estudiantes ITCR\Documentos\GitHub\Prototipo-Tarea\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 C:\Users\ASUS\OneDrive - Estudiantes ITCR\Documentos\GitHub\Prototipo-Tarea\API\obj\Debug\net8.0\ref\API.dll
+<<<<<<< HEAD
 C:\Users\Mano-\Documents\TEC\Semestre-I-2024\Bases-de-datos\rest-tec\API\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Mano-\Documents\TEC\Semestre-I-2024\Bases-de-datos\rest-tec\API\bin\Debug\net8.0\appsettings.json
 C:\Users\Mano-\Documents\TEC\Semestre-I-2024\Bases-de-datos\rest-tec\API\bin\Debug\net8.0\database.json
@@ -224,3 +225,5 @@ C:\Users\Mano-\Documents\TEC\Semestre-I-2024\Bases-de-datos\rest-tec\API\obj\Deb
 C:\Users\Mano-\Documents\TEC\Semestre-I-2024\Bases-de-datos\rest-tec\API\obj\Debug\net8.0\API.pdb
 C:\Users\Mano-\Documents\TEC\Semestre-I-2024\Bases-de-datos\rest-tec\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 C:\Users\Mano-\Documents\TEC\Semestre-I-2024\Bases-de-datos\rest-tec\API\obj\Debug\net8.0\ref\API.dll
+=======
+>>>>>>> FrontEndDev

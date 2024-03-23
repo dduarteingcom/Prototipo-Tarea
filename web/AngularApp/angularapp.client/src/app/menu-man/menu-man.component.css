@@ -47,11 +47,11 @@
   background-color: gray;
 }
 
-#options-container button:hover{
-  border:none;
-  border-radius:360px;
-  background-color: red;
-}
+  #options-container button:hover {
+    border: none;
+    border-radius: 360px;
+    background-color: red;
+  }
 
 #top {
   display: flex;

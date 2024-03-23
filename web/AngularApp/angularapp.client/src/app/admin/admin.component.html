@@ -3,10 +3,6 @@
 </div>
 
 <div class="container">
-  <div>
-    <input [(ngModel)]="inputBoxValue" type="text" placeholder="Type your input" />
-    <button (click)="newDishT()">Insert Dish</button>
-  </div>
 
   <h2>Lista de Platillos</h2>
   <div class="dish-list">
@@ -18,9 +14,95 @@
       </li>
     </ul>
   </div>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Calorías</th>
+        <th>Precio</th>
+        <th>Ingredientes</th>
+        <th>Tiempo de preparacion</th>
+        <th>Descripcion del platillo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dish of activeDishes">
+        <td>{{ dish.Id }}</td>
+        <td>{{ dish.nombre }}</td>
+        <td>{{ dish.tipo }}</td>
+        <td>{{ dish.calorias }}</td>
+        <td>{{ dish.precio }}</td>
+        <td>{{ dish.ingredientes }}</td>
+        <td>{{ dish.duracion }}</td>
+        <td>{{ dish.descripcion }}</td>
+      </tr>
+    </tbody>
+  </table>
 
   <div>
-    <button class="dish-btn">Add Dish</button>
+    <button (click)="toggleForm()" class="dish-btn">Crear plato</button>
+    <button (click)="toggleForm2()" class=" dish-btn">Modificar plato</button>
+    <button (click)="toggleForm3()" class=" dish-btn">Eliminar plato</button>
+  </div>
+  <div *ngIf="showForm">
+    <form (ngSubmit)="submitForm()" #form="ngForm">
+      <!-- Form fields go here -->
+      <label>Nombre </label>
+      <input type="text" name="Nombre" [(ngModel)]="dishName" required placeholder="Nombre">
+      <label>Tipo </label>
+      <input type="text" name="Tipo" [(ngModel)]="dishType" required placeholder="Tipo">
+      <label>Calorías </label>
+      <input type="number" name="Calorías" [(ngModel)]="dishCalories" required placeholder="Calorías">
+      <label>Precio </label>
+      <input type="number" name="Precio" [(ngModel)]="dishPrice" required placeholder="Precio">
+      <label>Ingredientes </label>
+      <input type="text" name="Ingredientes" [(ngModel)]="dishIngredients" required placeholder="Ingredientes">
+      <label>Tiempo </label>
+      <input type="number" name="Tiempo" [(ngModel)]="dishTime" required placeholder="Tiempo">
+
+      <div><label>Descripcion </label> <input type="text" name="Descripcion" [(ngModel)]="dishDesc" required placeholder="Descripcion"></div>
+      <!-- Add more form fields as needed -->
+
+      <button (click)="submitForm()" type="submit"> Crear</button>
+    </form>
+  </div>
+  <div *ngIf="showForm2">
+    <form (ngSubmit)="submitForm2()" #form="ngForm">
+      <!-- Form fields go here -->
+      <label>ID </label>
+      <select name="ID" [(ngModel)]="formData.selectedOptionId" (change)="onSelectionChange($event)">
+        <option *ngFor="let option of defaultOptions" [value]="option">{{option}}</option>
+      </select>
+      <label>Nombre </label>
+      <input type="text" name="Nombre" [(ngModel)]="dishName" required placeholder="Nombre">
+      <label>Tipo </label>
+      <input type="text" name="Tipo" [(ngModel)]="dishType" required placeholder="Tipo">
+      <label>Calorías </label>
+      <input type="number" name="Calorías" [(ngModel)]="dishCalories" required placeholder="Calorías">
+      <label>Precio </label>
+      <input type="number" name="Precio" [(ngModel)]="dishPrice" required placeholder="Precio">
+      <label>Ingredientes </label>
+      <input type="text" name="Ingredientes" [(ngModel)]="dishIngredients" required placeholder="Ingredientes">
+      <label>Tiempo </label>
+      <input type="number" name="Tiempo" [(ngModel)]="dishTime" required placeholder="Tiempo">
+      <label>Descripcion</label>
+      <input type="text" name="Descripcion" [(ngModel)]="dishDesc" required placeholder="Descripcion">
+      <!-- Add more form fields as needed -->
+
+      <button (click)="submitForm2()" type="submit"> Modificar</button>
+    </form>
+  </div>
+  <div *ngIf="showForm3">
+    <form (ngSubmit)="submitForm3()" #form="ngForm">
+      <!-- Form fields go here -->
+      <label>ID </label>
+      <select name="ID" [(ngModel)]="formData.selectedOptionId" (change)="onSelectionChange($event)">
+        <option *ngFor="let option of defaultOptions" [value]="option">{{option}}</option>
+      </select>
+      <button (click)="submitForm3()" type="submit"> Eliminar</button>
+    </form>
   </div>
 
 </div>

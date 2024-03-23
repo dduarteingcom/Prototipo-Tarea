@@ -1,6 +1,6 @@
 /* eslint-disable prefer-const */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
@@ -12,11 +12,12 @@ interface Dish {
 }
 
 @Component({
-  selector: 'app-admin',
-  templateUrl: './admin.component.html',
-  styleUrl: './admin.component.css'
+  selector: 'app-menu-man',
+  templateUrl: './menu-man.component.html',
+  styleUrl: './menu-man.component.css'
 })
-export class AdminComponent implements OnInit {
+export class MenuManComponent implements OnInit {
+  platosDisponibles: any;
   defaultOptions: number[] = [];
   formData: any = {
     selectedOptionId: ''
@@ -31,7 +32,7 @@ export class AdminComponent implements OnInit {
   dishList: Dish[] = [];
   inputBoxValue: string = '';
   dishIdCounter: number = 0;
-  readonly APIUrl = "http://localhost:5000/plato/";
+  readonly APIUrl = "http://localhost:5000/menu/";
   activeDishes: any;
   dishName: string = '';
   dishType: string = '';
@@ -73,24 +74,27 @@ export class AdminComponent implements OnInit {
   }
 
   getDishes() {
-    this.http.get(this.APIUrl + 'mostrarPlatos').subscribe({
+    this.http.get(this.APIUrl + 'mostrarPlatosDisponibles').subscribe({
       next: response => {
         this.activeDishes = response;
-        console.log(response);
       }
     });
   }
 
-  toggleForm2() {
-    this.showForm2 = !this.showForm2;
-    this.showForm = false;
-    this.showForm3 = false;
-    this.getDefaultOptions();
+  getPlatos() {
+    this.http.get("http://localhost:5000/plato/" + 'mostrarPlatos').subscribe({
+      next: response => {
+        this.platosDisponibles = response;
+      }
+    });
   }
+
   toggleForm() {
     this.showForm = !this.showForm;
     this.showForm2 = false;
     this.showForm3 = false;
+    this.getDefaultOptions();
+    this.getPlatos();
   }
   toggleForm3() {
     this.showForm2 = false;
@@ -99,38 +103,22 @@ export class AdminComponent implements OnInit {
     this.getDefaultOptions();
   }
   submitForm() { //Add Dish
-    let datos = {
-      nombre: this.dishName,
-      tipo: this.dishType,
-      calorias: this.dishCalories,
-      precio: this.dishPrice,
-      ingredientes: this.dishIngredients,
-      duracion: this.dishTime,
-      descripcion: this.dishDesc
 
-    }
-
-    this.http.post(this.APIUrl + 'agregarPlato', datos).subscribe(data => {
+    this.http.post(this.APIUrl + 'agregarPlatoAlMenu?' + 'id=' + this.dishIDselection, 'datos').subscribe(data => {
       this.getDishes();
     })
     this.showForm = !this.showForm;
   }
-  submitForm2() { //Change dish
-    this.http.put(this.APIUrl + 'modificarPlato?' + 'id=' + this.dishIDselection +'&nuevoNombre=' + this.dishName + '&nuevoTipo=' + this.dishType + '&nuevoCalorias=' + this.dishCalories + '&nuevoPrecio=' + this.dishPrice + '&nuevaDescripcion=' + this.dishDesc, 'agregarPlato').subscribe(data => {
-      this.getDishes();
-    })
-    this.showForm2 = !this.showForm2;
-  }
   submitForm3() { //Delete dish
     console.log("Delete")
-    this.http.delete(this.APIUrl + 'eliminarPlato?' + 'id=' + this.dishIDselection).subscribe(data => {
+    this.http.delete(this.APIUrl + 'eliminarPlatoDelMenu?' + 'id=' + this.dishIDselection).subscribe(data => {
       this.getDishes();
     })
     this.showForm3 = !this.showForm3;
   }
 
-  getDefaultOptions(){
-    this.http.get<number[]>(this.APIUrl + 'mostrarIdPlatos').subscribe({
+  getDefaultOptions() {
+    this.http.get<number[]>("http://localhost:5000/plato/" + 'mostrarIdPlatos').subscribe({
       next: response => {
         this.defaultOptions = response;
       }

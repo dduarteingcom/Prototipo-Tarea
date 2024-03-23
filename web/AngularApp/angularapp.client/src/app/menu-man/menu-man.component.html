@@ -1,0 +1,102 @@
+<div id="top">
+  <button class="back-btn" (click)="goHomepage()">Back</button>
+</div>
+
+<div class="container">
+
+  <h2>Menu actual</h2>
+  <div class="dish-list">
+    <ul id="options-container">
+      <li *ngFor="let dish of dishList">
+        <input type="checkbox" [(ngModel)]="dish.active">
+        <span>{{dish.name}}</span>
+        <button (click)="deleteDish(dish.id)">X</button>
+      </li>
+    </ul>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Calorías</th>
+        <th>Precio</th>
+        <th>Ingredientes</th>
+        <th>Tiempo de preparacion</th>
+        <th>Descripcion del platillo</th>
+        <th>Ventas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dish of activeDishes">
+        <td>{{ dish.nombre }}</td>
+        <td>{{ dish.tipo }}</td>
+        <td>{{ dish.calorias }}</td>
+        <td>{{ dish.precio }}</td>
+        <td>{{ dish.ingredientes }}</td>
+        <td>{{ dish.duracion }}</td>
+        <td>{{ dish.descripcion }}</td>
+        <td>{{ dish.ventas }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div>
+    <button (click)="toggleForm()" class="dish-btn">Agregar plato al Menu</button>
+    <button (click)="toggleForm3()" class=" dish-btn">Eliminar plato</button>
+  </div>
+
+
+  <div *ngIf="showForm">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let plato of platosDisponibles">
+          <td>{{ plato.Id }}</td>
+          <td>{{ plato.nombre }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <form (ngSubmit)="submitForm()" #form="ngForm">
+      <!-- Form fields go here -->
+      <label>ID </label>
+      <select name="ID" [(ngModel)]="formData.selectedOptionId" (change)="onSelectionChange($event)">
+        <option *ngFor="let option of defaultOptions" [value]="option">{{option}}</option>
+      </select>
+      <button (click)="submitForm()" type="submit"> Agregar</button>
+    </form>
+  </div>
+
+
+  <div *ngIf="showForm3">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dish of activeDishes">
+          <td>{{ dish.Id }}</td>
+          <td>{{ dish.nombre }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <form (ngSubmit)="submitForm3()" #form="ngForm">
+      <!-- Form fields go here -->
+      <label>ID </label>
+      <select name="ID" [(ngModel)]="formData.selectedOptionId" (change)="onSelectionChange($event)">
+        <option *ngFor="let option of defaultOptions" [value]="option">{{option}}</option>
+      </select>
+      <button (click)="submitForm3()" type="submit"> Eliminar</button>
+    </form>
+  </div>
+
+</div>
+

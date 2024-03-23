@@ -1,0 +1,17 @@
+.main-body {
+  display: flex;
+  justify-content: space-between; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column;
+  height: 80vh; /* Full viewport height */
+}
+
+.platillos {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

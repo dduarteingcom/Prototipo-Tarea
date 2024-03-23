@@ -96,8 +96,12 @@
       "pedidosAsigandos": [
         2,
         3,
+<<<<<<< HEAD
         4,
         5
+=======
+        4
+>>>>>>> FrontEndDev
       ],
       "correo": "mauro@gmail.com",
       "contraseña": "m@Uro"
@@ -159,7 +163,11 @@
     {
       "Id": 5,
       "cliente": 305668797,
+<<<<<<< HEAD
       "chef": "mauro@gmail.com",
+=======
+      "chef": null,
+>>>>>>> FrontEndDev
       "platos": [
         1
       ],

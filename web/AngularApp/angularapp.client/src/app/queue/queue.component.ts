@@ -1,17 +1,20 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+<<<<<<< HEAD
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from '../user.service';
 import { HttpClient } from '@angular/common/http';
 import { Time } from '@angular/common';
+=======
+>>>>>>> FrontEndDev
 
 @Component({
-  /* eslint-disable @typescript-eslint/no-explicit-any */
   selector: 'app-queue',
   templateUrl: './queue.component.html',
   styleUrl: './queue.component.css'
 })
 export class QueueComponent {
+<<<<<<< HEAD
   //API variables
   readonly APIUrl = "http://localhost:5000/chef/"
   orders: any;
@@ -25,11 +28,15 @@ export class QueueComponent {
     this.getPendingOrders();
   }
 
+=======
+  constructor(private router:Router) { }
+>>>>>>> FrontEndDev
   goToOrders() {
     console.log(this.usermail)
     this.router.navigate(['/chef']);
     console.log(this.usermail)
   }
+<<<<<<< HEAD
 
   getPendingOrders() {
     this.http.get(this.APIUrl + 'obtenerPedidosDesasignados').subscribe({
@@ -50,5 +57,7 @@ export class QueueComponent {
     this.orders = this.orders.filter((order: { Id: number; }) => order.Id !== orderId);
   }
 
+=======
+>>>>>>> FrontEndDev
 }
 
