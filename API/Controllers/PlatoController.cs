@@ -36,7 +36,8 @@ namespace API.Controllers
                 ingredientes = platoRequest.ingredientes,
                 duracion = platoRequest.duracion,
                 descripcion = platoRequest.descripcion,
-                ventas = 0
+                ventas = 0,
+                estrellas = 0
             };
 
             // Convierte el objeto Plato a un objeto dinámico
@@ -141,6 +142,30 @@ namespace API.Controllers
             System.IO.File.WriteAllText("database.json", JsonConvert.SerializeObject(data, settings));
 
             return Ok();
+        }
+
+        [HttpPut]
+        [Route("agregarCalificacion")]
+        public IActionResult agregarCalificacion([FromBody] Calificacion calificacion)
+        {
+            // Leer el archivo json
+            var json = System.IO.File.ReadAllText("database.json");
+            var data = JsonConvert.DeserializeObject<Root>(json);
+            var listaPlatos = data.platos;
+
+            Plato plato = null; // Definir 'plato' fuera del ciclo foreach
+
+            foreach (var platoId in calificacion.Ids)
+            {
+                plato = listaPlatos.First(p => p.Id == platoId);
+                plato.estrellas += calificacion.estrellas;
+            }
+
+            // Guardar los cambios en el archivo json
+            json = JsonConvert.SerializeObject(data, Formatting.Indented);
+            System.IO.File.WriteAllText("database.json", json);
+
+            return Ok(plato); // Ahora 'plato' está en el alcance correcto
         }
 
     }
