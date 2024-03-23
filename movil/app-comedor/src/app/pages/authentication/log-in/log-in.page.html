@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="row">
+      <ion-button class="boton-redondo" (click)="goBack()">&#8592;</ion-button>
+
+
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content >
+  <p style="margin-left: 19vw; color: white;">Inicio de sesión</p>
+  <ul>
+    <input [(ngModel)]="correo" placeholder="Escriba su correo electrónico">
+    <input [(ngModel)]="contrasena" placeholder="Escriba su contraseña">
+  </ul>
+
+  <div class="button-centered">
+    <ion-button class="boton2" (click)="checkInfo()">Continuar &raquo;</ion-button>
+  </div>
+  <p *ngIf="error === true">Correo y/o contraseña incorrectos</p>
+</ion-content>

@@ -1,0 +1,53 @@
+<ion-header color="primary">
+  <ion-toolbar>
+    <div class="row">
+      <ion-button class="boton-redondo" (click)="goBack()">&#8592;</ion-button>
+      <p style="margin-left: 23vw; color: white;">Regístrate</p>
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+  <div style="text-align: center;">
+    <p> Ingresa los siguientes datos</p>
+  </div>
+
+  <div style="text-align: center;background-color: #034A91;">
+    <p style="display: inline-block; padding: 0.2vh; color: white;"> Información personal</p>
+  </div>
+
+  <ul>
+    <input placeholder="Número de Cédula" [(ngModel)]="cedula">
+    <input placeholder="Nombre" [(ngModel)]="nombre">
+    <input placeholder="Apellido 1" [(ngModel)]="apellido1" >
+    <input placeholder="Apellido 2" [(ngModel)]="apellido2" >
+  </ul>
+  <div style="text-align: center;background-color: #034A91;">
+    <p style="display: inline-block; padding: 0.2vh; color: white;"> Fecha de Nacimiento</p>
+  </div>
+  <ul>
+    <input placeholder="dd" [(ngModel)]="dia">
+    <input placeholder="mm" [(ngModel)]="mes">
+    <input placeholder="yyyy" [(ngModel)]="ano">
+  </ul>
+  <div style="text-align: center;background-color: #034A91;">
+    <p style="display: inline-block; padding: 0.2vh; color: white;"> Dirección</p>
+  </div>
+  <ul>
+    <input placeholder="Provincia" [(ngModel)]="provincia" >
+    <input placeholder="Cantón" [(ngModel)]="canton" >
+    <input placeholder="Distrito" [(ngModel)]="distrito" >
+  </ul >
+  <div style="text-align: center;background-color: #034A91;">
+    <p style="display: inline-block; padding: 0.2vh; color: white;"> Teléfonos</p>
+  </div>
+  <ul>
+    <input placeholder="Teléfono-1" [(ngModel)]="telefono1" >
+    <input placeholder="Teléfono-2" [(ngModel)]="telefono2" >
+  </ul>
+  <div class="button-centered">
+    <ion-button class="boton2" (click)="moveToMore()">Continuar &raquo;</ion-button>
+  </div>
+
+</ion-content>
