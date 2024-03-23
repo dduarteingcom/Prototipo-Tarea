@@ -26,12 +26,21 @@ export class ConfigPage implements OnInit {
 
   ngOnInit() {
   }
+  /**
+   * Funicón que devuelve a la página home
+   */
   goBack(){
     this._router.navigate(['/home']);
   }
+  /**
+   * Función que dirige a la página de autorización
+   */
   movetoAuth(){
     this._router.navigate(['/authentication'])
   }
+  /**
+   * Función que realiza la petición para eliminar una cuenta de cliente
+   */
   deleteAccount(){
     this._http.delete(this.APIUrl + 'eliminarCliente?cedula=' + this._checkUserService.getCedula()).subscribe();
     this.movetoAuth();

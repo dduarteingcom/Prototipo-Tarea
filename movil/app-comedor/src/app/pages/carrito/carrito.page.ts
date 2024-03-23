@@ -26,18 +26,27 @@ export class CarritoPage implements OnInit {
 
     this.pedidos=this._carritoService.getPedidos();
   }
+  /**
+   * Función que devuelve a la página de home
+   */
   goBack(){
     this._router.navigate(['/home'])
   }
+  /**
+   * Función que redirige a la página de pedido
+   */
   goPedido(){
     if(this.pedidos.length>0){
       this._router.navigate(['/pedido'])
     }
 
   }
+  /**
+   * Función que elimina un plato del carrito de compras
+   * @param pedido Nombre del plato que se va a eliminar
+   */
   removeItem(pedido:string){
     this.pedidos = this.pedidos.filter((pedidos)=> pedidos.nombre !== pedido);
-    console.log(this.pedidos);
     this._carritoService.setPedidos(this.pedidos);
   }
 

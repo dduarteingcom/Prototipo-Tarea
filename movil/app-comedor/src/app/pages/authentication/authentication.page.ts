@@ -19,9 +19,15 @@ export class AuthenticationPage implements OnInit {
 
   ngOnInit() {
   }
+  /**
+   * Función que dirige a la página de Log In
+   */
   moveToLogIn(){
     this._router.navigate(['log-in'])
   }
+  /**
+   * Función que dirige a la página de Sign Up
+   */
   moveToSignUp(){
     this._router.navigate(['sign-up'])
   }

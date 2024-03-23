@@ -33,6 +33,9 @@ export class HomePage {
     private _http: HttpClient
   ){
   }
+  /**
+   * En este On Init se realiza la petición para obtener los platos del menú
+   */
   ngOnInit() {
     this.userName = this._checkUser.geNombre();
     this._http.get(this.APIUrl +'mostrarPlatosDisponibles').subscribe((data: any )=>{
@@ -40,18 +43,27 @@ export class HomePage {
     }
     )
   }
+  /**
+   * Función que redirige a la página de carrito
+   */
   moveToCarrito(){
     this._router.navigate(['/carrito']);
   }
+  /**
+   * Función que agrega platos al carrito de compras
+   * @param plato El nombre del plato a añadir
+   */
   addToCarrito(plato: string){
     this.pedidos=this._carritoService.getPedidos();
     const newOrder = this.platos.filter((platos: { nombre: string; })=>
     platos.nombre.toLocaleLowerCase().includes(plato.toLowerCase())
     );
     this.pedidos.push(newOrder[0]);
-    console.log(this.pedidos)
     this._carritoService.setPedidos(this.pedidos);
   }
+  /**
+   * Función que redirige a la página de configuración
+   */
   moveToConfig(){
     this._router.navigate(['/config'])
   }
