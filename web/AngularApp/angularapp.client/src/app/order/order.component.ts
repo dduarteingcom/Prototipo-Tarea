@@ -27,29 +27,6 @@ export class OrderComponent {
   usermail!: string;
   isActive: boolean = false;
 
-  orders = [
-    {
-      "Id": 2,
-      "cliente": "108660494",
-      "chef": "mauro@gmail.com",
-      "platos": [
-        3
-      ],
-      "tiempoPreparacion": 25,
-      "estado": true
-    },
-    {
-      "Id": 3,
-      "cliente": "118620970",
-      "chef": "mauro@gmail.com",
-      "platos": [
-        2,
-        3
-      ],
-      "tiempoPreparacion": 45,
-      "estado": true
-    }];
-
   @ViewChildren(TimerComponent)
   timers!: QueryList<TimerComponent>
   constructor(private router: Router, private route: ActivatedRoute, private userService: UserService, private http: HttpClient) { }
@@ -57,38 +34,7 @@ export class OrderComponent {
   ngOnInit(): void {
     this.usermail = this.userService.getUserId();
     this.getActiveOrders();
-    this.timers.forEach(timer => {
-      // Access and initialize data for each TimerComponent
-      // For example:
-      console.log('HELLO 300');
-      timer.minutes = 9;
-      console.log(timer.seconds)
-    });
   }
-
-  //ngDoCheck(): void {
-  //  this.accessTimers();
-  //}
-
-  //ngOnChanges(): void {
-  //console.log('HELLO 1')
-    
-  //  this.accessTimers();
-  //}
-
-  ngAfterViewInit() {
-    console.log('HELLO 2: ' + this.timers.length);
-    // Access and use timers property here
-    this.timers.forEach(timer => {
-      // Access and initialize data for each TimerComponent
-      // For example:
-      console.log('HELLO 2');
-      timer.minutes = 9;
-      console.log(timer.seconds)
-
-    });
-  }
-
 
   accessTimers() {
     // Accessing all app-timer instances
@@ -103,12 +49,11 @@ export class OrderComponent {
   }
 
   closeOrder(orderId: number) {
-    console.log('CERRANDOOOO')
+    console.log('closing...')
     this.http.put(this.APIUrl + 'terminarPedido?id=' + orderId, this.usermail).subscribe();
     this.activeOrders = this.activeOrders.filter((order: { Id: number; }) => order.Id !== orderId);
   }
 
-  //calls queue Angular View
   goToQueue() {
     this.router.navigate(['/queue']);
     this.usermail = this.userService.getUserId();

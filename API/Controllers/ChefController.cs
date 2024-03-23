@@ -49,7 +49,7 @@ namespace API.Controllers
 
         [HttpPut]
         [Route("agarrarPedido")]
-        public IActionResult UpdatePlato(int id, string correo)
+        public IActionResult agarrarPlato(int id, string correo)
         {
             // Leer el archivo json
             var json = System.IO.File.ReadAllText("database.json");
@@ -65,6 +65,14 @@ namespace API.Controllers
             // Actualizar los datos del plato
             pedido.chef = correo;
             pedido.estado = true;
+            var chef = data.chefs.FirstOrDefault(p => p.correo == correo);
+            if (chef.pedidosAsigandos == null)
+            {
+                chef.pedidosAsigandos = new List<int>();
+            }
+            chef.pedidosAsigandos.Add(id);
+
+
 
             // Guardar los cambios en el archivo json
             json = JsonConvert.SerializeObject(data, Formatting.Indented);
@@ -109,6 +117,25 @@ namespace API.Controllers
             System.IO.File.WriteAllText("database.json", json);
 
             return Ok(pedido);
+        }
+
+        [HttpGet]
+        [Route("obtenerPedidosActivosOtrosChef")]
+        public IActionResult ObtenerPedidosActivosOtrosChef(string correo)
+        {
+            // Leer el archivo json
+            var json = System.IO.File.ReadAllText("database.json");
+            var data = JsonConvert.DeserializeObject<Root>(json);
+
+            // Filtrar los pedidos cuyo estado sea true
+            var pedidosActivos = data.pedidos.Where(p => p.estado == true && p.chef != correo && p.chef != null).ToList();
+
+            if (pedidosActivos.Count == 0)
+            {
+                return NotFound();
+            }
+
+            return Ok(pedidosActivos);
         }
 
 

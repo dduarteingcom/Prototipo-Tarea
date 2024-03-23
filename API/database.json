@@ -95,7 +95,9 @@
     {
       "pedidosAsigandos": [
         2,
-        3
+        3,
+        4,
+        5
       ],
       "correo": "mauro@gmail.com",
       "contraseña": "m@Uro"
@@ -105,7 +107,7 @@
     {
       "Id": 1,
       "cliente": 118620970,
-      "chef": "mauro@gmail.com",
+      "chef": "andres@gmail.com",
       "platos": [
         2,
         4
@@ -136,14 +138,14 @@
         1
       ],
       "horaDePedido": "16:52:07",
-      "tiempoPreparacion": 0,
-      "estado": false,
+      "tiempoPreparacion": 6,
+      "estado": true,
       "monto": 5000
     },
     {
       "Id": 4,
       "cliente": 305668797,
-      "chef": null,
+      "chef": "mauro@gmail.com",
       "platos": [
         2,
         3,
@@ -157,7 +159,7 @@
     {
       "Id": 5,
       "cliente": 305668797,
-      "chef": null,
+      "chef": "mauro@gmail.com",
       "platos": [
         1
       ],
@@ -194,7 +196,8 @@
       ],
       "duracion": 6,
       "descripcion": "Es una sopa tradicional mexicana preparada con tortilla, jitomate, y un toque de picante",
-      "ventas": 9
+      "ventas": 9,
+      "estrellas": 15
     },
     {
       "Id": 2,
@@ -209,7 +212,8 @@
       ],
       "duracion": 10,
       "descripcion": "Es un plato italiano que combina pasta con una salsa hecha de carne picada, tomate, cebolla, zanahoria, apio y varias hierbas y especias",
-      "ventas": 6
+      "ventas": 6,
+      "estrellas": 1
     },
     {
       "Id": 3,
@@ -224,7 +228,8 @@
       ],
       "duracion": 6,
       "descripcion": "Es un sándwich popular de Filadelfia, EE. UU., hecho con finas rebanadas de bistec y queso derretido en un pan largo",
-      "ventas": 4
+      "ventas": 4,
+      "estrellas": 3
     },
     {
       "Id": 4,
@@ -239,7 +244,8 @@
       ],
       "duracion": 4,
       "descripcion": "Es una hamburguesa de carne de ternera, generalmente servida en un pan de hamburguesa con queso derretido encima",
-      "ventas": 14
+      "ventas": 14,
+      "estrellas": 9
     }
   ],
   "facturas": [

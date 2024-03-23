@@ -1,6 +1,46 @@
 [
   {
     "ContainingType": "API.Controllers.AdminController",
+    "Method": "mostrarTopCalificacion",
+    "RelativePath": "admin/mostrarTopCalificacion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AdminController",
+    "Method": "mostrarTopClientes",
+    "RelativePath": "admin/mostrarTopClientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AdminController",
+    "Method": "mostrarTopGanancias",
+    "RelativePath": "admin/mostrarTopGanancias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AdminController",
+    "Method": "mostrarTopPlatos",
+    "RelativePath": "admin/mostrarTopPlatos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AdminController",
     "Method": "ObtenerPedidosActivos",
     "RelativePath": "admin/obtenerPedidosActivos",
     "HttpMethod": "GET",
@@ -10,9 +50,151 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API.Controllers.ChefController",
+    "Method": "agarrarPlato",
+    "RelativePath": "chef/agarrarPedido",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "correo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ChefController",
+    "Method": "mostrarTodosPedidos",
+    "RelativePath": "chef/mostrarTodosPedidos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ChefController",
+    "Method": "ObtenerPedidosActivosChef",
+    "RelativePath": "chef/obtenerPedidosActivosChef",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "correo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ChefController",
+    "Method": "ObtenerPedidosActivosOtrosChef",
+    "RelativePath": "chef/obtenerPedidosActivosOtrosChef",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "correo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ChefController",
+    "Method": "OobtenerPedidosDesasignado",
+    "RelativePath": "chef/obtenerPedidosDesasignados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ChefController",
+    "Method": "terminarPedido",
+    "RelativePath": "chef/terminarPedido",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.ClienteController",
-    "Method": "encontrarCedula",
-    "RelativePath": "cliente/encontrarCedula",
+    "Method": "agregarCliente",
+    "RelativePath": "cliente/agregarCliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nuevoClienteRequest",
+        "Type": "API.Models.ClienteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ClienteController",
+    "Method": "eliminarCliente",
+    "RelativePath": "cliente/eliminarCliente",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cedula",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ClienteController",
+    "Method": "encontrarCorreoPasswd",
+    "RelativePath": "cliente/encontrarCorreoPasswd",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "correo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ClienteController",
+    "Method": "encontrarPorCedula",
+    "RelativePath": "cliente/encontrarPorCedula",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -26,6 +208,129 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API.Controllers.ClienteController",
+    "Method": "modificarContrase\u00F1a",
+    "RelativePath": "cliente/modificarContrase\u00F1a",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cedula",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "nuevaContrase\u00F1a",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.FacturaController",
+    "Method": "CrearFactura",
+    "RelativePath": "factura/CrearFactura",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "facturaRequest",
+        "Type": "API.Models.FacturaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.MenuController",
+    "Method": "agregarPlatoAlMenu",
+    "RelativePath": "menu/agregarPlatoAlMenu",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.MenuController",
+    "Method": "eliminiarPlatoDelMenu",
+    "RelativePath": "menu/eliminarPlatoDelMenu",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.MenuController",
+    "Method": "mostrarPlatosDisponibles",
+    "RelativePath": "menu/mostrarPlatosDisponibles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PedidoController",
+    "Method": "AgregarPedido",
+    "RelativePath": "pedido/agregarPedido",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pedidoRequest",
+        "Type": "API.Models.PedidoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PlatoController",
+    "Method": "agregarCalificacion",
+    "RelativePath": "plato/agregarCalificacion",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "calificacion",
+        "Type": "API.Models.Calificacion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.PlatoController",
     "Method": "AddPlato",
     "RelativePath": "plato/agregarPlato",
@@ -34,22 +339,23 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "nombre",
-        "Type": "System.String",
-        "IsRequired": false
-      },
+        "Name": "platoRequest",
+        "Type": "API.Models.PlatoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PlatoController",
+    "Method": "eliminarPlato",
+    "RelativePath": "plato/eliminarPlato",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Name": "tipo",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "calorias",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "precio",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": false
       }
@@ -88,8 +394,33 @@
         "Name": "nuevoPrecio",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "nuevaDescripcion",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PlatoController",
+    "Method": "mostrarIdPlatos",
+    "RelativePath": "plato/mostrarIdPlatos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PlatoController",
+    "Method": "mostrarPlatos",
+    "RelativePath": "plato/mostrarPlatos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
