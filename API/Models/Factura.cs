@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
 
-        public int cedula { get; set; }    
+        public string cliente { get; set; }    
 
         public Fecha fecha { get;  set; }
 
