@@ -1,7 +1,0 @@
-{
-  "name": "app-comedor",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular-standalone"
-}

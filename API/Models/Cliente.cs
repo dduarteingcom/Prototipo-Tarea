@@ -10,7 +10,7 @@ namespace API.Models
         public Direccion direccion { get; set; }
         public string fechaNacimiento { get; set; }
         public List<int> telefonos { get; set; }
+        public Carrito carrito { get; set; }
         public List<int> pedidos { get; set; }
-        public int pedidosRealizados { get; set; }
     }
 }
