@@ -12,7 +12,7 @@ import { UserService } from '../user.service';
 export class LoginComponent {
 
 
-  readonly APIUrl = "https://localhost:7258/usuario/";
+  readonly APIUrl = "http://localhost:5000/usuario/";
   email: string = '';
   password: string = '';
   errorMessage: string = '';

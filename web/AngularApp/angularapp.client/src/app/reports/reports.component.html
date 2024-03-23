@@ -1,0 +1,97 @@
+<div class="main-body">
+  <div class="header">
+    <h1>Reportes de administrador</h1>
+  </div>
+
+  <div *ngIf="showForm">
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Tipo</th>
+          <th>Calorias</th>
+          <th>Precio</th>
+          <th>Ventas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dish of topPlatos">
+          <td>{{ dish.nombre }}</td>
+          <td>{{ dish.tipo}}</td>
+          <td>{{ dish.calorias }}</td>
+          <td>{{ dish.precio}}</td>
+          <td>{{ dish.ventas }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="showForm2">
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Tipo</th>
+          <th>Calorias</th>
+          <th>Precio</th>
+          <th>Ventas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dish of topGanancias">
+          <td>{{ dish.nombre }}</td>
+          <td>{{ dish.tipo}}</td>
+          <td>{{ dish.calorias }}</td>
+          <td>{{ dish.precio}}</td>
+          <td>{{ dish.ventas }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div *ngIf="showForm3">
+    <table>
+      <thead>
+        <tr>
+          <th>Cedula</th>
+          <th>Nombre</th>
+          <th>Correo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dish of topClientes">
+          <td>{{ dish.cedula}}</td>
+          <td>{{ dish.nombre.primerNombre}}</td>
+          <td>{{ dish.correo }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="showForm4">
+    <table>
+      <thead>
+        <tr>
+          <th>Cedula</th>
+          <th>Nombre</th>
+          <th>Correo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dish of topRated">
+          <td>{{ dish.cedula}}</td>
+          <td>{{ dish.nombre.primerNombre}}</td>
+          <td>{{ dish.correo }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container-btn">
+    <button class="platillos" (click)="goToMenu()">Platos mas vendidos</button>
+    <button class="platillos" (click)="goToDishes()">Platos de mas ganancias</button>
+    <button class="platillos" (click)="goToReports()">Mejores clientes</button>
+    <button class="platillos" (click)="bestRated()">Platos con mejor feedback</button>
+  </div>
+</div>
+

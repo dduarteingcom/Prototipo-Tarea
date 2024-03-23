@@ -12,7 +12,7 @@ import { HttpClient } from '@angular/common/http';
 export class MenuComponent implements OnInit {
 
   usermail!: string;
-  readonly APIUrl = "https://localhost:7258/admin/";
+  readonly APIUrl = "http://localhost:5000/admin/";
   activeOrders: any;
   constructor(private router: Router, private route: ActivatedRoute, private userService: UserService, private http: HttpClient) { }
   response: any;
@@ -35,6 +35,12 @@ export class MenuComponent implements OnInit {
   }
 
   goToMenu() {
+    this.router.navigate(['/menu-man']);
+  }
+  goToDishes() {
     this.router.navigate(['/admin']);
+  }
+  goToReports() {
+    this.router.navigate(['/reports']);
   }
 }

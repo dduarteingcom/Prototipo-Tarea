@@ -8,7 +8,7 @@
         "apellido2": "Acuña"
       },
       "correo": "mluna@gmail.com",
-      "contraseña": "maurito12",
+      "contraseña": "1234",
       "direccion": {
         "distrito": "Concepcion",
         "cantón": "La Union",
@@ -18,8 +18,11 @@
       "telefonos": [
         62912132
       ],
-      "carrito": null,
-      "pedidos": null
+      "pedidos": [
+        1,
+        2
+      ],
+      "pedidosRealizados": 5
     },
     {
       "cedula": 108660494,
@@ -40,8 +43,35 @@
         72021332,
         60161269
       ],
-      "carrito": null,
-      "pedidos": null
+      "pedidos": [
+        3
+      ],
+      "pedidosRealizados": 1
+    },
+    {
+      "cedula": 305668797,
+      "nombre": {
+        "primerNombre": "Juan",
+        "apellido1": "Viñas",
+        "apellido2": "Mora"
+      },
+      "correo": "jo@gmail.com",
+      "contraseña": "juan1",
+      "direccion": {
+        "distrito": "La Rivera",
+        "cantón": "Belen",
+        "provincia": "Heredia"
+      },
+      "fechaNacimiento": "05-07-2001",
+      "telefonos": [
+        87870511
+      ],
+      "pedidos": [
+        4,
+        5,
+        6
+      ],
+      "pedidosRealizados": 3
     }
   ],
   "administradores": [
@@ -65,7 +95,8 @@
     {
       "pedidosAsigandos": [
         2,
-        3
+        3,
+        4
       ],
       "correo": "mauro@gmail.com",
       "contraseña": "m@Uro"
@@ -75,68 +106,79 @@
     {
       "Id": 1,
       "cliente": 118620970,
-      "chef": "mauro@gmail.com",
+      "chef": "andres@gmail.com",
       "platos": [
-        1,
-        3
+        2,
+        4
       ],
-      "horaDePedido": "14:50:23",
-      "tiempoPreparacion": 12,
+      "horaDePedido": "16:51:15",
+      "tiempoPreparacion": 14,
       "estado": true,
-      "monto": 6500
+      "monto": 7800
     },
     {
       "Id": 2,
-      "cliente": 18620970,
-      "chef": "andres@gmail.com",
+      "cliente": 118620970,
+      "chef": "mauro@gmail.com",
       "platos": [
-        1,
-        2
+        2,
+        4
       ],
-      "horaDePedido": "15:04:55",
-      "tiempoPreparacion": 16,
+      "horaDePedido": "16:51:32",
+      "tiempoPreparacion": 14,
       "estado": true,
-      "monto": 9500
+      "monto": 7800
     },
     {
       "Id": 3,
-      "cliente": 118620970,
-      "chef": null,
+      "cliente": 108660494,
+      "chef": "mauro@gmail.com",
       "platos": [
-        2,
-        3
+        1
       ],
-      "horaDePedido": "17:48:10",
-      "tiempoPreparacion": 16,
+      "horaDePedido": "16:52:07",
+      "tiempoPreparacion": 6,
       "estado": true,
-      "monto": 6000
+      "monto": 5000
     },
     {
       "Id": 4,
-      "cliente": 118620970,
-      "chef": null,
+      "cliente": 305668797,
+      "chef": "mauro@gmail.com",
       "platos": [
+        2,
         3,
-        3,
-        3
+        4
       ],
-      "horaDePedido": "18:48:25",
-      "tiempoPreparacion": 18,
+      "horaDePedido": "16:54:09",
+      "tiempoPreparacion": 20,
       "estado": true,
-      "monto": 4500
+      "monto": 9300
     },
     {
       "Id": 5,
-      "cliente": 118620970,
+      "cliente": 305668797,
+      "chef": null,
+      "platos": [
+        1
+      ],
+      "horaDePedido": "16:54:21",
+      "tiempoPreparacion": 6,
+      "estado": true,
+      "monto": 5000
+    },
+    {
+      "Id": 6,
+      "cliente": 305668797,
       "chef": null,
       "platos": [
         1,
-        3
+        4
       ],
-      "horaDePedido": "19:10:29",
-      "tiempoPreparacion": 12,
+      "horaDePedido": "16:54:24",
+      "tiempoPreparacion": 10,
       "estado": true,
-      "monto": 6500
+      "monto": 8300
     }
   ],
   "platos": [
@@ -152,7 +194,9 @@
         "culantro"
       ],
       "duracion": 6,
-      "descripcion": "Es una sopa tradicional mexicana preparada con tortilla, jitomate, y un toque de picante"
+      "descripcion": "Es una sopa tradicional mexicana preparada con tortilla, jitomate, y un toque de picante",
+      "ventas": 9,
+      "estrellas": 15
     },
     {
       "Id": 2,
@@ -166,7 +210,9 @@
         "carne"
       ],
       "duracion": 10,
-      "descripcion": "Es un plato italiano que combina pasta con una salsa hecha de carne picada, tomate, cebolla, zanahoria, apio y varias hierbas y especias"
+      "descripcion": "Es un plato italiano que combina pasta con una salsa hecha de carne picada, tomate, cebolla, zanahoria, apio y varias hierbas y especias",
+      "ventas": 6,
+      "estrellas": 1
     },
     {
       "Id": 3,
@@ -180,7 +226,9 @@
         "carne"
       ],
       "duracion": 6,
-      "descripcion": "Es un sándwich popular de Filadelfia, EE. UU., hecho con finas rebanadas de bistec y queso derretido en un pan largo"
+      "descripcion": "Es un sándwich popular de Filadelfia, EE. UU., hecho con finas rebanadas de bistec y queso derretido en un pan largo",
+      "ventas": 4,
+      "estrellas": 3
     },
     {
       "Id": 4,
@@ -194,7 +242,9 @@
         "queso"
       ],
       "duracion": 4,
-      "descripcion": "Es una hamburguesa de carne de ternera, generalmente servida en un pan de hamburguesa con queso derretido encima"
+      "descripcion": "Es una hamburguesa de carne de ternera, generalmente servida en un pan de hamburguesa con queso derretido encima",
+      "ventas": 14,
+      "estrellas": 9
     }
   ],
   "facturas": [
@@ -214,5 +264,10 @@
       "montoTotal": 11000
     }
   ],
-  "menu": [1,2,3,4]
+  "menu": [
+    1,
+    2,
+    4,
+    3
+  ]
 }

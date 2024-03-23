@@ -10,6 +10,8 @@ import { QueueComponent } from './queue/queue.component';
 import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { DishOptComponent } from './dish-opt/dish-opt.component';
+import { MenuManComponent } from './menu-man/menu-man.component';
+import { ReportsComponent } from './reports/reports.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { DishOptComponent } from './dish-opt/dish-opt.component';
     LoginComponent,
     OrderComponent,
     QueueComponent,
-    DishOptComponent
+    DishOptComponent,
+    MenuManComponent,
+    ReportsComponent
   ],
   imports: [
     FormsModule,

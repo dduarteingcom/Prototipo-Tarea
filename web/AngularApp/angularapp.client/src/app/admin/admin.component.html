@@ -72,9 +72,11 @@
     <form (ngSubmit)="submitForm2()" #form="ngForm">
       <!-- Form fields go here -->
       <label>ID </label>
-      <select name="ID" [(ngModel)]="formData.selectedOptionId" (change) ="onSelectionChange($event)">
+      <select name="ID" [(ngModel)]="formData.selectedOptionId" (change)="onSelectionChange($event)">
         <option *ngFor="let option of defaultOptions" [value]="option">{{option}}</option>
       </select>
+      <label>Nombre </label>
+      <input type="text" name="Nombre" [(ngModel)]="dishName" required placeholder="Nombre">
       <label>Tipo </label>
       <input type="text" name="Tipo" [(ngModel)]="dishType" required placeholder="Tipo">
       <label>Calorías </label>
@@ -96,7 +98,7 @@
     <form (ngSubmit)="submitForm3()" #form="ngForm">
       <!-- Form fields go here -->
       <label>ID </label>
-      <select name="ID" [(ngModel)]="formData.selectedOptionId">
+      <select name="ID" [(ngModel)]="formData.selectedOptionId" (change)="onSelectionChange($event)">
         <option *ngFor="let option of defaultOptions" [value]="option">{{option}}</option>
       </select>
       <button (click)="submitForm3()" type="submit"> Eliminar</button>
