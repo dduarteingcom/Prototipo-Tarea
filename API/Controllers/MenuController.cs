@@ -35,7 +35,7 @@ namespace API.Controllers
             string json = System.IO.File.ReadAllText("database.json");
             var data = JsonConvert.DeserializeObject<dynamic>(json);
 
-            data.menu.Add(id);
+            data.menu.platos.Add(id);
 
             string output = JsonConvert.SerializeObject(data, Formatting.Indented);
             System.IO.File.WriteAllText("database.json", output);
@@ -48,9 +48,9 @@ namespace API.Controllers
             string json = System.IO.File.ReadAllText("database.json");
             var data = JsonConvert.DeserializeObject<dynamic>(json);
 
-            List<int> platos = data.menu.ToObject<List<int>>();
+            List<int> platos = data.menu.platos.ToObject<List<int>>();
             platos.Remove(id);
-            data.menu = JArray.FromObject(platos);
+            data.menu.platos = JArray.FromObject(platos);
 
             string output = JsonConvert.SerializeObject(data, Formatting.Indented);
             System.IO.File.WriteAllText("database.json", output);

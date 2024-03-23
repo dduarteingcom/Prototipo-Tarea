@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Controllers",
-    "\\Models"
+    ""
   ],
-  "SelectedNode": "\\Models\\Usuario.cs",
+  "SelectedNode": "\\API.sln",
   "PreviewInSolutionExplorer": false
 }

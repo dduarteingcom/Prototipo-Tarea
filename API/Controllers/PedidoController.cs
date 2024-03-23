@@ -35,15 +35,6 @@ namespace API.Controllers
                 horaDePedido = hora.ToString("HH:mm:ss")
             };
 
-            var cliente = data.clientes.FirstOrDefault(p => p.cedula == nuevoPedido.cliente);
-            cliente.pedidosRealizados += 1;
-            if (cliente.pedidos == null)
-            {
-                cliente.pedidos = new List<int>();
-            }
-            cliente.pedidos.Add(nuevoPedido.Id);
-
-
             // Calcula el monto total del pedido
             int montoTotal = 0;
             int tiempo = 0;
@@ -51,9 +42,7 @@ namespace API.Controllers
             {
                 var plato = listaPlatos.First(p => p.Id == platoId);
                 montoTotal += plato.precio;
-                plato.ventas += 1;
                 tiempo += plato.duracion;
-
             }
 
             nuevoPedido.monto = montoTotal;

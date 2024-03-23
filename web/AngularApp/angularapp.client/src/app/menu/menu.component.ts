@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from '../user.service';
 import { HttpClient } from '@angular/common/http';
@@ -9,10 +10,11 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+
   usermail!: string;
   readonly APIUrl = "https://localhost:7258/admin/";
   activeOrders: any;
-  constructor(private route: ActivatedRoute, private userService: UserService, private http: HttpClient) { }
+  constructor(private router: Router, private route: ActivatedRoute, private userService: UserService, private http: HttpClient) { }
   response: any;
   ngOnInit(): void {
     this.getActiveOrders();
@@ -32,4 +34,7 @@ export class MenuComponent implements OnInit {
 
   }
 
+  goToMenu() {
+    this.router.navigate(['/admin']);
+  }
 }

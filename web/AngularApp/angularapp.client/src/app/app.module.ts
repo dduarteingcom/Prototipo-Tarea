@@ -1,21 +1,31 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { RouterModule } from '@angular/router';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { OrderComponent } from './order/order.component';
+import { QueueComponent } from './queue/queue.component';
+import { AdminComponent } from './admin/admin.component';
+import { FormsModule } from '@angular/forms';
+import { DishOptComponent } from './dish-opt/dish-opt.component';
 
 @NgModule({
   declarations: [
+    AdminComponent,
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    OrderComponent,
+    QueueComponent,
+    DishOptComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule,
-    AppRoutingModule, FormsModule, RouterModule.forRoot([])
+    FormsModule,
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule, 
+    RouterModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]

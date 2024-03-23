@@ -1,10 +1,17 @@
 .main-body {
-    display:flex;
+    display: flex;
+    justify-content: space-between; /* Center horizontally */
+    align-items: center; /* Center vertically */
     flex-direction:column;
-    justify-content: space-between;
-    margin: 40px;
+    height: 80vh; /* Full viewport height */
 }
 
-div {
-    padding: 50px; 
+.platillos{
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
