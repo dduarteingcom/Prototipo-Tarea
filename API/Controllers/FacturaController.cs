@@ -9,45 +9,33 @@ namespace API.Controllers
     public class FacturaController : ControllerBase
     {
         [HttpPost]
-        [Route("agregarFactura")]
-        public IActionResult AgregarFactura(int cedula, string dia, string mes, string año, string hora, List<int> pedidos)
+        [Route("CrearFactura")]
+        public IActionResult CrearFactura([FromBody] FacturaRequest facturaRequest)
         {
+            DateTime date = DateTime.Now;
+
             // Obtén el objeto JSON completo
             var json = System.IO.File.ReadAllText("database.json");
             var data = JsonConvert.DeserializeObject<Root>(json);
 
             // Accede a la lista de facturas, pedidos y platos
             var listaFacturas = data.facturas;
-            var listaPedidos = data.pedidos;
-            var listaPlatos = data.platos;
 
             // Crea un nuevo objeto factura
             var nuevaFactura = new Factura
             {
                 Id = (listaFacturas.Count + 1), // Genera el Id basado en la cantidad de facturas existentes
-                cedula = cedula,
+                cliente = facturaRequest.cliente,
                 fecha = new Fecha
                 {
-                    dia = dia,
-                    mes = mes,
-                    año = año
+                    dia = date.Day.ToString(),
+                    mes = date.Month.ToString(),
+                    año = date.Year.ToString()
                 },
-                hora = hora,
-                pedidos = pedidos,
+                hora = date.ToString("HH:mm:ss"),
+                pedidos = facturaRequest.pedidos,
+                montoTotal = facturaRequest.montoTotal
             };
-
-            // Calcula el monto total de la factura
-            int montoTotal = 0;
-            foreach (var pedidoId in pedidos)
-            {
-                var pedido = listaPedidos.First(p => p.Id == pedidoId);
-                foreach (var platoId in pedido.platos)
-                {
-                    var plato = listaPlatos.First(p => p.Id == platoId);
-                    montoTotal += plato.precio;
-                }
-            }
-            nuevaFactura.montoTotal = montoTotal;
 
             // Convierte el objeto Factura a un objeto dinámico
             var nuevoFacturaDinamico = JsonConvert.DeserializeObject<Factura>(JsonConvert.SerializeObject(nuevaFactura));
@@ -66,6 +54,7 @@ namespace API.Controllers
             System.IO.File.WriteAllText("database.json", JsonConvert.SerializeObject(data, settings));
 
             return Ok(nuevaFactura);
+
         }
 
 
