@@ -10,11 +10,11 @@
 
 
 <ion-content >
-  <p>{{prueba}}</p>
   <p style="margin-left: 19vw; color: white;">Inicio de sesión</p>
+  <ul>
     <input [(ngModel)]="correo" placeholder="Escriba su correo electrónico">
     <input [(ngModel)]="contrasena" placeholder="Escriba su contraseña">
-
+  </ul>
 
   <div class="button-centered">
     <ion-button class="boton2" (click)="checkInfo()">Continuar &raquo;</ion-button>
