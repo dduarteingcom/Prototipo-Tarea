@@ -1,6 +1,7 @@
 ﻿
 namespace API.Models
 {
+    //Modelo de cliente con sus respectivos atributos
     public class Cliente : Usuario
     {
         public int cedula { get; set; }
