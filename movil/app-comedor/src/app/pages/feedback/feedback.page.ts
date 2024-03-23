@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { FacturaService } from 'src/app/services/factura.service';
 
 
 @Component({
@@ -14,7 +15,11 @@ import { Router } from '@angular/router';
 })
 export class FeedbackPage implements OnInit {
 
-  constructor(private _router: Router) { }
+
+  constructor(
+    private _router: Router,
+    private _facturaService : FacturaService
+    ) { }
 
   ngOnInit() {
   }
@@ -22,4 +27,7 @@ export class FeedbackPage implements OnInit {
   goHome(){
     this._router.navigate(['/home']);
   }
+
+
+  
 }
