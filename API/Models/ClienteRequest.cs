@@ -1,5 +1,6 @@
 ﻿namespace API.Models
 {
+    //Modelo de cliente con atributos de la app web para transformarla al modelo de la DB
     public class ClienteRequest
     {
         public int cedula { get; set; }

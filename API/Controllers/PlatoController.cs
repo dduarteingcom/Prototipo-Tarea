@@ -26,7 +26,9 @@ namespace API.Controllers
             // Crea un nuevo plato
             var nuevoPlato = new Plato
             {
+
                 Id = (ultimoId + 1), // Genera el Id basado en el Id del último plato
+
                 nombre = platoRequest.nombre,
                 tipo = platoRequest.tipo,
                 calorias = platoRequest.calorias,
@@ -140,7 +142,6 @@ namespace API.Controllers
 
             return Ok();
         }
-
 
     }
 }
