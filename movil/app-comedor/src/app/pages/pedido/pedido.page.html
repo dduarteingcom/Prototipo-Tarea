@@ -67,8 +67,11 @@
   <div class="textoFactura">
     <p style="font-size: 3vb; font-weight: bolder;">ESTADO DEL PEDIDO</p>
   </div>
+  <div style="text-align:center;">
+    <p style="color: black; font-size: 2vb; font-family: 'Times New Roman', Times, serif; margin-top: -5vh;">{{textoRestante}}</p>
+  </div>
 
-  <div class="button-centered">
+  <div class="button-centered" *ngIf="mostrarDiv">
     <ion-button class="boton2" (click)="goFeedback()">Realizado &raquo;</ion-button>
   </div>
 
