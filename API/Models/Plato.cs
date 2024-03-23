@@ -21,5 +21,7 @@
 
         public int ventas { get; set; }
 
+        public int estrellas { get; set; }
+
     }
 }

@@ -74,6 +74,19 @@ namespace API.Controllers
             return topClientes;
         }
 
+        [HttpGet]
+        [Route("mostrarTopCalificacion")]
+        public dynamic mostrarTopCalificacion()
+        {
+            string json = System.IO.File.ReadAllText("database.json");
+            var data = JsonConvert.DeserializeObject<Root>(json);
+
+            // Ordenamos los platos por ventas de mayor a menor
+            var topCalificacion = data.platos.OrderByDescending(p => (int)p.estrellas).Take(10);
+
+            return topCalificacion;
+        }
+
 
     }
 }
